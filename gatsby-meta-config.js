@@ -54,7 +54,7 @@ module.exports = {
         date: '2022.03 ~ 2022.06',
         activity: '사용자 맞춤형 길 찾기 서비스 WayFindeR 개발',
         links: {
-          // post: 'https://uos-urbanscience.org/archives/uos_portfolio/당신이-원하는-길로-이끄는-지도-wayfinder',
+          post: 'https://uos-urbanscience.org/archives/uos_portfolio/당신이-원하는-길로-이끄는-지도-wayfinder',
           github: 'https://github.com/GYURI-PARK/2022_Graduation_project',
         },
       },
@@ -85,7 +85,7 @@ module.exports = {
         techStack: ['HTML', 'CSS','JavaScript','Node.js'],
         thumbnailUrl: 'wayfinder.001.png',
         links: {
-          // post: 'https://uos-urbanscience.org/archives/uos_portfolio/당신이-원하는-길로-이끄는-지도-wayfinder',
+          post: 'https://uos-urbanscience.org/archives/uos_portfolio/당신이-원하는-길로-이끄는-지도-wayfinder',
           github: 'https://github.com/GYURI-PARK/2022_Graduation_project',
         },
       },
