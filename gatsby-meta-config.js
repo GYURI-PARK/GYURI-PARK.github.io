@@ -19,7 +19,7 @@ module.exports = {
     },
     social: {
       github: `https://github.com/GYURI-PARK`, // `https://github.com/zoomKoding`,
-      // linkedIn: ``, // `https://www.linkedin.com/in/jinhyeok-jeong-800871192`,
+      linkedIn: `https://www.linkedin.com/in/gyuri-park-03755025b/`,
       email: `higyuri99@naver.com`, // `zoomkoding@gmail.com`,
     },
   },
