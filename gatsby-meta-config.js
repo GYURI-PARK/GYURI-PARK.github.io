@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['노력의 가치를 아는', '일상에 풍요로움을 더해주는', '다양한 관점을 가진'],
-      thumbnail: 'movegif.gif', // Path to the image in the 'asset' folder
+      thumbnail: 'mimoticon.gif', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/GYURI-PARK`, // `https://github.com/zoomKoding`,
