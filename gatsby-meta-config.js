@@ -1,5 +1,5 @@
 module.exports = {
-  title: `gyurisinZORBA.com`,
+  title: `gyurisinZorba.com`,
   description: `GYURI's Tech Blog`,
   language: `ko`, // `ko`, `en` => currently support versions for Korean and English
   siteUrl: `https://github.com/GYURI-PARK`,
