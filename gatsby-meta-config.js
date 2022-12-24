@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['노력의 가치를 아는', '일상에 풍요로움을 더해주는', '다양한 관점을 가진'],
-      thumbnail: '움직이는미모티콘.gif', // Path to the image in the 'asset' folder
+      thumbnail: 'movemimoticon.gif', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/GYURI-PARK`, // `https://github.com/zoomKoding`,
@@ -47,8 +47,8 @@ module.exports = {
         activity: '대구 계성고등학교 졸업',
       },
       {
-        date: '2023.02',
-        activity: '서울시립대학교 공간정보공학과 & 빅데이터분석학 (졸업예정)',
+        date: '2018.03 ~ 2023.02',
+        activity: '서울시립대학교 공간정보공학과 & 빅데이터분석학',
       },
       {
         date: '2022.03 ~ 2022.06',
