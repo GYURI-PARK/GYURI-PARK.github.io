@@ -15,7 +15,7 @@ module.exports = {
     bio: {
       role: `개발자`,
       description: ['노력의 가치를 아는', '일상에 풍요로움을 더해주는', '다양한 관점을 가진'],
-      thumbnail: 'movemimoticon.gif', // Path to the image in the 'asset' folder
+      thumbnail: 'movegif.gif', // Path to the image in the 'asset' folder
     },
     social: {
       github: `https://github.com/GYURI-PARK`, // `https://github.com/zoomKoding`,
@@ -83,7 +83,7 @@ module.exports = {
         description:
           '“여러분은 목적지까지의 길을 찾을 때 어떻게 하시나요?” 기존의 우리가 사용하고 있는 길 찾기 서비스들은 보행환경을 고려하지 않은 채, 최단거리 / 최소 시간 위주의 경로만을 제공합니다. 단순히 빨리 갈 수 있는 길이 아닌, 안전하고 쾌적한 내가 걷고 싶은 길을 제공해 주는 서비스가 있다면 어떨까요? 안전성, 쾌적성 기반의 보행자 맞춤형 길 찾기 서비스, WayFindeR입니다.',
         techStack: ['HTML', 'CSS','JavaScript','Node.js'],
-        thumbnailUrl: '맞춤형서비스.png',
+        thumbnailUrl: 'wayfinder.png',
         links: {
           post: 'https://uos-urbanscience.org/archives/uos_portfolio/당신이-원하는-길로-이끄는-지도-wayfinder',
           github: 'https://github.com/GYURI-PARK/2022_Graduation_project',
