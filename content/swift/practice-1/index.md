@@ -7,10 +7,19 @@ tags: swift
 categories: Swift
 ---
 
-![swift-logo.png](swift-log.png)
+![swift-logo.png](./swift-log.png)
 
 
 ## 💡 명명법
+
+### Swift 는 대소문자를 구분!
+
+> Lower Camel Case : function, method, variable, constant 
+    ex) someVariavleName
+
+> Upper Camel Case : type(class, struct, enum, extension, …)
+    ex) Person, Point, Week
+
 
 
 
