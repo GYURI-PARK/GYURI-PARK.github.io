@@ -7,8 +7,7 @@ tags: swift
 categories: Swift
 ---
 
-![swift-logo.png](./swift-log.png)
-
+![swift-logo.png](swift-log.png)
 
 ## 💡 명명법
 
