@@ -14,16 +14,19 @@ categories: Swift
 
 ### Swift 는 대소문자를 구분!
 
-> Lower Camel Case : function, method, variable, constant 
+* Lower Camel Case : function, method, variable, constant 
     ex) someVariavleName
 
-> Upper Camel Case : type(class, struct, enum, extension, …)
+* Upper Camel Case : type(class, struct, enum, extension, …)
     ex) Person, Point, Week
 
-
+</br>
+</br>
 
 
 ## 💡 콘솔로그
+* print : 단순 문자열 출력
+* dump : 인스턴스의 자세한 설명 (description 프로퍼티) 까지 출력
 
 
 ## 💡 문자열 보간법
