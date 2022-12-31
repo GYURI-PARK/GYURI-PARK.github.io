@@ -97,7 +97,18 @@ dump(orange)
 
 ### Swift는 다른 데이터 타입 간의 변경이 매우 까다롭기 때문에 반드시 명확한 데이터 타입을 설정해주어야 한다.
 
+</br>
 
+* 1. Bool (true or false)
+
+```bash
+var someBool: Bool = true
+print(someBool)
+someBool = false
+```
+
+</br>
+</br>
 
 ## 💡 Any / AnyObject / nil
 
