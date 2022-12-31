@@ -11,7 +11,7 @@ categories: Swift
 
 ## 💡 명명법
 
-### Swift 는 대소문자를 구분!
+##### Swift 는 대소문자를 구분!
 
 * Lower Camel Case : function, method, variable, constant 
     ex) someVariavleName
@@ -76,8 +76,8 @@ dump(orange)
 
 ## 💡 상수와 변수
 
-### 띄워쓰기 중요!
-### 값의 type이 명확하다면 type 생략 가능
+##### 띄워쓰기 중요!
+##### 값의 type이 명확하다면 type 생략 가능
 
 * 1. 상수 선언
 > 상수 선언 키워드 : let
@@ -95,7 +95,7 @@ dump(orange)
 
 ## 💡 데이터 타입
 
-### Swift는 다른 데이터 타입 간의 변경이 매우 까다롭기 때문에 반드시 명확한 데이터 타입을 설정해주어야 한다.
+##### Swift는 다른 데이터 타입 간의 변경이 매우 까다롭기 때문에 반드시 명확한 데이터 타입을 설정해주어야 한다.
 
 </br>
 
