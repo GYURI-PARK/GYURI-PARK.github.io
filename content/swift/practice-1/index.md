@@ -100,11 +100,24 @@ dump(orange)
 </br>
 
 * 1. Bool (true or false)
-
+</br>
 ```bash
 var someBool: Bool = true
 print(someBool)
 someBool = false
+```
+
+</br>
+
+* 2. Int (정수형) : 양의 정수, 음의 정수, 0 모두 가능
+</br>
+```bash
+var someInt: Int = -100
+print(someInt)
+someInt = 100
+print(someInt)
+someInt = 0
+print(someInt)
 ```
 
 </br>
