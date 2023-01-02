@@ -121,6 +121,15 @@ print(someInt)
 ```
 
 </br>
+
+* 3. UInt (양의 정수)
+</br>
+```bash
+var someUInt: UInt = 100
+print(someUInt)
+```
+
+</br>
 </br>
 
 ## 💡 Any / AnyObject / nil
