@@ -93,13 +93,13 @@ ex) Person, Point, Week</p>
 </br>
 <h2 id="-문자열-보간법-string-interpolation" style="position:relative;"><a href="#-%EB%AC%B8%EC%9E%90%EC%97%B4-%EB%B3%B4%EA%B0%84%EB%B2%95-string-interpolation" aria-label=" 문자열 보간법 string interpolation permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 문자열 보간법 (String interpolation)</h2>
 </br>
-</br>
 <ul>
 <li>프로그램 실행 중 문자열 내에 변수 또는 상수의 실질적인 값을 표현하기 위해 사용</li>
 </ul>
 <ul>
 <li>() -> 문자열로 자동 치환</li>
 </ul>
+</br>
 <h3 id="-예제-코드" style="position:relative;"><a href="#-%EC%98%88%EC%A0%9C-%EC%BD%94%EB%93%9C" aria-label=" 예제 코드 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>📎 예제 코드</h3>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">// 콘솔로그와 문자열 보간법 <span class="token punctuation">(</span>print 사용<span class="token punctuation">)</span>
 
@@ -126,27 +126,21 @@ dump<span class="token punctuation">(</span>orange<span class="token punctuation
 </br>
 </br>
 <h2 id="-상수와-변수" style="position:relative;"><a href="#-%EC%83%81%EC%88%98%EC%99%80-%EB%B3%80%EC%88%98" aria-label=" 상수와 변수 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 상수와 변수</h2>
-<h5 id="띄워쓰기-중요" style="position:relative;"><a href="#%EB%9D%84%EC%9B%8C%EC%93%B0%EA%B8%B0-%EC%A4%91%EC%9A%94" aria-label="띄워쓰기 중요 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>띄워쓰기 중요!</h5>
-<h5 id="값의-type이-명확하다면-type-생략-가능" style="position:relative;"><a href="#%EA%B0%92%EC%9D%98-type%EC%9D%B4-%EB%AA%85%ED%99%95%ED%95%98%EB%8B%A4%EB%A9%B4-type-%EC%83%9D%EB%9E%B5-%EA%B0%80%EB%8A%A5" aria-label="값의 type이 명확하다면 type 생략 가능 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>값의 type이 명확하다면 type 생략 가능</h5>
 <ul>
-<li>
+<li>띄워쓰기 중요!</li>
+<li>값의 type이 명확하다면 type 생략 가능</li>
+</ul>
 <ol>
 <li>상수 선언</li>
 </ol>
-</li>
-</ul>
 <blockquote>
 <p>상수 선언 키워드 : let
 let 이름: 타입 = 값</p>
 </blockquote>
 </br>
-<ul>
-<li>
 <ol start="2">
 <li>변수 선언</li>
 </ol>
-</li>
-</ul>
 <blockquote>
 <p>변수 선언 키워드 : var
 var 이름: 타입 = 값</p>
@@ -154,7 +148,9 @@ var 이름: 타입 = 값</p>
 </br>
 </br>
 <h2 id="-데이터-타입" style="position:relative;"><a href="#-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85" aria-label=" 데이터 타입 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 데이터 타입</h2>
-<h5 id="swift는-다른-데이터-타입-간의-변경이-매우-까다롭기-때문에-반드시-명확한-데이터-타입을-설정해주어야-한다" style="position:relative;"><a href="#swift%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EA%B0%84%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%9D%B4-%EB%A7%A4%EC%9A%B0-%EA%B9%8C%EB%8B%A4%EB%A1%AD%EA%B8%B0-%EB%95%8C%EB%AC%B8%EC%97%90-%EB%B0%98%EB%93%9C%EC%8B%9C-%EB%AA%85%ED%99%95%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A4%EC%A0%95%ED%95%B4%EC%A3%BC%EC%96%B4%EC%95%BC-%ED%95%9C%EB%8B%A4" aria-label="swift는 다른 데이터 타입 간의 변경이 매우 까다롭기 때문에 반드시 명확한 데이터 타입을 설정해주어야 한다 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Swift는 다른 데이터 타입 간의 변경이 매우 까다롭기 때문에 반드시 명확한 데이터 타입을 설정해주어야 한다.</h5>
+<ul>
+<li>Swift는 다른 데이터 타입 간의 변경이 매우 까다롭기 때문에 반드시 명확한 데이터 타입을 설정해주어야 한다.</li>
+</ul>
 </br>
 <ul>
 <li>
@@ -187,6 +183,19 @@ someInt = 0
 print(someInt)
 ```
 </br>
+<ul>
+<li>
+<ol start="3">
+<li>UInt (양의 정수)</li>
+</ol>
+</li>
+</ul>
+</br>
+```bash
+var someUInt: UInt = 100
+print(someUInt)
+```
+</br>
 </br>
 <h2 id="-any--anyobject--nil" style="position:relative;"><a href="#-any--anyobject--nil" aria-label=" any  anyobject  nil permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 Any / AnyObject / nil</h2>
 <div class="table-of-contents">
@@ -216,32 +225,9 @@ print(someInt)
 </li>
 <li>
 <p><a href="#-%EC%83%81%EC%88%98%EC%99%80-%EB%B3%80%EC%88%98">💡 상수와 변수</a></p>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#%EB%9D%84%EC%9B%8C%EC%93%B0%EA%B8%B0-%EC%A4%91%EC%9A%94">띄워쓰기 중요!</a></li>
-<li><a href="#%EA%B0%92%EC%9D%98-type%EC%9D%B4-%EB%AA%85%ED%99%95%ED%95%98%EB%8B%A4%EB%A9%B4-type-%EC%83%9D%EB%9E%B5-%EA%B0%80%EB%8A%A5">값의 type이 명확하다면 type 생략 가능</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 </li>
 <li>
 <p><a href="#-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85">💡 데이터 타입</a></p>
-<ul>
-<li>
-<ul>
-<li>
-<ul>
-<li><a href="#swift%EB%8A%94-%EB%8B%A4%EB%A5%B8-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85-%EA%B0%84%EC%9D%98-%EB%B3%80%EA%B2%BD%EC%9D%B4-%EB%A7%A4%EC%9A%B0-%EA%B9%8C%EB%8B%A4%EB%A1%AD%EA%B8%B0-%EB%95%8C%EB%AC%B8%EC%97%90-%EB%B0%98%EB%93%9C%EC%8B%9C-%EB%AA%85%ED%99%95%ED%95%9C-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85%EC%9D%84-%EC%84%A4%EC%A0%95%ED%95%B4%EC%A3%BC%EC%96%B4%EC%95%BC-%ED%95%9C%EB%8B%A4">Swift는 다른 데이터 타입 간의 변경이 매우 까다롭기 때문에 반드시 명확한 데이터 타입을 설정해주어야 한다.</a></li>
-</ul>
-</li>
-</ul>
-</li>
-</ul>
 </li>
 <li>
 <p><a href="#-any--anyobject--nil">💡 Any / AnyObject / nil</a></p>
