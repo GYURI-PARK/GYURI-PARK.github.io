@@ -131,6 +131,14 @@ print(someUInt)
 ```
 
 </br>
+
+* 4. Float (32비트 부동 소수형)
+</br>
+```bash
+var someFloat: Float = 3.14
+print(someFloat)
+```
+</br>
 </br>
 
 ## 💡 Any / AnyObject / nil
