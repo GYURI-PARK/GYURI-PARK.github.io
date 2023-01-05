@@ -100,8 +100,10 @@ dump(orange)
 
 </br>
 
-* 1. Bool (true or false)
+1. Bool (true or false)
+
 </br>
+
 ```bash
 var someBool: Bool = true
 print(someBool)
@@ -110,8 +112,10 @@ someBool = false
 
 </br>
 
-* 2. Int (정수형) : 양의 정수, 음의 정수, 0 모두 가능
+2. Int (정수형) : 양의 정수, 음의 정수, 0 모두 가능
+
 </br>
+
 ```bash
 var someInt: Int = -100
 print(someInt)
@@ -123,8 +127,10 @@ print(someInt)
 
 </br>
 
-* 3. UInt (양의 정수)
+3. UInt (양의 정수)
+
 </br>
+
 ```bash
 var someUInt: UInt = 100
 print(someUInt)
@@ -132,8 +138,10 @@ print(someUInt)
 
 </br>
 
-* 4. Float (32비트 부동 소수형)
+4. Float (32비트 부동 소수형)
+
 </br>
+
 ```bash
 var someFloat: Float = 3.14
 print(someFloat)
@@ -141,8 +149,10 @@ print(someFloat)
 </br>
 </br>
 
-* 4. Double (64비트 부동 소수형)
+5. Double (64비트 부동 소수형)
+
 </br>
+
 ```bash
 var someDouble: Double = 3.14
 print(someDouble)
@@ -151,7 +161,8 @@ print(someDouble)
 
 * someFloat라는 변수와 someDouble이라는 변수에 3.14 라는 같은 값을 할당해주었지만 someDouble과 someFloat은 애초에 다른 데이터 타입으로 선언되어있으므로 Float 자료형인 someFloat를 Double 자료형인 someDouble에 할당할 수 없다. 
 
-* 에러 코드
+에러 코드
+
 ```bash
 someDouble = someFloat
 ```
