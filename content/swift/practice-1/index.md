@@ -148,6 +148,14 @@ var someDouble: Double = 3.14
 print(someDouble)
 ```
 </br>
+
+* someFloat라는 변수와 someDouble이라는 변수에 3.14 라는 같은 값을 할당해주었지만 someDouble과 someFloat은 애초에 다른 데이터 타입으로 선언되어있으므로 Float 자료형인 someFloat를 Double 자료형인 someDouble에 할당할 수 없다. 
+
+* 에러 코드
+```bash
+someDouble = someFloat
+```
+
 </br>
 
 ## 💡 Any / AnyObject / nil
