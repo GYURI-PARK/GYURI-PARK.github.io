@@ -152,85 +152,51 @@ var 이름: 타입 = 값</p>
 <li>Swift는 다른 데이터 타입 간의 변경이 매우 까다롭기 때문에 반드시 명확한 데이터 타입을 설정해주어야 한다.</li>
 </ul>
 </br>
-<ul>
-<li>
 <ol>
 <li>Bool (true or false)</li>
 </ol>
-</li>
-</ul>
 </br>
-```bash
-var someBool: Bool = true
-print(someBool)
-someBool = false
-```
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var someBool: Bool <span class="token operator">=</span> <span class="token boolean">true</span>
+print<span class="token punctuation">(</span>someBool<span class="token punctuation">)</span>
+someBool <span class="token operator">=</span> <span class="token boolean">false</span></code></pre></div>
 </br>
-<ul>
-<li>
 <ol start="2">
 <li>Int (정수형) : 양의 정수, 음의 정수, 0 모두 가능</li>
 </ol>
-</li>
-</ul>
 </br>
-```bash
-var someInt: Int = -100
-print(someInt)
-someInt = 100
-print(someInt)
-someInt = 0
-print(someInt)
-```
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var someInt: Int <span class="token operator">=</span> <span class="token parameter variable">-100</span>
+print<span class="token punctuation">(</span>someInt<span class="token punctuation">)</span>
+someInt <span class="token operator">=</span> <span class="token number">100</span>
+print<span class="token punctuation">(</span>someInt<span class="token punctuation">)</span>
+someInt <span class="token operator">=</span> <span class="token number">0</span>
+print<span class="token punctuation">(</span>someInt<span class="token punctuation">)</span></code></pre></div>
 </br>
-<ul>
-<li>
 <ol start="3">
 <li>UInt (양의 정수)</li>
 </ol>
-</li>
-</ul>
 </br>
-```bash
-var someUInt: UInt = 100
-print(someUInt)
-```
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var someUInt: UInt <span class="token operator">=</span> <span class="token number">100</span>
+print<span class="token punctuation">(</span>someUInt<span class="token punctuation">)</span></code></pre></div>
 </br>
-<ul>
-<li>
 <ol start="4">
 <li>Float (32비트 부동 소수형)</li>
 </ol>
-</li>
-</ul>
 </br>
-```bash
-var someFloat: Float = 3.14
-print(someFloat)
-```
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var someFloat: Float <span class="token operator">=</span> <span class="token number">3.14</span>
+print<span class="token punctuation">(</span>someFloat<span class="token punctuation">)</span></code></pre></div>
 </br>
 </br>
-<ul>
-<li>
-<ol start="4">
+<ol start="5">
 <li>Double (64비트 부동 소수형)</li>
 </ol>
-</li>
-</ul>
 </br>
-```bash
-var someDouble: Double = 3.14
-print(someDouble)
-```
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var someDouble: Double <span class="token operator">=</span> <span class="token number">3.14</span>
+print<span class="token punctuation">(</span>someDouble<span class="token punctuation">)</span></code></pre></div>
 </br>
 <ul>
-<li>
-<p>someFloat라는 변수와 someDouble이라는 변수에 3.14 라는 같은 값을 할당해주었지만 someDouble과 someFloat은 애초에 다른 데이터 타입으로 선언되어있으므로 Float 자료형인 someFloat를 Double 자료형인 someDouble에 할당할 수 없다.</p>
-</li>
-<li>
-<p>에러 코드</p>
-</li>
+<li>someFloat라는 변수와 someDouble이라는 변수에 3.14 라는 같은 값을 할당해주었지만 someDouble과 someFloat은 애초에 다른 데이터 타입으로 선언되어있으므로 Float 자료형인 someFloat를 Double 자료형인 someDouble에 할당할 수 없다.</li>
 </ul>
+<p>에러 코드</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">someDouble <span class="token operator">=</span> someFloat</code></pre></div>
 </br>
 <h2 id="-any--anyobject--nil" style="position:relative;"><a href="#-any--anyobject--nil" aria-label=" any  anyobject  nil permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 Any / AnyObject / nil</h2>
