@@ -141,6 +141,15 @@ print(someFloat)
 </br>
 </br>
 
+* 4. Double (64비트 부동 소수형)
+</br>
+```bash
+var someDouble: Double = 3.14
+print(someDouble)
+```
+</br>
+</br>
+
 ## 💡 Any / AnyObject / nil
 
 
