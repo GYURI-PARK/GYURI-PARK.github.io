@@ -166,6 +166,27 @@ print(someDouble)
 ```bash
 someDouble = someFloat
 ```
+</br>
+</br>
+
+6. Character (문자 1개)
+</br>
+
+* 영어, 한글, 이모지 모두 가능
+</br>
+
+```bash
+var someCharacter1: Character = "🌍"
+print(someCharacter1)
+
+var someCharacter2: Character = "가"
+print(someCharacter2)
+
+var someCharacter3: Character = "S"
+print(someCharacter3)
+```
+
+</br>
 
 </br>
 
