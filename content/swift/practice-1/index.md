@@ -196,6 +196,9 @@ var someString: String = "하하하 🌝"
 someString += "웃으면 복이 와요"
 print(someString)
 ```
+</br>
+
+* 위의 결과와 마찬가지로 String은 Character을 포함하고 있지만, String으로 할당된 변수에 Character 값을 할당할 수 없다.
 
 ## 💡 Any / AnyObject / nil
 
