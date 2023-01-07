@@ -185,10 +185,17 @@ print(someCharacter2)
 var someCharacter3: Character = "S"
 print(someCharacter3)
 ```
-
+</br>
 </br>
 
+7. String (문자열)
 </br>
+
+```bash
+var someString: String = "하하하 🌝"
+someString += "웃으면 복이 와요"
+print(someString)
+```
 
 ## 💡 Any / AnyObject / nil
 
