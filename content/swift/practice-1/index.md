@@ -217,7 +217,9 @@ print(someAny)
 someAny = 123.12
 print(someAny)
 ```
+</br>
 
+* 다른 타입으로 할당된 변수에는 any 타입 할당 불가
 
 ```toc
 ```
