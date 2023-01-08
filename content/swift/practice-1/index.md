@@ -201,6 +201,22 @@ print(someString)
 * 위의 결과와 마찬가지로 String은 Character을 포함하고 있지만, String으로 할당된 변수에 Character 값을 할당할 수 없다.
 
 ## 💡 Any / AnyObject / nil
+</br>
+</br>
+
+1. Any : 모든 타입을 지칭하는 키워드
+</br>
+
+```bash
+import Swift
+
+var someAny: Any = 100
+print(someAny)
+someAny = "어떤 타입도 수용 가능합니다"
+print(someAny)
+someAny = 123.12
+print(someAny)
+```
 
 
 ```toc
