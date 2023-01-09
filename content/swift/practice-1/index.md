@@ -221,5 +221,22 @@ print(someAny)
 
 * 다른 타입으로 할당된 변수에는 any 타입 할당 불가
 
+</br>
+</br>
+
+2. AnyObject : 모든 클래스 타입을 지칭하는 프로토콜
+</br>
+
+```bash
+class SomeClass{}
+var someAnyObject: AnyObject = SomeClass()
+print(someAnyObject)
+```
+
+</br>
+
+* 클래스의 인스턴스에만 선언 가능
+
+
 ```toc
 ```
