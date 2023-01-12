@@ -7,21 +7,70 @@ tags: swift
 categories: Swift
 ---
 
-![swift-logo.png](swift-logo.png)
+![swift-logo.png](swift-logo.png){: width="100" height="100"}
 
-## 💡 명명법
+## 💡 컬렉션 타입
 
-##### Swift 는 대소문자를 구분!
+* 컬렉션 타입 : 여러 값들을 묶어서 하나의 변수로 표현
 
-* Lower Camel Case : function, method, variable, constant 
-    ex) someVariavleName
+</br>
 
-* Upper Camel Case : type(class, struct, enum, extension, …)
-    ex) Person, Point, Week
+### 1. Array
+* Array : 순서가 있는 list 컬렉션
+
+🎯 빈 Int Array 생성
+
+```bash
+var integers: Array<Int> = Array<Int>()
+```
+
+</br>
+
+#### append
+
+* Int 타입으로 Array를 생성했기 때문에 Int 타입의 숫자들만 추가할 수 있다. 
+
+```bash
+integers.append(1)
+integers.append(100)
+```
+</br>
+📎 결과
+[1]
+[1, 100]
+
+</br>
+
+#### contains
+
+* Array안에 해당 숫자가 있는지 판별
+> 있으면 true 반환
+> 없으면 false 반환
+
+```bash
+integers.contains(100)
+integers.contains(99)
+```
+</br>
+📎 결과
+true
+false
+
 
 </br>
 </br>
 
+### 2. Dictionary
+* Dictionary : 키와 값의 쌍으로 이루어진 컬렉션
+
+</br>
+</br>
+
+### 3. Set
+* Set : 순서가 없고, 멤버가 유일한 컬렉션
+
+</br>
+</br>
 
 ## 💡 콘솔로그
 </br>
