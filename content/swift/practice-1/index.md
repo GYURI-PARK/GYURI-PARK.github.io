@@ -19,10 +19,15 @@ categories: Swift
 
 - Swift 는 대소문자를 구분!
 
-* Lower Camel Case : function, method, variable, constant 
-    ex) someVariavleName
+### 1. Lower Camel Case 
 
-* Upper Camel Case : type(class, struct, enum, extension, …)
+> function, method, variable, constant 
+    ex) someVariavleName
+</br>
+
+### 2. Upper Camel Case 
+
+> type(class, struct, enum, extension, …)
     ex) Person, Point, Week
 
 </br>
@@ -32,9 +37,13 @@ categories: Swift
 ## 💡 콘솔로그
 </br>
 
-* print : 단순 문자열 출력 
+### 1. print
 
-* dump : 인스턴스의 자세한 설명 (description 프로퍼티) 까지 출력
+단순 문자열 출력 
+</br>
+
+### 2. dump
+인스턴스의 자세한 설명 (description 프로퍼티) 까지 출력
 
 </br>
 </br>
@@ -86,14 +95,18 @@ dump(orange)
 * 띄워쓰기 중요!
 * 값의 type이 명확하다면 type 생략 가능
 
-1. 상수 선언
+### 1. 상수 선언
+
 > 상수 선언 키워드 : let
+</br>
 > let 이름: 타입 = 값
 
 </br>
 
-2. 변수 선언
+### 2. 변수 선언
+
 > 변수 선언 키워드 : var
+</br>
 > var 이름: 타입 = 값
 
 </br>
@@ -106,7 +119,7 @@ dump(orange)
 
 </br>
 
-1. Bool (true or false)
+### 1. Bool (true or false)
 
 </br>
 
@@ -118,7 +131,7 @@ someBool = false
 
 </br>
 
-2. Int (정수형) : 양의 정수, 음의 정수, 0 모두 가능
+### 2. Int (정수형) : 양의 정수, 음의 정수, 0 모두 가능
 
 </br>
 
@@ -133,7 +146,7 @@ print(someInt)
 
 </br>
 
-3. UInt (양의 정수)
+### 3. UInt (양의 정수)
 
 </br>
 
@@ -144,7 +157,7 @@ print(someUInt)
 
 </br>
 
-4. Float (32비트 부동 소수형)
+### 4. Float (32비트 부동 소수형)
 
 </br>
 
@@ -155,7 +168,7 @@ print(someFloat)
 </br>
 </br>
 
-5. Double (64비트 부동 소수형)
+### 5. Double (64비트 부동 소수형)
 
 </br>
 
@@ -177,7 +190,7 @@ someDouble = someFloat
 </br>
 </br>
 
-6. Character (문자 1개)
+### 6. Character (문자 1개)
 </br>
 
 * 영어, 한글, 이모지 모두 가능
@@ -196,7 +209,7 @@ print(someCharacter3)
 </br>
 </br>
 
-7. String (문자열)
+### 7. String (문자열)
 </br>
 
 ```bash
@@ -212,7 +225,7 @@ print(someString)
 </br>
 </br>
 
-1. Any : 모든 타입을 지칭하는 키워드
+### 1. Any : 모든 타입을 지칭하는 키워드
 </br>
 
 ```bash
@@ -232,7 +245,7 @@ print(someAny)
 </br>
 </br>
 
-2. AnyObject : 모든 클래스 타입을 지칭하는 프로토콜
+### 2. AnyObject : 모든 클래스 타입을 지칭하는 프로토콜
 </br>
 
 ```bash
@@ -248,7 +261,7 @@ print(someAnyObject)
 </br>
 </br>
 
-3. nil : 없음을 의미한느 키워드
+### 3. nil : 없음을 의미한느 키워드
 </br>
 
 * null과 거의 같은 의미로 쓰인다.
