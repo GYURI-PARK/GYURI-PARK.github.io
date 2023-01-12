@@ -1,7 +1,7 @@
 ---
 emoji: 🕊
-title: Swift 기초 다지기(1)
-date: '2022-12-24 13:00:00'
+title: Swift 기초 다지기(2)
+date: '2023-01-12 14:00:00'
 author: 박규리
 tags: swift 
 categories: Swift
@@ -11,7 +11,7 @@ categories: Swift
 
 ## 💡 명명법
 
-- Swift 는 대소문자를 구분!
+##### Swift 는 대소문자를 구분!
 
 * Lower Camel Case : function, method, variable, constant 
     ex) someVariavleName
