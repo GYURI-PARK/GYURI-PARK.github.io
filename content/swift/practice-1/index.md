@@ -9,7 +9,7 @@ categories: Swift
 
 </br>
 
-![swift-logo.png](swift-logo.png){: width="100" height="100"}
+![swift-logo.png](swift-logo.png)
 
 </br>
 </br>
