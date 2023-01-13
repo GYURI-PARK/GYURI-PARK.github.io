@@ -7,7 +7,8 @@ tags: swift
 categories: Swift
 ---
 
-![swift-logo.png](swift-logo.png){: width="100" height="100"}
+</br>
+</br>
 
 ## 💡 컬렉션 타입
 
