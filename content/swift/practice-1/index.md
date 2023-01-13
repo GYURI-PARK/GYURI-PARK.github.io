@@ -8,10 +8,6 @@ categories: Swift
 ---
 
 </br>
-
-![swift-logo.png](swift-logo.png)
-
-</br>
 </br>
 
 
