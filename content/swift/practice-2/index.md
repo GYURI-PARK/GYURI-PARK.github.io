@@ -57,6 +57,41 @@ integers.contains(99)
 true </br>
 false
 
+</br>
+
+#### remove
+</br>
+
+1. remove(at: 인덱스)
+* Array안에 해당 위치 값 삭제 후 값 반환
+
+```bash
+integers.remove(at: 0)
+```
+</br>
+📎 결과 </br>
+1
+
+</br>
+
+2. removeLast()
+* 마지막 값 삭제 후 값 반환
+
+```bash
+integers.removeLast()
+```
+</br>
+📎 결과 </br>
+100
+
+</br>
+
+3. removeAll()
+* 모두 삭제
+
+```bash
+integers.removeAll()
+```
 
 </br>
 </br>
