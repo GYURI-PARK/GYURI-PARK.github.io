@@ -45,7 +45,7 @@ integers.append(100)
 #### contains
 
 * Array안에 해당 숫자가 있는지 판별
-> 있으면 true 반환
+> 있으면 true 반환 </br>
 > 없으면 false 반환
 
 ```bash
@@ -53,8 +53,8 @@ integers.contains(100)
 integers.contains(99)
 ```
 </br>
-📎 결과
-true
+📎 결과 </br>
+true </br>
 false
 
 
