@@ -1,6 +1,6 @@
 ---
 emoji: 🕊
-title: Swift 기초 다지기(1)
+title: Swift 기초 다지기 (1)
 date: '2022-12-24 13:00:00'
 author: 박규리
 tags: swift 
@@ -8,8 +8,6 @@ categories: Swift
 ---
 
 </br>
-</br>
-
 
 ## 💡 명명법
 
@@ -31,7 +29,6 @@ categories: Swift
 
 
 ## 💡 콘솔로그
-</br>
 
 ### 1. print
 
@@ -44,10 +41,8 @@ categories: Swift
 </br>
 </br>
 
-
 ## 💡 문자열 보간법 (String interpolation)
 </br>
-
 
 - 프로그램 실행 중 문자열 내에 변수 또는 상수의 실질적인 값을 표현하기 위해 사용
 * \() -> 문자열로 자동 치환
@@ -94,16 +89,14 @@ dump(orange)
 
 ### 1. 상수 선언
 
-> 상수 선언 키워드 : let
-</br>
+> 상수 선언 키워드 : let </br>
 > let 이름: 타입 = 값
 
 </br>
 
 ### 2. 변수 선언
 
-> 변수 선언 키워드 : var
-</br>
+> 변수 선언 키워드 : var </br>
 > var 이름: 타입 = 값
 
 </br>
@@ -218,8 +211,10 @@ print(someString)
 
 * 위의 결과와 마찬가지로 String은 Character을 포함하고 있지만, String으로 할당된 변수에 Character 값을 할당할 수 없다.
 
-## 💡 Any / AnyObject / nil
 </br>
+</br>
+
+## 💡 Any / AnyObject / nil
 </br>
 
 ### 1. Any : 모든 타입을 지칭하는 키워드
@@ -262,7 +257,6 @@ print(someAnyObject)
 </br>
 
 * null과 거의 같은 의미로 쓰인다.
-</br>
 
 * Any타입과 AnyObject 타입으로 선언된 변수에는 어떤 데이터 타입도 들어올 수 있지만,
 빈 값은 들어올 수 없다.

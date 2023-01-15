@@ -1,13 +1,12 @@
 ---
 emoji: 🕊
-title: Swift 기초 다지기(2)
+title: Swift 기초 다지기 (2)
 date: '2023-01-12 14:00:00'
 author: 박규리
 tags: swift 
 categories: Swift
 ---
 
-</br>
 </br>
 
 ## 💡 컬렉션 타입
@@ -19,9 +18,9 @@ categories: Swift
 ### 1. Array
 * Array : 순서가 있는 list 컬렉션
 
-#### Array 생성
+#### 다양한 방식으로 Array 생성하기
 
-🎯 빈 Int Array 생성
+🎯 Int Array 생성
 
 ```bash
 var integers: Array<Int> = Array<Int>()
@@ -29,7 +28,7 @@ var integers: Array<Int> = Array<Int>()
 
 </br>
 
-🎯 빈 Double Array 생성
+🎯 Double Array 생성
 
 ```bash
 var doubles: Array<Double> = [Double]()
@@ -37,7 +36,7 @@ var doubles: Array<Double> = [Double]()
 
 </br>
 
-🎯 빈 String Array 생성
+🎯 String Array 생성
 
 ```bash
 var strings: [String] = [String]()
@@ -45,7 +44,7 @@ var strings: [String] = [String]()
 
 </br>
 
-🎯 빈 Character Array 생성
+🎯 Character Array 생성
 
 ```bash
 var characters: [Character] = []
@@ -59,7 +58,7 @@ var characters: [Character] = []
 let immutableArray = [1,2,3]
 ```
 
-* immutableArray.append(4) 또는 immuntableArray.removeAll()과 같은 명령어 사용 불가능 
+* immutableArray.append(4) 또는 immuntableArray.removeAll() 과 같은 명령어 사용 불가능 
 
 </br>
 </br>
@@ -112,6 +111,7 @@ integers.remove(at: 0)
 1
 
 </br>
+</br>
 
 2. removeLast()
 * 마지막 값 삭제 후 값 반환
@@ -124,6 +124,7 @@ integers.removeLast()
 100
 
 </br>
+</br>
 
 3. removeAll()
 * 모두 삭제
@@ -133,8 +134,9 @@ integers.removeAll()
 ```
 
 </br>
+</br>
 
-cf) count
+**cf) count**
 * 몇개의 원소가 있는지 확인 
 
 ```bash
