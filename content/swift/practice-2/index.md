@@ -36,10 +36,11 @@ integers.append(1)
 integers.append(100)
 ```
 </br>
-📎 결과
-[1]
+📎 결과 </br>
+[1] </br>
 [1, 100]
 
+</br>
 </br>
 
 #### contains
@@ -57,6 +58,7 @@ integers.contains(99)
 true </br>
 false
 
+</br>
 </br>
 
 #### remove
