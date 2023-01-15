@@ -64,7 +64,6 @@ let immutableArray = [1,2,3]
 </br>
 </br>
 
-
 #### **append**
 
 * Int 타입으로 Array를 생성했기 때문에 Int 타입의 숫자들만 추가할 수 있다. 
