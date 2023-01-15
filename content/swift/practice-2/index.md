@@ -19,6 +19,8 @@ categories: Swift
 ### 1. Array
 * Array : 순서가 있는 list 컬렉션
 
+#### Array 생성
+
 🎯 빈 Int Array 생성
 
 ```bash
@@ -26,6 +28,42 @@ var integers: Array<Int> = Array<Int>()
 ```
 
 </br>
+
+🎯 빈 Double Array 생성
+
+```bash
+var doubles: Array<Double> = [Double]()
+```
+
+</br>
+
+🎯 빈 String Array 생성
+
+```bash
+var strings: [String] = [String]()
+```
+
+</br>
+
+🎯 빈 Character Array 생성
+
+```bash
+var characters: [Character] = []
+```
+
+</br>
+
+⭐️ let을 사용해 Array 선언 시 Array 원소 변경 불가능
+
+```bash
+let immutableArray = [1,2,3]
+```
+
+* immutableArray.append(4) 또는 immuntableArray.removeAll()과 같은 명령어 사용 불가능 
+
+</br>
+</br>
+
 
 #### **append**
 
