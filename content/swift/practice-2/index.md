@@ -27,7 +27,7 @@ var integers: Array<Int> = Array<Int>()
 
 </br>
 
-#### append
+#### **append**
 
 * Int 타입으로 Array를 생성했기 때문에 Int 타입의 숫자들만 추가할 수 있다. 
 
@@ -43,7 +43,7 @@ integers.append(100)
 </br>
 </br>
 
-#### contains
+#### **contains**
 
 * Array안에 해당 숫자가 있는지 판별
 > 있으면 true 반환 </br>
@@ -61,7 +61,7 @@ false
 </br>
 </br>
 
-#### remove
+#### **remove**
 </br>
 
 1. remove(at: 인덱스)
@@ -93,6 +93,15 @@ integers.removeLast()
 
 ```bash
 integers.removeAll()
+```
+
+</br>
+
+cf) count
+* 몇개의 원소가 있는지 확인 
+
+```bash
+integers.count
 ```
 
 </br>
