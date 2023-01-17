@@ -112,6 +112,7 @@ integers.remove(at: 0)
 
 </br>
 </br>
+</br>
 
 2. removeLast()
 * 마지막 값 삭제 후 값 반환
@@ -123,6 +124,7 @@ integers.removeLast()
 📎 결과 </br>
 100
 
+</br>
 </br>
 </br>
 
