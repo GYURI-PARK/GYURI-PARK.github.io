@@ -152,6 +152,20 @@ integers.count
 * Dictionary : 키와 값의 쌍으로 이루어진 컬렉션
 
 </br>
+
+🎯 Key가 String 타입이고 Value가 Any인 빈 Dictionary 생성
+
+```bash
+var antDictionary: Dictionary<String, Any> = [String: Any]()
+
+// 각각의 Key에 Value 할당하기
+anyDictionay["someKey"] = "value"
+anyDictionary["anotherKey"] = 100
+```
+
+
+
+</br>
 </br>
 
 ### 3. Set
