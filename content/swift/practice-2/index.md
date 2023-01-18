@@ -200,6 +200,41 @@ anyDictionary["someKey"] = nil
 ### 3. Set
 * Set : 순서가 없고, 멤버가 유일한 컬렉션
 
+#### 빈 Int Set 생성
+
+```bash
+var integerSet: Set<Int> = Set<Int>()
+```
+</br>
+
+#### **insert**
+
+* 원소 추가
+
+```bash
+integerSet.insert(1)
+integerSet.insert(100)
+integerSet.insert(99)
+integerSet.insert(99)
+
+// Set에서는 중복을 허락하지 않기 때문에 99가 두번 추가되어도 결과에 한번밖에 나타나지 않는다.
+```
+
+</br>
+</br>
+
+#### **contains**
+
+* 원소 포함여부 확인
+
+```bash
+integerSet.contains(1)
+integerSet.contains(2)
+```
+
+</br>
+
+
 </br>
 </br>
 
