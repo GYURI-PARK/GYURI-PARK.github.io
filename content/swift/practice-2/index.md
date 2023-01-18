@@ -18,7 +18,7 @@ categories: Swift
 ### 1. Array
 * Array : 순서가 있는 list 컬렉션
 
-#### 다양한 방식으로 Array 생성하기
+#### 빈 Array 생성
 
 🎯 Int Array 생성
 
@@ -153,6 +153,8 @@ integers.count
 
 </br>
 
+#### 빈 Dictionary 생성
+
 🎯 Key가 String 타입이고 Value가 Any인 빈 Dictionary 생성
 
 ```bash
@@ -162,8 +164,35 @@ var antDictionary: Dictionary<String, Any> = [String: Any]()
 anyDictionay["someKey"] = "value"
 anyDictionary["anotherKey"] = 100
 ```
+</br>
+📎 결과 </br>
+["someKey":"value", "anotherKey":100]
 
+</br>
 
+```bash
+// 기존 Key에 새로운 값(Value)할당해주기
+anyDictionay["someKey"] = "dictionary"
+```
+
+</br>
+
+🎯 let으로 불변 Dictionary 선언
+
+```bash
+let emptyDictionary: [String: String] = [:]
+let initalizedDictionary: [String: String] = ["name": "zorba", "gender": "female"]
+```
+
+</br>
+</br>
+
+#### value 삭제
+
+```bash
+anyDictionary.removeValue(forKey: "anotherKey")
+anyDictionary["someKey"] = nil 
+```
 
 </br>
 </br>
