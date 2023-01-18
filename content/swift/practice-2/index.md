@@ -233,6 +233,10 @@ integerSet.contains(2)
 ```
 
 </br>
+📎 결과 </br>
+true </br>
+false
+
 
 
 </br>
