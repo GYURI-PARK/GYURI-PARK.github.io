@@ -3,7 +3,7 @@ emoji: 🕊
 title: Swift 기초 다지기 (2)
 date: '2023-01-12 14:00:00'
 author: 박규리
-tags: swift 
+tags: Swift 
 categories: Swift
 ---
 
