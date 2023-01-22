@@ -138,7 +138,7 @@ integers.removeAll()
 </br>
 </br>
 
-**cf) count**
+#### **count**
 * 몇개의 원소가 있는지 확인 
 
 ```bash
@@ -248,13 +248,36 @@ false
 * Set 안에 해당 원소 값 삭제 후 값 반환
 
 ```bash
-integerSet.remove(at: 0)
+integerSet.remove(100)
 ```
 </br>
 📎 결과 </br>
-1
+100
 
+</br>
+</br>
+</br>
 
+2. removeFirst()
+* 마지막 값 삭제 후 값 반환
+
+```bash
+integerSet.removeFirst()
+```
+</br>
+📎 결과 </br>
+99
+
+</br>
+</br>
+</br>
+
+#### **count**
+* 몇개의 원소가 있는지 확인 
+
+```bash
+integerSet.count
+```
 </br>
 </br>
 
