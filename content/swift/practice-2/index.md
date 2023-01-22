@@ -238,6 +238,12 @@ integerSet.contains(2)
 true </br>
 false
 
+</br>
+</br>
+
+#### **remove**
+
+* 원소 제거
 
 
 </br>
