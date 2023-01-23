@@ -7,8 +7,6 @@ tags: Swift
 categories: Swift
 ---
 
-</br>
-
 ## 💡 컬렉션 타입
 
 * 컬렉션 타입 : 여러 값들을 묶어서 하나의 변수로 표현
