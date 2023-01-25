@@ -199,7 +199,7 @@ anyDictionary["someKey"] = nil
 ### 3. Set
 * Set : 순서가 없고, 멤버가 유일한 컬렉션
 
-#### 빈 Int Set 생성
+#### 빈 Set 생성
 
 ```bash
 var integerSet: Set<Int> = Set<Int>()
@@ -276,8 +276,35 @@ integerSet.removeFirst()
 ```bash
 integerSet.count
 ```
+
 </br>
 </br>
+
+#### **Set 응용**
+
+```bash
+let setA: Set<Int> = [1, 2, 3, 4, 5]
+let setB: Set<Int> = [3, 4, 5, 6, 7]
+```
+
+</br>
+
+1. union (합집합)
+* 결과 정렬 X
+
+```bash
+let union: Set<Int> = setA.union(setB)
+```
+</br>
+📎 결과 </br>
+{2, 4, 5, 6, 7, 3, 1}
+
+</br>
+</br>
+</br>
+
+
+
 
 
 ```toc
