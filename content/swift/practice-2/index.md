@@ -303,8 +303,45 @@ let union: Set<Int> = setA.union(setB)
 </br>
 </br>
 
+```bash
+let sortedUnion: [Int] = union.sorted()
+```
 
+</br>
+📎 결과 </br>
+{1, 2, 3, 4, 5, 6, 7}
 
+</br>
+</br>
+</br>`
+
+2. intersection (교집합)
+* 결과 정렬 X
+
+```bash
+let intersection: Set<Int> = setA.intersection(setB)
+```
+</br>
+📎 결과 </br>
+{5, 3, 4}
+
+</br>
+</br>
+</br>
+
+3.  subtracting (차집합)
+* 결과 정렬 X
+
+```bash
+let subtracting: Set<Int> = setA.subtracting(setB)
+```
+</br>
+📎 결과 </br>
+{2, 1}
+
+</br>
+</br>
+</br>
 
 
 ```toc
