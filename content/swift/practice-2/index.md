@@ -375,7 +375,6 @@ func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름
     return</br>
 }
 </br>
-
 </br>
 
 🎯 예제 코드
@@ -388,9 +387,28 @@ func printMyName(name: String) -> Void {
 func printMyName(name: String) {
     print(name)
 }
+```
+</br>
+</br>
+</br>
+
+* 매개변수가 없는 함수
+</br>
+
+func 함수이름 () -> 반환타입 { </br>
+    함수 구현부 </br>
+    return 반환값</br>
+}
+</br>
+</br>
+
+🎯 예제 코드
+```bash
+func maximumIntegerValue() -> Int {
+    return Int.max
+}
 
 ```
-
 
 ```toc
 ```
