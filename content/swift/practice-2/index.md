@@ -407,7 +407,6 @@ func 함수이름 () -> 반환타입 { </br>
 func maximumIntegerValue() -> Int {
     return Int.max
 }
-
 ```
 
 ```toc
