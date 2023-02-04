@@ -408,6 +408,17 @@ func maximumIntegerValue() -> Int {
     return Int.max
 }
 ```
+</br>
+</br>
+</br>
+
+* 매개변수와 반환값이 없는 함수
+</br>
+
+func 함수이름() -> Void {</br>
+    
+}
+
 
 ```toc
 ```
