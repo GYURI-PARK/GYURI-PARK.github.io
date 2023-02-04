@@ -416,9 +416,21 @@ func maximumIntegerValue() -> Int {
 </br>
 
 func 함수이름() -> Void {</br>
-    
+    함수 구현부 </br>
+    return </br>
+}
+</br>
+</br>
+
+🎯 예제 코드
+```bash
+func hello() -> Void {
+    print("hello")
 }
 
+// 생략도 가능
+func bye() {print("bye")}
+```
 
 ```toc
 ```
