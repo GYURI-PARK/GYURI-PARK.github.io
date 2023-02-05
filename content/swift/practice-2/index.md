@@ -431,6 +431,31 @@ func hello() -> Void {
 // 생략도 가능
 func bye() {print("bye")}
 ```
+</br>
+
+### 함수의 호출
+
+🎯 예제 코드
+```bash
+func sum(a: Int, b: Int) -> Int {
+    return a + b
+}
+sum(a: 3, b: 5)
+// 8
+
+func printMyName(name: String) {
+    print(name)
+}
+printMyName(name: "gyuri")
+// gyuri
+
+func hello() -> Void {
+    print("hello")
+}
+hello()
+// hello
+```
+
 
 ```toc
 ```
