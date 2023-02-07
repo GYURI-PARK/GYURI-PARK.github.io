@@ -476,10 +476,22 @@ func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름
 🎯 예제 코드
 ```bash
 func greeting(friend: String, me: String = "gyuri") {
-    print("Hello \(friend)! I'm \ (me)")
+    print("Hello \(friend)! I am \ (me)")
 }
-// friend = 기본값이 없는 매개변수
-// 
+// friend : 기본값이 없는 매개변수
+// me : 기본값이 gyuri인 매개변수
+```
+</br>
+</br>
+
+* 매개변수 기본값을 가지는 매개변수는 생략 가능
+
+🎯 예제 코드
+```bash
+greeting(friend: "Jenny")
+// Hello Jenny! I am gyuri
+greeting(friend: "GD", me: "Doris")
+// Hello GD! I am Doris
 ```
 
 
