@@ -318,12 +318,14 @@ false
 <li>함수 선언의 기본형태</li>
 </ul>
 </br>
-func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 ...) -> 반환타입 { </br>
-    함수 구현부 </br>
-    return 반환값 </br>
-}
+<p>func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 …) -> 반환타입 { </br></p>
+<ul>
+<li>함수 구현부 </br></li>
+<li>return 반환값 </br></li>
+</ul>
+<p>}
 </br>
-</br>
+</br></p>
 <p>🎯 예제 코드</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func sum<span class="token punctuation">(</span>a: Int, b: Int<span class="token punctuation">)</span> -<span class="token operator">></span> Int <span class="token punctuation">{</span>
     <span class="token builtin class-name">return</span> a + b
@@ -335,10 +337,12 @@ func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름
 <li>반환 값이 없는 함수</li>
 </ul>
 </br>
-<p>func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 …) -> Void { </br>
-함수 구현부 </br>
-return</br>
-}
+<p>func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 …) -> Void { </br></p>
+<ul>
+<li>함수 구현부 </br></li>
+<li>return</br></li>
+</ul>
+<p>}
 </br>
 </br></p>
 <p>🎯 예제 코드</p>
@@ -357,10 +361,12 @@ func printMyName<span class="token punctuation">(</span>name: String<span class=
 <li>매개변수가 없는 함수</li>
 </ul>
 </br>
-<p>func 함수이름 () -> 반환타입 { </br>
-함수 구현부 </br>
-return 반환값</br>
-}
+<p>func 함수이름 () -> 반환타입 { </br></p>
+<ul>
+<li>함수 구현부 </br></li>
+<li>return 반환값</br></li>
+</ul>
+<p>}
 </br>
 </br></p>
 <p>🎯 예제 코드</p>
@@ -374,10 +380,12 @@ return 반환값</br>
 <li>매개변수와 반환값이 없는 함수</li>
 </ul>
 </br>
-<p>func 함수이름() -> Void {</br>
-함수 구현부 </br>
-return </br>
-}
+<p>func 함수이름() -> Void {</br></p>
+<ul>
+<li>함수 구현부 </br></li>
+<li>return </br></li>
+</ul>
+<p>}
 </br>
 </br></p>
 <p>🎯 예제 코드</p>
@@ -410,22 +418,25 @@ hello<span class="token punctuation">(</span><span class="token punctuation">)</
 </br>
 </br>
 <h3 id="매개변수-기본값" style="position:relative;"><a href="#%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98-%EA%B8%B0%EB%B3%B8%EA%B0%92" aria-label="매개변수 기본값 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>매개변수 기본값</h3>
-<ul>
-<li>함수의 매개변수에 값이 들어가지 않아도 자동적으로 매개변수가 갖게 되는 값</li>
-<li>기본값을 갖는 매개변수는 매개변수 목록 중에 뒤쪽에 위치하는 것이 좋다.</li>
-</ul>
 </br>
-<p>func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 = 매개변수 기본값 …) -> 반환타입 { </br>
-함수 구현부 </br>
-return 반환값</br>
-}</p>
+<p>func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 = 매개변수 기본값 …) -> 반환타입 { </br></p>
+<ul>
+<li>함수 구현부 </br></li>
+<li>return 반환값</br></li>
+</ul>
+<p>}</p>
 </br>
 <p>🎯 예제 코드</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func greeting<span class="token punctuation">(</span>friend: String, me: String <span class="token operator">=</span> <span class="token string">"gyuri"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    print<span class="token punctuation">(</span><span class="token string">"Hello \(friend)! I am \ (me)"</span><span class="token punctuation">)</span>
+    print<span class="token punctuation">(</span><span class="token string">"Hello \(friend)! I am \(me)"</span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
+
 // friend <span class="token builtin class-name">:</span> 기본값이 없는 매개변수
-// me <span class="token builtin class-name">:</span> 기본값이 gyuri인 매개변수</code></pre></div>
+// me <span class="token builtin class-name">:</span> 기본값이 gyuri인 매개변수
+
+* 함수의 매개변수에 값이 들어가지 않아도 자동적으로 매개변수가 갖게 되는 값
+* 기본값을 갖는 매개변수는 매개변수 목록 중에 뒤쪽에 위치하는 것이 좋다.
+</code></pre></div>
 </br>
 </br>
 <ul>
@@ -434,6 +445,7 @@ return 반환값</br>
 <p>🎯 예제 코드</p>
 <div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">greeting<span class="token punctuation">(</span>friend: <span class="token string">"Jenny"</span><span class="token punctuation">)</span>
 // Hello Jenny<span class="token operator">!</span> I am gyuri
+
 greeting<span class="token punctuation">(</span>friend: <span class="token string">"GD"</span>, me: <span class="token string">"Doris"</span><span class="token punctuation">)</span>
 // Hello GD<span class="token operator">!</span> I am Doris</code></pre></div>
 </br>
@@ -444,10 +456,12 @@ greeting<span class="token punctuation">(</span>friend: <span class="token strin
 <li>함수의 중복 정의도 쉽게 가능</li>
 </ul>
 </br>
-<p>func 함수이름 (전달인자 레이블 매개변수1이름: 매개변수1타입, 전달인자 레이블 매개변수2이름: 매개변수2타입 …) -> 반환타입 { </br>
-함수 구현부 </br>
-return </br>
-} </br></p>
+<p>func 함수이름 (전달인자 레이블 매개변수1이름: 매개변수1타입, 전달인자 레이블 매개변수2이름: 매개변수2타입 …) -> 반환타입 { </br></p>
+<ul>
+<li>함수 구현부 </br></li>
+<li>return </br></li>
+</ul>
+<p>} </br></p>
 </br>
 <ul>
 <li>함수 내부에서 전달인자를 사용할 때에는 매개변수 이름을 사용</li>
