@@ -494,6 +494,12 @@ greeting(friend: "GD", me: "Doris")
 // Hello GD! I am Doris
 ```
 
+</br>
+</br>
+
+### 전달인자 레이블
+
+* 함수를 호출할 때  매개변수의 역할을 더 명확하게 하거나 함수 사용자의 입장에서 표현하고자 할 때 사용
 
 ```toc
 ```
