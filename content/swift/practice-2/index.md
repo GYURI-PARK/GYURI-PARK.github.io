@@ -515,8 +515,21 @@ func 함수이름 (전달인자 레이블 매개변수1이름: 매개변수1타�
 
 🎯 예제 코드
 ```bash
-func
+func greeting(to friend: String, from me: String) {
+    print("Hello \(friend)! I am \(me)")
+}
 ```
+</br>
+
+* 함수를 호출할 때에는 전달인자 레이블을 사용
+
+🎯 예제 코드
+```bash
+greeting(to: "GD", from: "gyuri")
+// Hello GD! I am gyuri
+```
+</br>
+
 
 ```toc
 ```
