@@ -532,6 +532,17 @@ greeting(to: "GD", from: "gyuri")
 // Hello GD! I am gyuri
 ```
 </br>
+</br>
+</br>
+
+### 가변 매개변수
+
+* 전달 받을 값의 개수를 알기 어려울 때 사용
+* 가변 매개변수는 함수당 하나만 가질 수 있다.
+
+</br>
+
+
 
 
 ```toc
