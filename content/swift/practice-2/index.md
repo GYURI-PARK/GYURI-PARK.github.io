@@ -542,6 +542,24 @@ greeting(to: "GD", from: "gyuri")
 
 </br>
 
+func 함수이름(매개변수1이름: 매개변수1타입, 전달인자 레이블 매개변수2이름: 매개변수2타입...) -> 반환타입 { </br>
+        함수 구현부 </br>
+        return </br>
+}
+
+</br>
+</br>
+
+🎯 예제 코드
+```bash
+func sayHelloToFriends(me: String, friends: String...) -> String {
+    return "Hello \(friends)! I'm \(me)!"
+}
+print(sayHelloToFriends(me: "gyuri", friends: "jenny", "rose", "jisoo", "risa"))
+```
+
+* 전달인자가 없거나 nil 입력 시 오류 발생
+
 
 
 
