@@ -560,7 +560,14 @@ print(sayHelloToFriends(me: "gyuri", friends: "jenny", "rose", "jisoo", "risa"))
 
 * 전달인자가 없거나 nil 입력 시 오류 발생
 
+</br>
+</br>
+</br>
 
+### 데이터 타입으로서의 함수
+
+* Swift는 함수형 프로그래밍 패러다임을 포함하는 다중 패러다임 언어
+* Swift의 함수는 일급객체이므로 변수, 상수 등에 저장이 가능하고 매개변수를 통해 전달할 수도 있다.
 
 
 ```toc
