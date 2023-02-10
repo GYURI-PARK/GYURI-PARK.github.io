@@ -352,8 +352,8 @@ let subtracting: Set<Int> = setA.subtracting(setB)
 </br>
 
 func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 ...) -> 반환타입 { </br>
--    함수 구현부 </br>
--    return 반환값 </br>
+        함수 구현부 </br>
+        return 반환값 </br>
 }
 </br>
 </br>
@@ -372,8 +372,8 @@ func sum(a: Int, b: Int) -> Int {
 </br>
 
 func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 ...) -> Void { </br>
--    함수 구현부 </br>
--    return</br>
+        함수 구현부 </br>
+        return</br>
 }
 </br>
 </br>
@@ -397,8 +397,8 @@ func printMyName(name: String) {
 </br>
 
 func 함수이름 () -> 반환타입 { </br>
--    함수 구현부 </br>
--    return 반환값</br>
+        함수 구현부 </br>
+        return 반환값</br>
 }
 </br>
 </br>
@@ -417,8 +417,8 @@ func maximumIntegerValue() -> Int {
 </br>
 
 func 함수이름() -> Void {</br>
--    함수 구현부 </br>
--    return </br>
+        함수 구현부 </br>
+        return </br>
 }
 </br>
 </br>
@@ -464,8 +464,8 @@ hello()
 </br>
 
 func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 = 매개변수 기본값 ...) -> 반환타입 { </br>
--    함수 구현부 </br>
--    return 반환값</br>
+        함수 구현부 </br>
+        return 반환값</br>
 } 
 
 </br>
@@ -508,8 +508,8 @@ greeting(friend: "GD", me: "Doris")
 </br>
 
 func 함수이름 (전달인자 레이블 매개변수1이름: 매개변수1타입, 전달인자 레이블 매개변수2이름: 매개변수2타입 ...) -> 반환타입 { </br>
--    함수 구현부 </br>
--    return </br>
+        함수 구현부 </br>
+        return </br>
 } </br>
 
 </br>
