@@ -593,7 +593,19 @@ someFunction("GD", "gyuri")
 \\<!-- Hello GD! I am gyuri --> 
 
 someFunction = greeting(friend:me:)
+someFunction("GD", "gyuri")
+\\<!-- Hello GD! I am gyuri -->
+```
 
+</br>
+</br>
+
+* 타입이 다른 함수는 할당할 수 없다.
+
+🎯 예제 코드
+```bash
+someFunction = sayHelloToFriends(me: friends:)
+\\<!-- friends가 가변 매개변수를 가지므로 오류 코드 🚫 -->
 ```
 
 
