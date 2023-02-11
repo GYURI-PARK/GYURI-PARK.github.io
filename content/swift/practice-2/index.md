@@ -615,8 +615,16 @@ someFunction = sayHelloToFriends(me: friends:)
 
 🎯 예제 코드
 ```bash
-려ㅜㅊ
-\\<!-- friends가 가변 매개변수를 가지므로 오류 코드 🚫 -->
+func runAnother(function: (String, String) -> Void) {
+    function("jenny", "mike")
+}
+
+runAnother(function: greeting(friend:me:))
+\\<!-- 함수 직접 넘겨주기 -->
+\\<!-- Hello jenny! I am mike -->
+
+runAnother(function: someFunction)
+\\<!-- 함수가 할당된 변수 넘겨주기 -->
 ```
 
 ```toc
