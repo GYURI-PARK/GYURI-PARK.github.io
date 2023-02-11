@@ -496,6 +496,52 @@ print<span class="token punctuation">(</span>sayHelloToFriends<span class="token
 <li>Swift는 함수형 프로그래밍 패러다임을 포함하는 다중 패러다임 언어</li>
 <li>Swift의 함수는 일급객체이므로 변수, 상수 등에 저장이 가능하고 매개변수를 통해 전달할 수도 있다.</li>
 </ul>
+</br>
+</br>
+</br>
+<h3 id="함수의-타입표현" style="position:relative;"><a href="#%ED%95%A8%EC%88%98%EC%9D%98-%ED%83%80%EC%9E%85%ED%91%9C%ED%98%84" aria-label="함수의 타입표현 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>함수의 타입표현</h3>
+<ul>
+<li>Swift의 함수는 하나의 데이터 타입으로서 표현될 수 있다.</li>
+<li>반환타입을 생략할 수 없다.</li>
+</ul>
+<p>(매개변수1타입, 매개변수2타입 …) -> 반환타입 </br></p>
+</br>
+</br>
+<p>🎯 예제 코드</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var someFunction: <span class="token punctuation">(</span>String, String<span class="token punctuation">)</span> -<span class="token operator">></span> Void <span class="token operator">=</span> greeting<span class="token punctuation">(</span>to:from:<span class="token punctuation">)</span>
+
+<span class="token punctuation">\</span><span class="token punctuation">\</span><span class="token operator">&lt;</span><span class="token operator">!</span>-- 변수 someFunction에 <span class="token punctuation">(</span>String 타입의 매개변수 <span class="token number">2</span>개를 가지고 반환값이 없는<span class="token punctuation">)</span> 함수 할당 --<span class="token operator">></span>
+ 
+someFunction<span class="token punctuation">(</span><span class="token string">"GD"</span>, <span class="token string">"gyuri"</span><span class="token punctuation">)</span>
+<span class="token punctuation">\</span><span class="token punctuation">\</span><span class="token operator">&lt;</span><span class="token operator">!</span>-- Hello GD<span class="token operator">!</span> I am gyuri --<span class="token operator">></span> 
+
+someFunction <span class="token operator">=</span> greeting<span class="token punctuation">(</span>friend:me:<span class="token punctuation">)</span>
+someFunction<span class="token punctuation">(</span><span class="token string">"GD"</span>, <span class="token string">"gyuri"</span><span class="token punctuation">)</span>
+<span class="token punctuation">\</span><span class="token punctuation">\</span><span class="token operator">&lt;</span><span class="token operator">!</span>-- Hello GD<span class="token operator">!</span> I am gyuri --<span class="token operator">></span></code></pre></div>
+</br>
+</br>
+<ul>
+<li>타입이 다른 함수는 할당할 수 없다.</li>
+</ul>
+<p>🎯 예제 코드</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">someFunction <span class="token operator">=</span> sayHelloToFriends<span class="token punctuation">(</span>me: friends:<span class="token punctuation">)</span>
+<span class="token punctuation">\</span><span class="token punctuation">\</span><span class="token operator">&lt;</span><span class="token operator">!</span>-- friends가 가변 매개변수를 가지므로 오류 코드 🚫 --<span class="token operator">></span></code></pre></div>
+</br>
+</br>
+<ul>
+<li>함수 타입을 매개변수 타입으로 지정해주면 함수 내부에서도 실행 가능</li>
+</ul>
+<p>🎯 예제 코드</p>
+<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func runAnother<span class="token punctuation">(</span>function: <span class="token punctuation">(</span>String, String<span class="token punctuation">)</span> -<span class="token operator">></span> Void<span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    function<span class="token punctuation">(</span><span class="token string">"jenny"</span>, <span class="token string">"mike"</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span>
+
+runAnother<span class="token punctuation">(</span>function: greeting<span class="token punctuation">(</span>friend:me:<span class="token punctuation">))</span>
+<span class="token punctuation">\</span><span class="token punctuation">\</span><span class="token operator">&lt;</span><span class="token operator">!</span>-- 함수 직접 넘겨주기 --<span class="token operator">></span>
+<span class="token punctuation">\</span><span class="token punctuation">\</span><span class="token operator">&lt;</span><span class="token operator">!</span>-- Hello jenny<span class="token operator">!</span> I am mike --<span class="token operator">></span>
+
+runAnother<span class="token punctuation">(</span>function: someFunction<span class="token punctuation">)</span>
+<span class="token punctuation">\</span><span class="token punctuation">\</span><span class="token operator">&lt;</span><span class="token operator">!</span>-- 함수가 할당된 변수 넘겨주기 --<span class="token operator">></span></code></pre></div>
 <div class="table-of-contents">
 <ul>
 <li>
@@ -540,6 +586,7 @@ print<span class="token punctuation">(</span>sayHelloToFriends<span class="token
 <li><a href="#%EC%A0%84%EB%8B%AC%EC%9D%B8%EC%9E%90-%EB%A0%88%EC%9D%B4%EB%B8%94">전달인자 레이블</a></li>
 <li><a href="#%EA%B0%80%EB%B3%80-%EB%A7%A4%EA%B0%9C%EB%B3%80%EC%88%98">가변 매개변수</a></li>
 <li><a href="#%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85%EC%9C%BC%EB%A1%9C%EC%84%9C%EC%9D%98-%ED%95%A8%EC%88%98">데이터 타입으로서의 함수</a></li>
+<li><a href="#%ED%95%A8%EC%88%98%EC%9D%98-%ED%83%80%EC%9E%85%ED%91%9C%ED%98%84">함수의 타입표현</a></li>
 </ul>
 </li>
 </ul>
