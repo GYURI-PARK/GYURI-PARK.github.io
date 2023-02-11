@@ -569,6 +569,29 @@ print(sayHelloToFriends(me: "gyuri", friends: "jenny", "rose", "jisoo", "risa"))
 * Swift는 함수형 프로그래밍 패러다임을 포함하는 다중 패러다임 언어
 * Swift의 함수는 일급객체이므로 변수, 상수 등에 저장이 가능하고 매개변수를 통해 전달할 수도 있다.
 
+</br>
+</br>
+</br>
+
+### 함수의 타입표현
+
+* Swift의 함수는 하나의 데이터 타입으로서 표현될 수 있다.
+* 반환타입을 생략할 수 없다.
+
+(매개변수1타입, 매개변수2타입 ...) -> 반환타입 </br>
+
+</br>
+</br>
+
+🎯 예제 코드
+```bash
+var someFunction: (String, String) -> Void = greeting(to:from:)
+
+\\<!-- 변수 someFunction에 (String 타입의 매개변수 2개를 가지고 반환값이 없는) 함수 할당 -->
+ 
+```
+
+
 
 ```toc
 ```
