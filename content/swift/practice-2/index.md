@@ -589,6 +589,11 @@ var someFunction: (String, String) -> Void = greeting(to:from:)
 
 \\<!-- 변수 someFunction에 (String 타입의 매개변수 2개를 가지고 반환값이 없는) 함수 할당 -->
  
+someFunction("GD", "gyuri")
+\\<!-- Hello GD! I am gyuri --> 
+
+someFunction = greeting(friend:me:)
+
 ```
 
 
