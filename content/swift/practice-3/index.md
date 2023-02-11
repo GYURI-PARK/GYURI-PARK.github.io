@@ -38,11 +38,25 @@ if someInteger < 100 {
     print("100")
 }
 ```
+
+</br>
 </br>
 
+### switch
 
+switch value { </br>
+case pattern: </br>
+    code </br>
+default: </br>
+    code </br>
+}
 
+</br>
+</br>
 
+* 범위 연산자를 활용하면 유용
+
+#### 💭 범위 연산자
 
 ```toc
 ```
