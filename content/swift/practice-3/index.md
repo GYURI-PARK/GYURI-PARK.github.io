@@ -11,12 +11,12 @@ categories: Swift
 
 ### if-else
 
-if condition { </br>
-        statements </br>
-}   else if condition { </br>
-        statements </br>
-}   else { </br>
-        statements </br>
+**if** condition { </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statements </br>
+}&nbsp;&nbsp;**else if** condition { </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statements </br>
+}&nbsp;&nbsp;**else** { </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;statements </br>
 } 
 
 </br>
@@ -44,11 +44,11 @@ if someInteger < 100 {
 
 ### switch
 
-switch value { </br>
-case pattern: </br>
-    code </br>
-default: </br>
-    code </br>
+**switch** value { </br>
+**case** pattern: </br>
+&nbsp;&nbsp;&nbsp;code </br>
+**default:** </br>
+&nbsp;&nbsp;&nbsp;code </br>
 }
 
 </br>
