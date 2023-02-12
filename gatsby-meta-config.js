@@ -47,16 +47,16 @@ module.exports = {
         activity: '대구 계성고등학교 졸업',
       },
       {
-        date: '2018.03 ~ 2023.02',
-        activity: '서울시립대학교 공간정보공학과 & 빅데이터분석학 졸업',
-      },
-      {
         date: '2022.03 ~ 2022.06',
         activity: '사용자 맞춤형 길 찾기 서비스 WayFindeR 개발',
         links: {
           post: 'https://uos-urbanscience.org/archives/uos_portfolio/당신이-원하는-길로-이끄는-지도-wayfinder',
           github: 'https://github.com/GYURI-PARK/2022_Graduation_project',
         },
+      },
+      {
+        date: '2018.03 ~ 2023.02',
+        activity: '서울시립대학교 공간정보공학과 & 빅데이터분석학 학위 취득',
       },
       {
         date: '2023.03 ~ 2023.12',
