@@ -540,7 +540,7 @@ func greeting(to friend: String, from me: String) {
 }
 
 // 전달인자 레이블 : to, from
-// 매개변수 이름 : ㄹㄱ
+// 매개변수 이름 : friend, me
 ```
 </br>
 
