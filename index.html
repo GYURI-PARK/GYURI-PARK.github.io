@@ -70,12 +70,15 @@
      statements 
 }  else { 
      statements 
-} condition(조건) 소괄호 생략 가능 Swift 조건은 항상 Bool 타입이 들어와야한다. 🎯 예제 코드 switch switch value { 
+} condition(조건) 소괄호 생략 가능 ❗️ Swift 조건은 항상 Bool 타입이 들어와야한다. ❗️ 🎯 예제 코드 switch switch value { 
 case pattern: 
    code 
 default: 
    code 
-} 범위 연산자를 활용하면 유용 💭 범위 연산자 💡 조건문 if-else switch 💭 범위 연산자</p><div class="info"><div class="date">February 11, 2023</div><div class="categories"><div class="category">Swift</div></div></div></a></div><div class="post-card-wrapper"><a class="post-card" href="/회고/Apple Developer Academy/"><div class="title">Apple Developer Academy @ POSTECH 합격 후기</div><p class="description"></p><div class="info"><div class="date">January 18, 2023</div><div class="categories"><div class="category">회고</div></div></div></a></div><div class="post-card-wrapper"><a class="post-card" href="/swift/practice-2/"><div class="title">Swift 기초 다지기 (2)</div><p class="description">💡 컬렉션 타입 컬렉션 타입 : 여러 값들을 묶어서 하나의 변수로 표현 1. Array Array : 순서가 있는 list 컬렉션 빈 Array 생성 🎯 Int Array 생성 🎯 Double Array 생성 🎯 String Array 생성 🎯 Character Array 생성 ⭐️ let을 사용해 Array 선언 시 Array 원소 변경 불가능 immutableArray.append(4) 또는 immuntableArray.removeAll() 과 같은 명령어 사용 불가능 append Int 타입으로 Array를 생성했기 때문에 Int 타입의 숫자들만 추가할 수 있다. contains Array안에 해당 숫자가 있는지 판별 있으면 true 반환 
+} 범위 연산자를 활용하면 유용 💭 범위 연산자 닫힌 범위 연산자(Closed Range Operator) a…b
+a 이상 b 이하 반 닫힌 범위 연산자 (Half-Open Range Operator) a..<b
+a 이상 b 미만 단방향 범위 (One-Side Ranges) …a , a… , ..<a
+시작과 끝 중 하나만 정해주는 연산자 💡 조건문 if-else switch 💭 범위 연산자</p><div class="info"><div class="date">February 11, 2023</div><div class="categories"><div class="category">Swift</div></div></div></a></div><div class="post-card-wrapper"><a class="post-card" href="/회고/Apple Developer Academy/"><div class="title">Apple Developer Academy @ POSTECH 합격 후기</div><p class="description"></p><div class="info"><div class="date">January 18, 2023</div><div class="categories"><div class="category">회고</div></div></div></a></div><div class="post-card-wrapper"><a class="post-card" href="/swift/practice-2/"><div class="title">Swift 기초 다지기 (2)</div><p class="description">💡 컬렉션 타입 컬렉션 타입 : 여러 값들을 묶어서 하나의 변수로 표현 1. Array Array : 순서가 있는 list 컬렉션 빈 Array 생성 🎯 Int Array 생성 🎯 Double Array 생성 🎯 String Array 생성 🎯 Character Array 생성 ⭐️ let을 사용해 Array 선언 시 Array 원소 변경 불가능 immutableArray.append(4) 또는 immuntableArray.removeAll() 과 같은 명령어 사용 불가능 append Int 타입으로 Array를 생성했기 때문에 Int 타입의 숫자들만 추가할 수 있다. contains Array안에 해당 숫자가 있는지 판별 있으면 true 반환 
 없으면 false 반환 remove remove(at: 인덱스) Array안에 해당 위치 값 삭제 후 값 반환 removeLast() 마지막 값 삭제 후 값 반환 removeAll() 모두 삭제 count 몇개의 원소가 있는지 확인 2. D…</p><div class="info"><div class="date">January 12, 2023</div><div class="categories"><div class="category">Swift</div></div></div></a></div><div class="post-card-wrapper"><a class="post-card" href="/swift/practice-1/"><div class="title">Swift 기초 다지기 (1)</div><p class="description">💡 명명법 Swift 는 대소문자를 구분! 1. Lower Camel Case function, method, variable, constant 2. Upper Camel Case type(class, struct, enum, extension, …) 💡 콘솔로그 1. print 단순 문자열 출력
  2. dump 인스턴스의 자세한 설명 (description 프로퍼티) 까지 출력 💡 문자열 보간법 (String interpolation) 프로그램 실행 중 문자열 내에 변수 또는 상수의 실질적인 값을 표현하기 위해 사용 () -> 문자열로 자동 치환 📎 예제 코드 💡 상수와 변수 띄워쓰기 중요! 값의 type이 명확하다면 type 생략 가능 1. 상수 선언 상수 선언 키워드 : let 
 let 이름: 타입 = 값 2. 변수 선언 변수 선언 키워드 : var 
