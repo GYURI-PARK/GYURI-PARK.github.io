@@ -563,8 +563,8 @@ greeting(to: "GD", from: "gyuri")
 </br>
 
 func 함수이름(매개변수1이름: 매개변수1타입, 전달인자 레이블 매개변수2이름: 매개변수2타입...) -> 반환타입 { </br>
-        함수 구현부 </br>
-        return </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;함수 구현부 </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return </br>
 }
 
 </br>
@@ -577,8 +577,9 @@ func sayHelloToFriends(me: String, friends: String...) -> String {
 }
 print(sayHelloToFriends(me: "gyuri", friends: "jenny", "rose", "jisoo", "risa"))
 ```
+</br>
 
-* 전달인자가 없거나 nil 입력 시 오류 발생
+* 🚫 전달인자가 없거나 nil 입력 시 오류 발생
 
 </br>
 </br>
@@ -597,6 +598,7 @@ print(sayHelloToFriends(me: "gyuri", friends: "jenny", "rose", "jisoo", "risa"))
 
 * Swift의 함수는 하나의 데이터 타입으로서 표현될 수 있다.
 * 반환타입을 생략할 수 없다.
+</br>
 
 (매개변수1타입, 매개변수2타입 ...) -> 반환타입 </br>
 
