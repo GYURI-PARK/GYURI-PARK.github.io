@@ -20,10 +20,9 @@ categories: Swift
 } 
 
 </br>
-</br>
 
 * condition(조건) 소괄호 생략 가능
-* Swift 조건은 항상 Bool 타입이 들어와야한다.
+* ❗️ Swift 조건은 항상 Bool 타입이 들어와야한다. ❗️
 
 🎯 예제 코드
 ```bash
@@ -52,11 +51,32 @@ if someInteger < 100 {
 }
 
 </br>
-</br>
 
 * 범위 연산자를 활용하면 유용
 
-#### 💭 범위 연산자
+#### 💭 **범위 연산자**
+
+1. 닫힌 범위 연산자(Closed Range Operator)
+
+> a...b
+> a 이상 b 이하
+</br>
+
+2. 반 닫힌 범위 연산자 (Half-Open Range Operator)
+
+> a..<b
+> a 이상 b 미만
+</br>
+
+3. 단방향 범위 (One-Side Ranges)
+
+> ...a , a... , ..<a
+> 시작과 끝 중 하나만 정해주는 연산자
+
+
+
+
+
 
 ```toc
 ```
