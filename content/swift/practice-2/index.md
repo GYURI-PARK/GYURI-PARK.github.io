@@ -609,15 +609,24 @@ print(sayHelloToFriends(me: "gyuri", friends: "jenny", "rose", "jisoo", "risa"))
 ```bash
 var someFunction: (String, String) -> Void = greeting(to:from:)
 
-\\<!-- 변수 someFunction에 (String 타입의 매개변수 2개를 가지고 반환값이 없는) 함수 할당 -->
- 
-someFunction("GD", "gyuri")
-\\<!-- Hello GD! I am gyuri --> 
+// 변수 someFunction에 (String 타입의 매개변수 2개를 가지고 반환값이 없는) 함수 할당 
+```
 
+```bash 
+someFunction("GD", "gyuri")
+```
+
+📎 결과
+> Hello GD! I am gyuri 
+
+</br>
+
+```bash 
 someFunction = greeting(friend:me:)
 someFunction("GD", "gyuri")
-\\<!-- Hello GD! I am gyuri -->
 ```
+📎 결과
+> Hello GD! I am gyuri
 
 </br>
 </br>
@@ -626,8 +635,7 @@ someFunction("GD", "gyuri")
 
 🎯 예제 코드
 ```bash
-someFunction = sayHelloToFriends(me: friends:)
-\\<!-- friends가 가변 매개변수를 가지므로 오류 코드 🚫 -->
+// 🚫 friends가 가변 매개변수를 가지므로 오류 코드 🚫
 ```
 
 </br>
@@ -641,13 +649,14 @@ func runAnother(function: (String, String) -> Void) {
     function("jenny", "mike")
 }
 
+// 1. 함수 직접 넘겨주기
 runAnother(function: greeting(friend:me:))
-\\<!-- 함수 직접 넘겨주기 -->
-\\<!-- Hello jenny! I am mike -->
 
+// 2. 함수가 할당된 변수 넘겨주기
 runAnother(function: someFunction)
-\\<!-- 함수가 할당된 변수 넘겨주기 -->
 ```
+📎 결과
+> Hello jenny! I am mike
 
 ```toc
 ```
