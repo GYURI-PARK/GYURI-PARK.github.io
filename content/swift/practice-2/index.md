@@ -442,21 +442,35 @@ func bye() {print("bye")}
 func sum(a: Int, b: Int) -> Int {
     return a + b
 }
-sum(a: 3, b: 5)
-// 8
 
+sum(a: 3, b: 5)
+```
+📎 결과
+> 8
+
+</br>
+
+```bash
 func printMyName(name: String) {
     print(name)
 }
-printMyName(name: "gyuri")
-// gyuri
 
+printMyName(name: "gyuri")
+```
+📎 결과
+> gyuri
+
+</br>
+
+```bash
 func hello() -> Void {
     print("hello")
 }
+
 hello()
-// hello
 ```
+📎 결과
+> hello
 
 </br>
 </br>
