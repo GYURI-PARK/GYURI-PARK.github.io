@@ -348,12 +348,12 @@ let subtracting: Set<Int> = setA.subtracting(setB)
 
 ### 함수의 선언
 
-* 함수 선언의 기본형태
+* **함수 선언의 기본형태**
 </br>
 
 func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 ...) -> 반환타입 { </br>
-        함수 구현부 </br>
-        return 반환값 </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;함수 구현부 </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;**return** 반환값 </br>
 }
 </br>
 </br>
@@ -368,12 +368,12 @@ func sum(a: Int, b: Int) -> Int {
 </br>
 </br>
 
-* 반환 값이 없는 함수
+* **반환 값이 없는 함수**
 </br>
 
 func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름: 매개변수2타입 ...) -> Void { </br>
-        함수 구현부 </br>
-        return</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;함수 구현부 </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return</br>
 }
 </br>
 </br>
@@ -393,12 +393,12 @@ func printMyName(name: String) {
 </br>
 </br>
 
-* 매개변수가 없는 함수
+* **매개변수가 없는 함수**
 </br>
 
 func 함수이름 () -> 반환타입 { </br>
-        함수 구현부 </br>
-        return 반환값</br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;함수 구현부 </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return 반환값</br>
 }
 </br>
 </br>
@@ -413,12 +413,12 @@ func maximumIntegerValue() -> Int {
 </br>
 </br>
 
-* 매개변수와 반환값이 없는 함수
+* **매개변수와 반환값이 없는 함수**
 </br>
 
 func 함수이름() -> Void {</br>
-        함수 구현부 </br>
-        return </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;함수 구현부 </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;return </br>
 }
 </br>
 </br>
@@ -432,6 +432,7 @@ func hello() -> Void {
 // 생략도 가능
 func bye() {print("bye")}
 ```
+</br>
 </br>
 
 ### 함수의 호출
