@@ -186,6 +186,62 @@ a 이상 b 미만</p>
     <span class="token keyword">default</span><span class="token punctuation">:</span>
         <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"unknown"</span></span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span></code></pre></div>
+</br>
+</br>
+</br>
+<h2 id="-반복문" style="position:relative;"><a href="#-%EB%B0%98%EB%B3%B5%EB%AC%B8" aria-label=" 반복문 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 반복문</h2>
+<h3 id="for---in" style="position:relative;"><a href="#for---in" aria-label="for   in permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>for - in</h3>
+<p>for item in items { </br>
+     code </br>
+}</p>
+</br>
+<p>🎯 예제 코드</p>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">import</span> <span class="token class-name">Swift</span>
+
+<span class="token keyword">var</span> integers <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span>
+<span class="token keyword">let</span> people <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"Doris"</span></span><span class="token punctuation">:</span> <span class="token number">10</span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"Jenny"</span></span><span class="token punctuation">:</span> <span class="token number">15</span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"Timmy"</span></span><span class="token punctuation">:</span><span class="token number">20</span><span class="token punctuation">]</span>
+
+<span class="token keyword">for</span> i <span class="token keyword">in</span> integers <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>i<span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+</br>
+</br>
+<ul>
+<li>Dictionary의 경우 item은 (key, value) 형태인 튜플 타입</li>
+</ul>
+<p>🎯 예제 코드</p>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">for</span> <span class="token punctuation">(</span>name<span class="token punctuation">,</span> age<span class="token punctuation">)</span> <span class="token keyword">in</span> people <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"</span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation">name</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">: </span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation">age</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">"</span></span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+</br>
+</br>
+<h3 id="while" style="position:relative;"><a href="#while" aria-label="while permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>while</h3>
+<p>while condition { </br>
+     code </br>
+}</p>
+</br>
+<ul>
+<li>조건 (condition)에는 반드시 bool 값이 들어와야한다.</li>
+<li>조건 부분에 소괄호() 생략 가능</li>
+</ul>
+</br>
+<p>🎯 예제 코드</p>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">while</span> integers<span class="token punctuation">.</span>count <span class="token operator">></span> <span class="token number">1</span> <span class="token punctuation">{</span>
+    integers<span class="token punctuation">.</span><span class="token function">removeLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span></code></pre></div>
+</br>
+</br>
+<h3 id="repeat---while" style="position:relative;"><a href="#repeat---while" aria-label="repeat   while permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>repeat - while</h3>
+<p>repeat { </br>
+     code </br>
+} while condition</p>
+</br>
+<p>🎯 예제 코드</p>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">repeat</span> <span class="token punctuation">{</span>
+    integers<span class="token punctuation">.</span><span class="token function">removeLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<span class="token punctuation">}</span> <span class="token keyword">while</span> integers<span class="token punctuation">.</span>count <span class="token operator">></span> <span class="token number">0</span></code></pre></div>
+</br>
+</br> 
 <div class="table-of-contents">
 <ul>
 <li>
@@ -200,6 +256,14 @@ a 이상 b 미만</p>
 <li><a href="#-%EB%B2%94%EC%9C%84-%EC%97%B0%EC%82%B0%EC%9E%90">💭 <strong>범위 연산자</strong></a></li>
 </ul>
 </li>
+</ul>
+</li>
+<li>
+<p><a href="#-%EB%B0%98%EB%B3%B5%EB%AC%B8">💡 반복문</a></p>
+<ul>
+<li><a href="#for---in">for - in</a></li>
+<li><a href="#while">while</a></li>
+<li><a href="#repeat---while">repeat - while</a></li>
 </ul>
 </li>
 </ul>
