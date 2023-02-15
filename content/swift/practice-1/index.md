@@ -259,5 +259,8 @@ print(someAnyObject)
 * Any타입과 AnyObject 타입으로 선언된 변수에는 어떤 데이터 타입도 들어올 수 있지만,
 빈 값은 들어올 수 없다.
 
+</br>
+</br>
+
 ```toc
 ```

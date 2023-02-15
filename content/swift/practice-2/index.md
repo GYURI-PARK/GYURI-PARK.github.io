@@ -616,7 +616,7 @@ var someFunction: (String, String) -> Void = greeting(to:from:)
 someFunction("GD", "gyuri")
 ```
 
-📎 결과
+📎 결과 </br>
 > Hello GD! I am gyuri 
 
 </br>
@@ -625,7 +625,7 @@ someFunction("GD", "gyuri")
 someFunction = greeting(friend:me:)
 someFunction("GD", "gyuri")
 ```
-📎 결과
+📎 결과 </br>
 > Hello GD! I am gyuri
 
 </br>
@@ -635,6 +635,7 @@ someFunction("GD", "gyuri")
 
 🎯 예제 코드
 ```swift
+someFunction = sayHelloToFriends(me:friends:)
 // 🚫 friends가 가변 매개변수를 가지므로 오류 코드 🚫
 ```
 
@@ -655,8 +656,11 @@ runAnother(function: greeting(friend:me:))
 // 2. 함수가 할당된 변수 넘겨주기
 runAnother(function: someFunction)
 ```
-📎 결과
+📎 결과 </br>
 > Hello jenny! I am mike
+
+</br>
+</br>
 
 ```toc
 ```
