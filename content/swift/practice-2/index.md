@@ -20,7 +20,7 @@ categories: Swift
 
 🎯 Int Array 생성
 
-```bash
+```swift
 var integers: Array<Int> = Array<Int>()
 ```
 
@@ -28,7 +28,7 @@ var integers: Array<Int> = Array<Int>()
 
 🎯 Double Array 생성
 
-```bash
+```swift
 var doubles: Array<Double> = [Double]()
 ```
 
@@ -36,7 +36,7 @@ var doubles: Array<Double> = [Double]()
 
 🎯 String Array 생성
 
-```bash
+```swift
 var strings: [String] = [String]()
 ```
 
@@ -44,7 +44,7 @@ var strings: [String] = [String]()
 
 🎯 Character Array 생성
 
-```bash
+```swift
 var characters: [Character] = []
 ```
 
@@ -52,7 +52,7 @@ var characters: [Character] = []
 
 ⭐️ let을 사용해 Array 선언 시 Array 원소 변경 불가능
 
-```bash
+```swift
 let immutableArray = [1,2,3]
 ```
 
@@ -65,7 +65,7 @@ let immutableArray = [1,2,3]
 
 * Int 타입으로 Array를 생성했기 때문에 Int 타입의 숫자들만 추가할 수 있다. 
 
-```bash
+```swift
 integers.append(1)
 integers.append(100)
 ```
@@ -83,7 +83,7 @@ integers.append(100)
 > 있으면 true 반환 </br>
 > 없으면 false 반환
 
-```bash
+```swift
 integers.contains(100)
 integers.contains(99)
 ```
@@ -101,7 +101,7 @@ false
 1. remove(at: 인덱스)
 * Array안에 해당 위치 값 삭제 후 값 반환
 
-```bash
+```swift
 integers.remove(at: 0)
 ```
 </br>
@@ -115,7 +115,7 @@ integers.remove(at: 0)
 2. removeLast()
 * 마지막 값 삭제 후 값 반환
 
-```bash
+```swift
 integers.removeLast()
 ```
 </br>
@@ -129,7 +129,7 @@ integers.removeLast()
 3. removeAll()
 * 모두 삭제
 
-```bash
+```swift
 integers.removeAll()
 ```
 
@@ -139,7 +139,7 @@ integers.removeAll()
 #### **count**
 * 몇개의 원소가 있는지 확인 
 
-```bash
+```swift
 integers.count
 ```
 
@@ -155,7 +155,7 @@ integers.count
 
 🎯 Key가 String 타입이고 Value가 Any인 빈 Dictionary 생성
 
-```bash
+```swift
 var antDictionary: Dictionary<String, Any> = [String: Any]()
 
 // 각각의 Key에 Value 할당하기
@@ -169,7 +169,7 @@ anyDictionary["anotherKey"] = 100
 </br>
 </br>
 
-```bash
+```swift
 // 기존 Key에 새로운 값(Value)할당해주기
 anyDictionay["someKey"] = "dictionary"
 ```
@@ -178,7 +178,7 @@ anyDictionay["someKey"] = "dictionary"
 
 🎯 let으로 불변 Dictionary 선언
 
-```bash
+```swift
 let emptyDictionary: [String: String] = [:]
 let initalizedDictionary: [String: String] = ["name": "zorba", "gender": "female"]
 ```
@@ -188,7 +188,7 @@ let initalizedDictionary: [String: String] = ["name": "zorba", "gender": "female
 
 #### value 삭제
 
-```bash
+```swift
 anyDictionary.removeValue(forKey: "anotherKey")
 anyDictionary["someKey"] = nil 
 ```
@@ -201,7 +201,7 @@ anyDictionary["someKey"] = nil
 
 #### 빈 Set 생성
 
-```bash
+```swift
 var integerSet: Set<Int> = Set<Int>()
 ```
 </br>
@@ -210,7 +210,7 @@ var integerSet: Set<Int> = Set<Int>()
 
 * 원소 추가
 
-```bash
+```swift
 integerSet.insert(1)
 integerSet.insert(100)
 integerSet.insert(99)
@@ -226,7 +226,7 @@ integerSet.insert(99)
 
 * 원소 포함여부 확인
 
-```bash
+```swift
 integerSet.contains(1)
 integerSet.contains(2)
 ```
@@ -245,7 +245,7 @@ false
 1. remove(원소 값)
 * Set 안에 해당 원소 값 삭제 후 값 반환
 
-```bash
+```swift
 integerSet.remove(100)
 ```
 </br>
@@ -259,7 +259,7 @@ integerSet.remove(100)
 2. removeFirst()
 * 마지막 값 삭제 후 값 반환
 
-```bash
+```swift
 integerSet.removeFirst()
 ```
 </br>
@@ -273,7 +273,7 @@ integerSet.removeFirst()
 #### **count**
 * 몇개의 원소가 있는지 확인 
 
-```bash
+```swift
 integerSet.count
 ```
 
@@ -282,7 +282,7 @@ integerSet.count
 
 #### **Set 응용**
 
-```bash
+```swift
 let setA: Set<Int> = [1, 2, 3, 4, 5]
 let setB: Set<Int> = [3, 4, 5, 6, 7]
 ```
@@ -292,7 +292,7 @@ let setB: Set<Int> = [3, 4, 5, 6, 7]
 1. union (합집합)
 * 결과 정렬 X
 
-```bash
+```swift
 let union: Set<Int> = setA.union(setB)
 ```
 </br>
@@ -303,7 +303,7 @@ let union: Set<Int> = setA.union(setB)
 </br>
 </br>
 
-```bash
+```swift
 let sortedUnion: [Int] = union.sorted()
 ```
 
@@ -318,7 +318,7 @@ let sortedUnion: [Int] = union.sorted()
 2. intersection (교집합)
 * 결과 정렬 X
 
-```bash
+```swift
 let intersection: Set<Int> = setA.intersection(setB)
 ```
 </br>
@@ -332,7 +332,7 @@ let intersection: Set<Int> = setA.intersection(setB)
 3.  subtracting (차집합)
 * 결과 정렬 X
 
-```bash
+```swift
 let subtracting: Set<Int> = setA.subtracting(setB)
 ```
 </br>
@@ -359,7 +359,7 @@ func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름
 </br>
 
 🎯 예제 코드
-```bash
+```swift
 func sum(a: Int, b: Int) -> Int {
     return a + b
 }
@@ -379,7 +379,7 @@ func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름
 </br>
 
 🎯 예제 코드
-```bash
+```swift
 func printMyName(name: String) -> Void {
     print(name)
 }
@@ -404,7 +404,7 @@ func 함수이름 () -> 반환타입 { </br>
 </br>
 
 🎯 예제 코드
-```bash
+```swift
 func maximumIntegerValue() -> Int {
     return Int.max
 }
@@ -424,7 +424,7 @@ func 함수이름() -> Void {</br>
 </br>
 
 🎯 예제 코드
-```bash
+```swift
 func hello() -> Void {
     print("hello")
 }
@@ -438,7 +438,7 @@ func bye() {print("bye")}
 ### 함수의 호출
 
 🎯 예제 코드
-```bash
+```swift
 func sum(a: Int, b: Int) -> Int {
     return a + b
 }
@@ -450,7 +450,7 @@ sum(a: 3, b: 5)
 
 </br>
 
-```bash
+```swift
 func printMyName(name: String) {
     print(name)
 }
@@ -462,7 +462,7 @@ printMyName(name: "gyuri")
 
 </br>
 
-```bash
+```swift
 func hello() -> Void {
     print("hello")
 }
@@ -491,7 +491,7 @@ func 함수이름 (매개변수1이름: 매개변수1타입, **매개변수2이�
 </br>
 
 🎯 예제 코드
-```bash
+```swift
 func greeting(friend: String, me: String = "gyuri") {
     print("Hello \(friend)! I am \(me)")
 }
@@ -506,7 +506,7 @@ func greeting(friend: String, me: String = "gyuri") {
 * 매개변수 기본값을 가지는 매개변수는 생략 가능
 
 🎯 예제 코드
-```bash
+```swift
 greeting(friend: "Jenny")
 // Hello Jenny! I am gyuri
 
@@ -534,7 +534,7 @@ func 함수이름 (전달인자 레이블 매개변수1이름: 매개변수1타�
 * 함수 내부에서 전달인자를 사용할 때에는 매개변수 이름을 사용
 
 🎯 예제 코드
-```bash
+```swift
 func greeting(to friend: String, from me: String) {
     print("Hello \(friend)! I am \(me)")
 }
@@ -547,7 +547,7 @@ func greeting(to friend: String, from me: String) {
 * 함수를 호출할 때에는 전달인자 레이블을 사용
 
 🎯 예제 코드
-```bash
+```swift
 greeting(to: "GD", from: "gyuri")
 // Hello GD! I am gyuri
 ```
@@ -571,7 +571,7 @@ func 함수이름(매개변수1이름: 매개변수1타입, 전달인자 레이�
 </br>
 
 🎯 예제 코드
-```bash
+```swift
 func sayHelloToFriends(me: String, friends: String...) -> String {
     return "Hello \(friends)! I'm \(me)!"
 }
@@ -606,13 +606,13 @@ print(sayHelloToFriends(me: "gyuri", friends: "jenny", "rose", "jisoo", "risa"))
 </br>
 
 🎯 예제 코드
-```bash
+```swift
 var someFunction: (String, String) -> Void = greeting(to:from:)
 
 // 변수 someFunction에 (String 타입의 매개변수 2개를 가지고 반환값이 없는) 함수 할당 
 ```
 
-```bash 
+```swift 
 someFunction("GD", "gyuri")
 ```
 
@@ -621,7 +621,7 @@ someFunction("GD", "gyuri")
 
 </br>
 
-```bash 
+```swift 
 someFunction = greeting(friend:me:)
 someFunction("GD", "gyuri")
 ```
@@ -634,7 +634,7 @@ someFunction("GD", "gyuri")
 * 타입이 다른 함수는 할당할 수 없다.
 
 🎯 예제 코드
-```bash
+```swift
 // 🚫 friends가 가변 매개변수를 가지므로 오류 코드 🚫
 ```
 
@@ -644,7 +644,7 @@ someFunction("GD", "gyuri")
 * 함수 타입을 매개변수 타입으로 지정해주면 함수 내부에서도 실행 가능
 
 🎯 예제 코드
-```bash
+```swift
 func runAnother(function: (String, String) -> Void) {
     function("jenny", "mike")
 }
