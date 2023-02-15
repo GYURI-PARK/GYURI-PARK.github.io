@@ -77,19 +77,19 @@
 </ul>
 <h4 id="빈-array-생성" style="position:relative;"><a href="#%EB%B9%88-array-%EC%83%9D%EC%84%B1" aria-label="빈 array 생성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>빈 Array 생성</h4>
 <p>🎯 Int Array 생성</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var integers: Array<span class="token operator">&lt;</span>Int<span class="token operator">></span> <span class="token operator">=</span> Array<span class="token operator">&lt;</span>Int<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">var</span> integers<span class="token punctuation">:</span> <span class="token class-name">Array</span><span class="token operator">&lt;</span><span class="token class-name">Int</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token class-name">Array</span><span class="token operator">&lt;</span><span class="token class-name">Int</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 <p>🎯 Double Array 생성</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var doubles: Array<span class="token operator">&lt;</span>Double<span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">[</span>Double<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">var</span> doubles<span class="token punctuation">:</span> <span class="token class-name">Array</span><span class="token operator">&lt;</span><span class="token class-name">Double</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token class-name">Double</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 <p>🎯 String Array 생성</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var strings: <span class="token punctuation">[</span>String<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>String<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">var</span> strings<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token class-name">String</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token class-name">String</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 <p>🎯 Character Array 생성</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var characters: <span class="token punctuation">[</span>Character<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">var</span> characters<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token class-name">Character</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">]</span></code></pre></div>
 </br>
 <p>⭐️ let을 사용해 Array 선언 시 Array 원소 변경 불가능</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">let</span> immutableArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1,2</span>,3<span class="token punctuation">]</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> immutableArray <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span><span class="token number">2</span><span class="token punctuation">,</span><span class="token number">3</span><span class="token punctuation">]</span></code></pre></div>
 <ul>
 <li>immutableArray.append(4) 또는 immuntableArray.removeAll() 과 같은 명령어 사용 불가능</li>
 </ul>
@@ -99,8 +99,8 @@
 <ul>
 <li>Int 타입으로 Array를 생성했기 때문에 Int 타입의 숫자들만 추가할 수 있다.</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integers.append<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-integers.append<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integers<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+integers<span class="token punctuation">.</span><span class="token function">append</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 [1] </br>
@@ -115,8 +115,8 @@ integers.append<span class="token punctuation">(</span><span class="token number
 <p>있으면 true 반환 </br>
 없으면 false 반환</p>
 </blockquote>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integers.contains<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
-integers.contains<span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integers<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+integers<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 true </br>
@@ -131,7 +131,7 @@ false
 <ul>
 <li>Array안에 해당 위치 값 삭제 후 값 반환</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integers.remove<span class="token punctuation">(</span>at: <span class="token number">0</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integers<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span>at<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 1
@@ -144,7 +144,7 @@ false
 <ul>
 <li>마지막 값 삭제 후 값 반환</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integers.removeLast<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integers<span class="token punctuation">.</span><span class="token function">removeLast</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 100
@@ -157,14 +157,14 @@ false
 <ul>
 <li>모두 삭제</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integers.removeAll<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integers<span class="token punctuation">.</span><span class="token function">removeAll</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 </br>
 <h4 id="count" style="position:relative;"><a href="#count" aria-label="count permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>count</strong></h4>
 <ul>
 <li>몇개의 원소가 있는지 확인</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integers.count</code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integers<span class="token punctuation">.</span>count</code></pre></div>
 </br>
 </br>
 <h3 id="2-dictionary" style="position:relative;"><a href="#2-dictionary" aria-label="2 dictionary permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>2. Dictionary</h3>
@@ -174,27 +174,27 @@ false
 </br>
 <h4 id="빈-dictionary-생성" style="position:relative;"><a href="#%EB%B9%88-dictionary-%EC%83%9D%EC%84%B1" aria-label="빈 dictionary 생성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>빈 Dictionary 생성</h4>
 <p>🎯 Key가 String 타입이고 Value가 Any인 빈 Dictionary 생성</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var antDictionary: Dictionary<span class="token operator">&lt;</span>String, Any<span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">[</span>String: Any<span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">var</span> antDictionary<span class="token punctuation">:</span> <span class="token class-name">Dictionary</span><span class="token operator">&lt;</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token keyword">Any</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token class-name">String</span><span class="token punctuation">:</span> <span class="token keyword">Any</span><span class="token punctuation">]</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
 
-// 각각의 Key에 Value 할당하기
-anyDictionay<span class="token punctuation">[</span><span class="token string">"someKey"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"value"</span>
-anyDictionary<span class="token punctuation">[</span><span class="token string">"anotherKey"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span></code></pre></div>
+<span class="token comment">// 각각의 Key에 Value 할당하기</span>
+anyDictionay<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"someKey"</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string-literal"><span class="token string">"value"</span></span>
+anyDictionary<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"anotherKey"</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token number">100</span></code></pre></div>
 </br>
 📎 결과 </br>
 ["someKey":"value", "anotherKey":100]
 </br>
 </br>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">// 기존 Key에 새로운 값<span class="token punctuation">(</span>Value<span class="token punctuation">)</span>할당해주기
-anyDictionay<span class="token punctuation">[</span><span class="token string">"someKey"</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string">"dictionary"</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token comment">// 기존 Key에 새로운 값(Value)할당해주기</span>
+anyDictionay<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"someKey"</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token string-literal"><span class="token string">"dictionary"</span></span></code></pre></div>
 </br>
 <p>🎯 let으로 불변 Dictionary 선언</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">let</span> emptyDictionary: <span class="token punctuation">[</span>String: String<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span>:<span class="token punctuation">]</span>
-<span class="token builtin class-name">let</span> initalizedDictionary: <span class="token punctuation">[</span>String: String<span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string">"name"</span><span class="token builtin class-name">:</span> <span class="token string">"zorba"</span>, <span class="token string">"gender"</span><span class="token builtin class-name">:</span> <span class="token string">"female"</span><span class="token punctuation">]</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> emptyDictionary<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token class-name">String</span><span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token punctuation">:</span><span class="token punctuation">]</span>
+<span class="token keyword">let</span> initalizedDictionary<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token class-name">String</span><span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"name"</span></span><span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"zorba"</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"gender"</span></span><span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"female"</span></span><span class="token punctuation">]</span></code></pre></div>
 </br>
 </br>
 <h4 id="value-삭제" style="position:relative;"><a href="#value-%EC%82%AD%EC%A0%9C" aria-label="value 삭제 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>value 삭제</h4>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">anyDictionary.removeValue<span class="token punctuation">(</span>forKey: <span class="token string">"anotherKey"</span><span class="token punctuation">)</span>
-anyDictionary<span class="token punctuation">[</span><span class="token string">"someKey"</span><span class="token punctuation">]</span> <span class="token operator">=</span> nil </code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">anyDictionary<span class="token punctuation">.</span><span class="token function">removeValue</span><span class="token punctuation">(</span>forKey<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"anotherKey"</span></span><span class="token punctuation">)</span>
+anyDictionary<span class="token punctuation">[</span><span class="token string-literal"><span class="token string">"someKey"</span></span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token nil constant">nil</span> </code></pre></div>
 </br>
 </br>
 <h3 id="3-set" style="position:relative;"><a href="#3-set" aria-label="3 set permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>3. Set</h3>
@@ -202,26 +202,26 @@ anyDictionary<span class="token punctuation">[</span><span class="token string">
 <li>Set : 순서가 없고, 멤버가 유일한 컬렉션</li>
 </ul>
 <h4 id="빈-set-생성" style="position:relative;"><a href="#%EB%B9%88-set-%EC%83%9D%EC%84%B1" aria-label="빈 set 생성 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>빈 Set 생성</h4>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var integerSet: Set<span class="token operator">&lt;</span>Int<span class="token operator">></span> <span class="token operator">=</span> Set<span class="token operator">&lt;</span>Int<span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">var</span> integerSet<span class="token punctuation">:</span> <span class="token class-name">Set</span><span class="token operator">&lt;</span><span class="token class-name">Int</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token class-name">Set</span><span class="token operator">&lt;</span><span class="token class-name">Int</span><span class="token operator">></span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 <h4 id="insert" style="position:relative;"><a href="#insert" aria-label="insert permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>insert</strong></h4>
 <ul>
 <li>원소 추가</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integerSet.insert<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-integerSet.insert<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
-integerSet.insert<span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">)</span>
-integerSet.insert<span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integerSet<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+integerSet<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span>
+integerSet<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">)</span>
+integerSet<span class="token punctuation">.</span><span class="token function">insert</span><span class="token punctuation">(</span><span class="token number">99</span><span class="token punctuation">)</span>
 
-// Set에서는 중복을 허락하지 않기 때문에 <span class="token number">99</span>가 두번 추가되어도 결과에 한번밖에 나타나지 않는다.</code></pre></div>
+<span class="token comment">// Set에서는 중복을 허락하지 않기 때문에 99가 두번 추가되어도 결과에 한번밖에 나타나지 않는다.</span></code></pre></div>
 </br>
 </br>
 <h4 id="contains-1" style="position:relative;"><a href="#contains-1" aria-label="contains 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>contains</strong></h4>
 <ul>
 <li>원소 포함여부 확인</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integerSet.contains<span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
-integerSet.contains<span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integerSet<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token number">1</span><span class="token punctuation">)</span>
+integerSet<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token number">2</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 true </br>
@@ -236,7 +236,7 @@ false
 <ul>
 <li>Set 안에 해당 원소 값 삭제 후 값 반환</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integerSet.remove<span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integerSet<span class="token punctuation">.</span><span class="token function">remove</span><span class="token punctuation">(</span><span class="token number">100</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 100
@@ -249,7 +249,7 @@ false
 <ul>
 <li>마지막 값 삭제 후 값 반환</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integerSet.removeFirst<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integerSet<span class="token punctuation">.</span><span class="token function">removeFirst</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 99
@@ -260,12 +260,12 @@ false
 <ul>
 <li>몇개의 원소가 있는지 확인</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">integerSet.count</code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">integerSet<span class="token punctuation">.</span>count</code></pre></div>
 </br>
 </br>
 <h4 id="set-응용" style="position:relative;"><a href="#set-%EC%9D%91%EC%9A%A9" aria-label="set 응용 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a><strong>Set 응용</strong></h4>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">let</span> setA: Set<span class="token operator">&lt;</span>Int<span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span>, <span class="token number">2</span>, <span class="token number">3</span>, <span class="token number">4</span>, <span class="token number">5</span><span class="token punctuation">]</span>
-<span class="token builtin class-name">let</span> setB: Set<span class="token operator">&lt;</span>Int<span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span>, <span class="token number">4</span>, <span class="token number">5</span>, <span class="token number">6</span>, <span class="token number">7</span><span class="token punctuation">]</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> setA<span class="token punctuation">:</span> <span class="token class-name">Set</span><span class="token operator">&lt;</span><span class="token class-name">Int</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">1</span><span class="token punctuation">,</span> <span class="token number">2</span><span class="token punctuation">,</span> <span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">]</span>
+<span class="token keyword">let</span> setB<span class="token punctuation">:</span> <span class="token class-name">Set</span><span class="token operator">&lt;</span><span class="token class-name">Int</span><span class="token operator">></span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token number">3</span><span class="token punctuation">,</span> <span class="token number">4</span><span class="token punctuation">,</span> <span class="token number">5</span><span class="token punctuation">,</span> <span class="token number">6</span><span class="token punctuation">,</span> <span class="token number">7</span><span class="token punctuation">]</span></code></pre></div>
 </br>
 <ol>
 <li>union (합집합)</li>
@@ -273,14 +273,14 @@ false
 <ul>
 <li>결과 정렬 X</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">let</span> union: Set<span class="token operator">&lt;</span>Int<span class="token operator">></span> <span class="token operator">=</span> setA.union<span class="token punctuation">(</span>setB<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> union<span class="token punctuation">:</span> <span class="token class-name">Set</span><span class="token operator">&lt;</span><span class="token class-name">Int</span><span class="token operator">></span> <span class="token operator">=</span> setA<span class="token punctuation">.</span><span class="token function">union</span><span class="token punctuation">(</span>setB<span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 {2, 4, 5, 6, 7, 3, 1}
 </br>
 </br>
 </br>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">let</span> sortedUnion: <span class="token punctuation">[</span>Int<span class="token punctuation">]</span> <span class="token operator">=</span> union.sorted<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> sortedUnion<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token class-name">Int</span><span class="token punctuation">]</span> <span class="token operator">=</span> union<span class="token punctuation">.</span><span class="token function">sorted</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 {1, 2, 3, 4, 5, 6, 7}
@@ -293,7 +293,7 @@ false
 <ul>
 <li>결과 정렬 X</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">let</span> intersection: Set<span class="token operator">&lt;</span>Int<span class="token operator">></span> <span class="token operator">=</span> setA.intersection<span class="token punctuation">(</span>setB<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> intersection<span class="token punctuation">:</span> <span class="token class-name">Set</span><span class="token operator">&lt;</span><span class="token class-name">Int</span><span class="token operator">></span> <span class="token operator">=</span> setA<span class="token punctuation">.</span><span class="token function">intersection</span><span class="token punctuation">(</span>setB<span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 {5, 3, 4}
@@ -306,7 +306,7 @@ false
 <ul>
 <li>결과 정렬 X</li>
 </ul>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash"><span class="token builtin class-name">let</span> subtracting: Set<span class="token operator">&lt;</span>Int<span class="token operator">></span> <span class="token operator">=</span> setA.subtracting<span class="token punctuation">(</span>setB<span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">let</span> subtracting<span class="token punctuation">:</span> <span class="token class-name">Set</span><span class="token operator">&lt;</span><span class="token class-name">Int</span><span class="token operator">></span> <span class="token operator">=</span> setA<span class="token punctuation">.</span><span class="token function">subtracting</span><span class="token punctuation">(</span>setB<span class="token punctuation">)</span></code></pre></div>
 </br>
 📎 결과 </br>
 {2, 1}
@@ -327,8 +327,8 @@ false
 </br>
 </br></p>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func sum<span class="token punctuation">(</span>a: Int, b: Int<span class="token punctuation">)</span> -<span class="token operator">></span> Int <span class="token punctuation">{</span>
-    <span class="token builtin class-name">return</span> a + b
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">sum</span><span class="token punctuation">(</span>a<span class="token punctuation">:</span> <span class="token class-name">Int</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token class-name">Int</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">Int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b
 <span class="token punctuation">}</span></code></pre></div>
 </br>
 </br>
@@ -344,13 +344,13 @@ false
 </br>
 </br></p>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func printMyName<span class="token punctuation">(</span>name: String<span class="token punctuation">)</span> -<span class="token operator">></span> Void <span class="token punctuation">{</span>
-    print<span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">printMyName</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">Void</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
-// 생략도 가능 
-func printMyName<span class="token punctuation">(</span>name: String<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    print<span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+<span class="token comment">// 생략도 가능 </span>
+<span class="token keyword">func</span> <span class="token function-definition function">printMyName</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
 <span class="token punctuation">}</span></code></pre></div>
 </br>
 </br>
@@ -366,8 +366,8 @@ func printMyName<span class="token punctuation">(</span>name: String<span class=
 </br>
 </br></p>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func maximumIntegerValue<span class="token punctuation">(</span><span class="token punctuation">)</span> -<span class="token operator">></span> Int <span class="token punctuation">{</span>
-    <span class="token builtin class-name">return</span> Int.max
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">maximumIntegerValue</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">Int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token class-name">Int</span><span class="token punctuation">.</span>max
 <span class="token punctuation">}</span></code></pre></div>
 </br>
 </br>
@@ -383,41 +383,41 @@ func printMyName<span class="token punctuation">(</span>name: String<span class=
 </br>
 </br></p>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func hello<span class="token punctuation">(</span><span class="token punctuation">)</span> -<span class="token operator">></span> Void <span class="token punctuation">{</span>
-    print<span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">Void</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"hello"</span></span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
-// 생략도 가능
-func <span class="token function-name function">bye</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>print<span class="token punctuation">(</span><span class="token string">"bye"</span><span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre></div>
+<span class="token comment">// 생략도 가능</span>
+<span class="token keyword">func</span> <span class="token function-definition function">bye</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span><span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"bye"</span></span><span class="token punctuation">)</span><span class="token punctuation">}</span></code></pre></div>
 </br>
 </br>
 <h3 id="함수의-호출" style="position:relative;"><a href="#%ED%95%A8%EC%88%98%EC%9D%98-%ED%98%B8%EC%B6%9C" aria-label="함수의 호출 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>함수의 호출</h3>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func sum<span class="token punctuation">(</span>a: Int, b: Int<span class="token punctuation">)</span> -<span class="token operator">></span> Int <span class="token punctuation">{</span>
-    <span class="token builtin class-name">return</span> a + b
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">sum</span><span class="token punctuation">(</span>a<span class="token punctuation">:</span> <span class="token class-name">Int</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token class-name">Int</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">Int</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> a <span class="token operator">+</span> b
 <span class="token punctuation">}</span>
 
-sum<span class="token punctuation">(</span>a: <span class="token number">3</span>, b: <span class="token number">5</span><span class="token punctuation">)</span></code></pre></div>
+<span class="token function">sum</span><span class="token punctuation">(</span>a<span class="token punctuation">:</span> <span class="token number">3</span><span class="token punctuation">,</span> b<span class="token punctuation">:</span> <span class="token number">5</span><span class="token punctuation">)</span></code></pre></div>
 <p>📎 결과</p>
 <blockquote>
 <p>8</p>
 </blockquote>
 </br>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func printMyName<span class="token punctuation">(</span>name: String<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    print<span class="token punctuation">(</span>name<span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">printMyName</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span>name<span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
-printMyName<span class="token punctuation">(</span>name: <span class="token string">"gyuri"</span><span class="token punctuation">)</span></code></pre></div>
+<span class="token function">printMyName</span><span class="token punctuation">(</span>name<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"gyuri"</span></span><span class="token punctuation">)</span></code></pre></div>
 <p>📎 결과</p>
 <blockquote>
 <p>gyuri</p>
 </blockquote>
 </br>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func hello<span class="token punctuation">(</span><span class="token punctuation">)</span> -<span class="token operator">></span> Void <span class="token punctuation">{</span>
-    print<span class="token punctuation">(</span><span class="token string">"hello"</span><span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">Void</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"hello"</span></span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
-hello<span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
+<span class="token function">hello</span><span class="token punctuation">(</span><span class="token punctuation">)</span></code></pre></div>
 <p>📎 결과</p>
 <blockquote>
 <p>hello</p>
@@ -437,23 +437,23 @@ hello<span class="token punctuation">(</span><span class="token punctuation">)</
 </ul>
 </br>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func greeting<span class="token punctuation">(</span>friend: String, me: String <span class="token operator">=</span> <span class="token string">"gyuri"</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    print<span class="token punctuation">(</span><span class="token string">"Hello \(friend)! I am \(me)"</span><span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">greeting</span><span class="token punctuation">(</span>friend<span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">,</span> me<span class="token punctuation">:</span> <span class="token class-name">String</span> <span class="token operator">=</span> <span class="token string-literal"><span class="token string">"gyuri"</span></span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Hello </span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation">friend</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">! I am </span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation">me</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">"</span></span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
-// friend <span class="token builtin class-name">:</span> 기본값이 없는 매개변수
-// me <span class="token builtin class-name">:</span> 기본값이 gyuri인 매개변수</code></pre></div>
+<span class="token comment">// friend : 기본값이 없는 매개변수</span>
+<span class="token comment">// me : 기본값이 gyuri인 매개변수</span></code></pre></div>
 </br>
 </br>
 <ul>
 <li>매개변수 기본값을 가지는 매개변수는 생략 가능</li>
 </ul>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">greeting<span class="token punctuation">(</span>friend: <span class="token string">"Jenny"</span><span class="token punctuation">)</span>
-// Hello Jenny<span class="token operator">!</span> I am gyuri
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token function">greeting</span><span class="token punctuation">(</span>friend<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"Jenny"</span></span><span class="token punctuation">)</span>
+<span class="token comment">// Hello Jenny! I am gyuri</span>
 
-greeting<span class="token punctuation">(</span>friend: <span class="token string">"GD"</span>, me: <span class="token string">"Doris"</span><span class="token punctuation">)</span>
-// Hello GD<span class="token operator">!</span> I am Doris</code></pre></div>
+<span class="token function">greeting</span><span class="token punctuation">(</span>friend<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"GD"</span></span><span class="token punctuation">,</span> me<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"Doris"</span></span><span class="token punctuation">)</span>
+<span class="token comment">// Hello GD! I am Doris</span></code></pre></div>
 </br>
 </br>
 <h3 id="전달인자-레이블" style="position:relative;"><a href="#%EC%A0%84%EB%8B%AC%EC%9D%B8%EC%9E%90-%EB%A0%88%EC%9D%B4%EB%B8%94" aria-label="전달인자 레이블 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>전달인자 레이블</h3>
@@ -471,19 +471,19 @@ greeting<span class="token punctuation">(</span>friend: <span class="token strin
 <li>함수 내부에서 전달인자를 사용할 때에는 매개변수 이름을 사용</li>
 </ul>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func greeting<span class="token punctuation">(</span>to friend: String, from me: String<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    print<span class="token punctuation">(</span><span class="token string">"Hello \(friend)! I am \(me)"</span><span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">greeting</span><span class="token punctuation">(</span>to friend<span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">,</span> from me<span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">print</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Hello </span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation">friend</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">! I am </span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation">me</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">"</span></span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
-// 전달인자 레이블 <span class="token builtin class-name">:</span> to, from
-// 매개변수 이름 <span class="token builtin class-name">:</span> friend, me</code></pre></div>
+<span class="token comment">// 전달인자 레이블 : to, from</span>
+<span class="token comment">// 매개변수 이름 : friend, me</span></code></pre></div>
 </br>
 <ul>
 <li>함수를 호출할 때에는 전달인자 레이블을 사용</li>
 </ul>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">greeting<span class="token punctuation">(</span>to: <span class="token string">"GD"</span>, from: <span class="token string">"gyuri"</span><span class="token punctuation">)</span>
-// Hello GD<span class="token operator">!</span> I am gyuri</code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token function">greeting</span><span class="token punctuation">(</span>to<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"GD"</span></span><span class="token punctuation">,</span> from<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"gyuri"</span></span><span class="token punctuation">)</span>
+<span class="token comment">// Hello GD! I am gyuri</span></code></pre></div>
 </br>
 </br>
 </br>
@@ -500,10 +500,10 @@ greeting<span class="token punctuation">(</span>friend: <span class="token strin
 </br>
 </br>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func sayHelloToFriends<span class="token punctuation">(</span>me: String, friends: String<span class="token punctuation">..</span>.<span class="token punctuation">)</span> -<span class="token operator">></span> String <span class="token punctuation">{</span>
-    <span class="token builtin class-name">return</span> <span class="token string">"Hello \(friends)! I'm \(me)!"</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">sayHelloToFriends</span><span class="token punctuation">(</span>me<span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">,</span> friends<span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token operator">...</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">String</span> <span class="token punctuation">{</span>
+    <span class="token keyword">return</span> <span class="token string-literal"><span class="token string">"Hello </span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation">friends</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">! I'm </span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation">me</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">!"</span></span>
 <span class="token punctuation">}</span>
-print<span class="token punctuation">(</span>sayHelloToFriends<span class="token punctuation">(</span>me: <span class="token string">"gyuri"</span>, friends: <span class="token string">"jenny"</span>, <span class="token string">"rose"</span>, <span class="token string">"jisoo"</span>, <span class="token string">"risa"</span><span class="token punctuation">))</span></code></pre></div>
+<span class="token function">print</span><span class="token punctuation">(</span><span class="token function">sayHelloToFriends</span><span class="token punctuation">(</span>me<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"gyuri"</span></span><span class="token punctuation">,</span> friends<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"jenny"</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"rose"</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"jisoo"</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"risa"</span></span><span class="token punctuation">)</span><span class="token punctuation">)</span></code></pre></div>
 </br>
 <ul>
 <li>🚫 전달인자가 없거나 nil 입력 시 오류 발생</li>
@@ -529,17 +529,17 @@ print<span class="token punctuation">(</span>sayHelloToFriends<span class="token
 </br>
 </br>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">var someFunction: <span class="token punctuation">(</span>String, String<span class="token punctuation">)</span> -<span class="token operator">></span> Void <span class="token operator">=</span> greeting<span class="token punctuation">(</span>to:from:<span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">var</span> someFunction<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">Void</span> <span class="token operator">=</span> <span class="token function">greeting</span><span class="token punctuation">(</span>to<span class="token punctuation">:</span>from<span class="token punctuation">:</span><span class="token punctuation">)</span>
 
-// 변수 someFunction에 <span class="token punctuation">(</span>String 타입의 매개변수 <span class="token number">2</span>개를 가지고 반환값이 없는<span class="token punctuation">)</span> 함수 할당 </code></pre></div>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">someFunction<span class="token punctuation">(</span><span class="token string">"GD"</span>, <span class="token string">"gyuri"</span><span class="token punctuation">)</span></code></pre></div>
+<span class="token comment">// 변수 someFunction에 (String 타입의 매개변수 2개를 가지고 반환값이 없는) 함수 할당 </span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token function">someFunction</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"GD"</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"gyuri"</span></span><span class="token punctuation">)</span></code></pre></div>
 <p>📎 결과</p>
 <blockquote>
 <p>Hello GD! I am gyuri</p>
 </blockquote>
 </br>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">someFunction <span class="token operator">=</span> greeting<span class="token punctuation">(</span>friend:me:<span class="token punctuation">)</span>
-someFunction<span class="token punctuation">(</span><span class="token string">"GD"</span>, <span class="token string">"gyuri"</span><span class="token punctuation">)</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift">someFunction <span class="token operator">=</span> <span class="token function">greeting</span><span class="token punctuation">(</span>friend<span class="token punctuation">:</span>me<span class="token punctuation">:</span><span class="token punctuation">)</span>
+<span class="token function">someFunction</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"GD"</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"gyuri"</span></span><span class="token punctuation">)</span></code></pre></div>
 <p>📎 결과</p>
 <blockquote>
 <p>Hello GD! I am gyuri</p>
@@ -550,22 +550,22 @@ someFunction<span class="token punctuation">(</span><span class="token string">"
 <li>타입이 다른 함수는 할당할 수 없다.</li>
 </ul>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">// 🚫 friends가 가변 매개변수를 가지므로 오류 코드 🚫</code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token comment">// 🚫 friends가 가변 매개변수를 가지므로 오류 코드 🚫</span></code></pre></div>
 </br>
 </br>
 <ul>
 <li>함수 타입을 매개변수 타입으로 지정해주면 함수 내부에서도 실행 가능</li>
 </ul>
 <p>🎯 예제 코드</p>
-<div class="gatsby-highlight" data-language="bash"><pre class="language-bash"><code class="language-bash">func runAnother<span class="token punctuation">(</span>function: <span class="token punctuation">(</span>String, String<span class="token punctuation">)</span> -<span class="token operator">></span> Void<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-    function<span class="token punctuation">(</span><span class="token string">"jenny"</span>, <span class="token string">"mike"</span><span class="token punctuation">)</span>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">func</span> <span class="token function-definition function">runAnother</span><span class="token punctuation">(</span>function<span class="token punctuation">:</span> <span class="token punctuation">(</span><span class="token class-name">String</span><span class="token punctuation">,</span> <span class="token class-name">String</span><span class="token punctuation">)</span> <span class="token operator">-></span> <span class="token class-name">Void</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+    <span class="token function">function</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"jenny"</span></span><span class="token punctuation">,</span> <span class="token string-literal"><span class="token string">"mike"</span></span><span class="token punctuation">)</span>
 <span class="token punctuation">}</span>
 
-// <span class="token number">1</span>. 함수 직접 넘겨주기
-runAnother<span class="token punctuation">(</span>function: greeting<span class="token punctuation">(</span>friend:me:<span class="token punctuation">))</span>
+<span class="token comment">// 1. 함수 직접 넘겨주기</span>
+<span class="token function">runAnother</span><span class="token punctuation">(</span>function<span class="token punctuation">:</span> <span class="token function">greeting</span><span class="token punctuation">(</span>friend<span class="token punctuation">:</span>me<span class="token punctuation">:</span><span class="token punctuation">)</span><span class="token punctuation">)</span>
 
-// <span class="token number">2</span>. 함수가 할당된 변수 넘겨주기
-runAnother<span class="token punctuation">(</span>function: someFunction<span class="token punctuation">)</span></code></pre></div>
+<span class="token comment">// 2. 함수가 할당된 변수 넘겨주기</span>
+<span class="token function">runAnother</span><span class="token punctuation">(</span>function<span class="token punctuation">:</span> someFunction<span class="token punctuation">)</span></code></pre></div>
 <p>📎 결과</p>
 <blockquote>
 <p>Hello jenny! I am mike</p>
