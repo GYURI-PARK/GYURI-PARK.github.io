@@ -48,7 +48,7 @@ categories: Swift
 
 📎 예제 코드
 
-```bash
+```swift
 // 콘솔로그와 문자열 보간법 (print 사용)
 
 import Swift
@@ -60,7 +60,7 @@ print("안녕하세요! 저는 \(age+4)살 입니다:)")
 ```
 </br>
 
-```bash
+```swift
 // 콘솔로그와 문자열 보간법 (dump 사용)
 
 class Person {
@@ -111,7 +111,7 @@ dump(orange)
 
 </br>
 
-```bash
+```swift
 var someBool: Bool = true
 print(someBool)
 someBool = false
@@ -123,7 +123,7 @@ someBool = false
 
 </br>
 
-```bash
+```swift
 var someInt: Int = -100
 print(someInt)
 someInt = 100
@@ -138,7 +138,7 @@ print(someInt)
 
 </br>
 
-```bash
+```swift
 var someUInt: UInt = 100
 print(someUInt)
 ```
@@ -149,7 +149,7 @@ print(someUInt)
 
 </br>
 
-```bash
+```swift
 var someFloat: Float = 3.14
 print(someFloat)
 ```
@@ -160,7 +160,7 @@ print(someFloat)
 
 </br>
 
-```bash
+```swift
 var someDouble: Double = 3.14
 print(someDouble)
 ```
@@ -172,7 +172,7 @@ print(someDouble)
 
 🚫 에러 코드 🚫
 
-```bash
+```swift
 someDouble = someFloat
 ```
 </br>
@@ -184,7 +184,7 @@ someDouble = someFloat
 * 영어, 한글, 이모지 모두 가능
 </br>
 
-```bash
+```swift
 var someCharacter1: Character = "🌍"
 print(someCharacter1)
 
@@ -200,7 +200,7 @@ print(someCharacter3)
 ### 7. String (문자열)
 </br>
 
-```bash
+```swift
 var someString: String = "하하하 🌝"
 someString += "웃으면 복이 와요"
 print(someString)
@@ -218,7 +218,7 @@ print(someString)
 ### 1. Any : 모든 타입을 지칭하는 키워드
 </br>
 
-```bash
+```swift
 import Swift
 
 var someAny: Any = 100
@@ -238,7 +238,7 @@ print(someAny)
 ### 2. AnyObject : 모든 클래스 타입을 지칭하는 프로토콜
 </br>
 
-```bash
+```swift
 class SomeClass{}
 var someAnyObject: AnyObject = SomeClass()
 print(someAnyObject)
