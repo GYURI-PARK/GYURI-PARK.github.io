@@ -122,8 +122,10 @@ switch "Doris" {
 ### for - in 
 
 for item in items { </br>
-&nbsp;&nbsp;&nbsp; code </br>
+&nbsp;&nbsp;&nbsp;&nbsp; code </br>
 }
+
+</br>
 
 🎯 예제 코드
 ```swift
@@ -145,6 +147,23 @@ for i in integers {
 ```swift
 for (name, age) in people {
     print("\(name): \(age)")
+}
+```
+</br>
+</br>
+
+### while
+
+while condition { </br>
+&nbsp;&nbsp;&nbsp;&nbsp; code </br>
+}
+
+</br>
+
+🎯 예제 코드
+```swift
+while integers.count > 1 {
+    integers.removeLast()
 }
 ```
 
