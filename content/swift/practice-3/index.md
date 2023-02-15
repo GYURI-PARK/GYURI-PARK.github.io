@@ -93,7 +93,25 @@ switch someInteger {
 </br>
 </br>
 
-* 정수 외의 대부
+* 정수 외의 대부분의 타입을 기본 타입으로 사용 가능
+* switch 조건문을 명확하게 명시하지 않으면 반드시 default 값 필요
+* break 명시 필요 X
+
+</br>
+
+🎯 예제 코드
+```swift
+switch "Doris" {
+    case "A":
+        print("A")
+    case "B":
+        print("B")
+    case "Doris":
+        print("It's Doris")
+    default:
+        print("unknown")
+}
+```
 
 
 
