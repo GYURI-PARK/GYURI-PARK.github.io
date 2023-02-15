@@ -160,6 +160,11 @@ while condition { </br>
 
 </br>
 
+* 조건 (condition)에는 반드시 bool 값이 들어와야한다.
+* 조건 부분에 소괄호() 생략 가능
+
+</br>
+
 🎯 예제 코드
 ```swift
 while integers.count > 1 {
@@ -167,6 +172,26 @@ while integers.count > 1 {
 }
 ```
 
+</br>
+</br>
+
+### repeat - while
+
+repeat { </br>
+&nbsp;&nbsp;&nbsp;&nbsp; code </br>
+} while condition 
+
+</br>
+
+🎯 예제 코드
+```swift
+repeat {
+    integers.removeLast()
+} while integers.count > 0
+```
+
+</br>
+</br> 
 
 ```toc
 ```
