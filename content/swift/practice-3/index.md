@@ -113,6 +113,40 @@ switch "Doris" {
 }
 ```
 
+</br>
+</br>
+</br>
+
+## 💡 반복문
+
+### for - in 
+
+for item in items { </br>
+&nbsp;&nbsp;&nbsp; code </br>
+}
+
+🎯 예제 코드
+```swift
+import Swift
+
+var integers = [1,2,3]
+let people = ["Doris": 10, "Jenny": 15, "Timmy":20]
+
+for i in integers {
+    print(i)
+}
+```
+</br>
+</br>
+
+* Dictionary의 경우 item은 (key, value) 형태인 튜플 타입
+
+🎯 예제 코드
+```swift
+for (name, age) in people {
+    print("\(name): \(age)")
+}
+```
 
 
 ```toc
