@@ -194,6 +194,34 @@ if let name - myName, let friend = yourName {
 
 ### 강제 추출 (Force Unwrapping)
 
+* 옵셔널의 값을 강제로 추출
+
+```swift
+func printName(_ name: String) {
+    print(name)
+}
+
+var myName: String? = "Doris"
+
+printNmae(myName!)
+// 변수 뒤에 느낌표 붙여서 강제 추출
+```
+
+</br>
+
+* 강제추출 시 값이 없으면 런타임 오류 발생
+
+<br>
+
+* 암시적 추출 옵셔널에서는 강제추출을 가정하고 선언
+
+```swift
+var yourName: String! = nil
+printName(yourName)
+
+// 뒤에 느낌표를 붙이지 않아도 강제추출 가능
+// 그러나 nil 값이 전달되기 때문에 런타임 오류 발생
+```
 </br>
 </br> 
 
