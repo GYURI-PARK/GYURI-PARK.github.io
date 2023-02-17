@@ -137,7 +137,62 @@ optionalValue = optionalValue + 1
 
 ## 💡 옵셔널 추출 (Optional Unwrapping)
 
+### 옵셔널 바인딩 (Optional Binding)
 
+* nil 체크 + 안전한 값 추출
+
+```swift
+func printName(_ name: String) {
+    print(name)
+}
+
+var myName: String? = nil
+
+printNmae(myName)
+// 🚫 오류코드 🚫
+// 전달되는 값의 타입이 다르기 때문에 컴파일 오류 발생
+// 따라서 if - let 방식으로 옵셔널 바인딩 
+```
+
+</br>
+
+#### if - let 방식으로 옵셔널 바인딩
+
+```swift
+func printName(_ name: String) {
+    print(name)
+}
+
+var myName: String! = nil
+
+if let name: String = myName {
+    printName(name)
+} else {
+    print("myName == nil")
+}
+
+// 상수 name은 if-let 구문 안에서만 사용가능
+```
+
+</br>
+
+* 여러 변수들을 한번에 바인딩 가능
+
+```swift
+var myName: String? = "Doris"
+var yourName: String? = nil
+
+if let name - myName, let friend = yourName {
+    print("\(name) and \(friend)")
+}
+// myName, yourName 두개의 변수에 모두 할당 되어야지만 실행 가능
+// yourName이 nil이기 때문에 실행 ❌
+```
+
+</br>
+</br>
+
+### 강제 추출 (Force Unwrapping)
 
 </br>
 </br> 
