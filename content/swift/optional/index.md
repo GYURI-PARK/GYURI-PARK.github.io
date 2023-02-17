@@ -92,6 +92,37 @@ optionalValue = nil
 optionalValue = optionalValue + 1
 // optionalValue에 nil이 할당되어있으므로 런타임 오류 발생
 ```
+</br>
+</br>
+
+### ❓ 옵셔널 (Optional)
+
+```swift
+// 물음표로 선언
+
+var optionalValue: Int? = 100
+
+switch optionalValue {
+    case .none:
+        print("This Optional variable is nil")
+    case .some(let value):
+        print("Value is \(value)")
+}
+```
+</br>
+
+* nil 할당 가능
+```swift
+optionalValue = nil
+```
+
+</br>
+
+* 기존 변수처럼 사용불가 ❌ 
+* nil 할당 가능
+```swift
+ㅐㅔ
+```
 
 
 </br>
