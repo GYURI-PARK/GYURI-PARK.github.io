@@ -79,7 +79,18 @@ switch optionalValue {
 
 * 기존 변수처럼 사용 가능
 ```swift
-ㅐㅔ
+optionalValue = optionalValue + 1
+```
+
+</br>
+
+* nil 할당 가능
+```swift
+optionalValue = nil
+
+// 🚫 오류코드
+optionalValue = optionalValue + 1
+// optionalValue에 nil이 할당되어있으므로 런타임 오류 발생
 ```
 
 
