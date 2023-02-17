@@ -11,6 +11,8 @@ categories: Swift
 
 > 값이 있을 수도 있고, 없을 수도 있는 것!
 
+</br>
+
 ### 🧠 Why?
 
 1. nil의 가능성을 명시적으로 표현
@@ -23,6 +25,7 @@ categories: Swift
 
 ```swift
 // int optional 타입 사용
+
 func someFunction(someOptionalParam: Int?) {
     // ...
 }
@@ -33,6 +36,7 @@ someFunction(someOptionalParam: nil)
 
 ```swift
 // int 타입 사용
+
 func someFunction(someParam: Int) {
     // ...
 }
@@ -40,6 +44,8 @@ func someFunction(someParam: Int) {
 someFunction(someParam: nil)
 // 🚫 someParam must not be nil 🚫 -> 오류코드
 ```
+</br>
+</br>
 
 ### enum + general
 
@@ -125,6 +131,12 @@ optionalValue = nil
 // 🚫 오류 코드 🚫
 optionalValue = optionalValue + 1
 ```
+
+</br>
+</br>
+
+## 💡 옵셔널 추출 (Optional Unwrapping)
+
 
 
 </br>
