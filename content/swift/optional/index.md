@@ -119,9 +119,11 @@ optionalValue = nil
 </br>
 
 * 기존 변수처럼 사용불가 ❌ 
-* nil 할당 가능
+
 ```swift
-ㅐㅔ
+// 옵셔널과 일반 값은 다른 타입이므로 연산 불가
+// 🚫 오류 코드 🚫
+optionalValue = optionalValue + 1
 ```
 
 
