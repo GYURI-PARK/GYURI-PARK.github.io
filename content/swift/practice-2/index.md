@@ -358,7 +358,6 @@ func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름
 </br>
 </br>
 
-🎯 예제 코드
 ```swift
 func sum(a: Int, b: Int) -> Int {
     return a + b
@@ -378,7 +377,6 @@ func 함수이름 (매개변수1이름: 매개변수1타입, 매개변수2이름
 </br>
 </br>
 
-🎯 예제 코드
 ```swift
 func printMyName(name: String) -> Void {
     print(name)
@@ -403,7 +401,6 @@ func 함수이름 () -> 반환타입 { </br>
 </br>
 </br>
 
-🎯 예제 코드
 ```swift
 func maximumIntegerValue() -> Int {
     return Int.max
@@ -423,7 +420,6 @@ func 함수이름() -> Void {</br>
 </br>
 </br>
 
-🎯 예제 코드
 ```swift
 func hello() -> Void {
     print("hello")
@@ -437,7 +433,6 @@ func bye() {print("bye")}
 
 ### 함수의 호출
 
-🎯 예제 코드
 ```swift
 func sum(a: Int, b: Int) -> Int {
     return a + b
@@ -490,7 +485,6 @@ func 함수이름 (매개변수1이름: 매개변수1타입, **매개변수2이�
 
 </br>
 
-🎯 예제 코드
 ```swift
 func greeting(friend: String, me: String = "gyuri") {
     print("Hello \(friend)! I am \(me)")
@@ -505,7 +499,6 @@ func greeting(friend: String, me: String = "gyuri") {
 
 * 매개변수 기본값을 가지는 매개변수는 생략 가능
 
-🎯 예제 코드
 ```swift
 greeting(friend: "Jenny")
 // Hello Jenny! I am gyuri
@@ -533,7 +526,6 @@ func 함수이름 (전달인자 레이블 매개변수1이름: 매개변수1타�
 
 * 함수 내부에서 전달인자를 사용할 때에는 매개변수 이름을 사용
 
-🎯 예제 코드
 ```swift
 func greeting(to friend: String, from me: String) {
     print("Hello \(friend)! I am \(me)")
@@ -546,7 +538,6 @@ func greeting(to friend: String, from me: String) {
 
 * 함수를 호출할 때에는 전달인자 레이블을 사용
 
-🎯 예제 코드
 ```swift
 greeting(to: "GD", from: "gyuri")
 // Hello GD! I am gyuri
@@ -570,7 +561,6 @@ func 함수이름(매개변수1이름: 매개변수1타입, 전달인자 레이�
 </br>
 </br>
 
-🎯 예제 코드
 ```swift
 func sayHelloToFriends(me: String, friends: String...) -> String {
     return "Hello \(friends)! I'm \(me)!"
@@ -605,7 +595,6 @@ print(sayHelloToFriends(me: "gyuri", friends: "jenny", "rose", "jisoo", "risa"))
 </br>
 </br>
 
-🎯 예제 코드
 ```swift
 var someFunction: (String, String) -> Void = greeting(to:from:)
 
@@ -633,7 +622,7 @@ someFunction("GD", "gyuri")
 
 * 타입이 다른 함수는 할당할 수 없다.
 
-🎯 예제 코드
+
 ```swift
 someFunction = sayHelloToFriends(me:friends:)
 // 🚫 friends가 가변 매개변수를 가지므로 오류 코드 🚫
@@ -644,7 +633,6 @@ someFunction = sayHelloToFriends(me:friends:)
 
 * 함수 타입을 매개변수 타입으로 지정해주면 함수 내부에서도 실행 가능
 
-🎯 예제 코드
 ```swift
 func runAnother(function: (String, String) -> Void) {
     function("jenny", "mike")

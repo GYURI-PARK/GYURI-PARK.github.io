@@ -26,7 +26,6 @@ categories: Swift
 
 </br>
 
-🎯 예제 코드
 ```swift
 import Swift
 let someInteger = 100
@@ -78,7 +77,6 @@ if someInteger < 100 {
 </br>
 </br>
 
-🎯 예제 코드
 ```swift
 switch someInteger {
     case 0:
@@ -101,7 +99,6 @@ switch someInteger {
 
 </br>
 
-🎯 예제 코드
 ```swift
 switch "Doris" {
     case "A":
@@ -129,7 +126,6 @@ for item in items { </br>
 
 </br>
 
-🎯 예제 코드
 ```swift
 import Swift
 
@@ -145,7 +141,6 @@ for i in integers {
 
 * Dictionary의 경우 item은 (key, value) 형태인 튜플 타입
 
-🎯 예제 코드
 ```swift
 for (name, age) in people {
     print("\(name): \(age)")
@@ -167,7 +162,6 @@ while condition { </br>
 
 </br>
 
-🎯 예제 코드
 ```swift
 while integers.count > 1 {
     integers.removeLast()
@@ -185,7 +179,6 @@ repeat { </br>
 
 </br>
 
-🎯 예제 코드
 ```swift
 repeat {
     integers.removeLast()
