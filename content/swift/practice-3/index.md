@@ -24,6 +24,8 @@ categories: Swift
 * condition(조건) 소괄호 생략 가능
 * ❗️ Swift 조건은 항상 Bool 타입이 들어와야한다. ❗️
 
+</br>
+
 🎯 예제 코드
 ```swift
 import Swift
