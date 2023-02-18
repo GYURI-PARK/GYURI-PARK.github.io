@@ -229,6 +229,35 @@ class 이름 { </br>
 }
 
 </br>
+</br>
+
+### 프로퍼티 및 매서드
+
+```swift
+class Sample {
+    var mutableProperty: Int = 100 // 가변 프로퍼티
+    let immutableProperty: Int = 100 // 불변 프로퍼티
+
+    static var typeProperty: Int = 100 // 타입 프로퍼티
+
+    func instanceMethod() {
+        print("instance method")
+    } // 인스턴스 매서드
+
+    // 타입 매서드 
+    // 1. static - 재정의 불가 타입 매서드
+    static func typeMethod() {
+        print("type method - static")
+    }
+
+    // 2. clss - 재정의 가능 타입 매서드
+    class func classMethod() {
+        print("type method - class")
+    }
+}
+```
+
+</br>
 </br> 
 
 ```toc
