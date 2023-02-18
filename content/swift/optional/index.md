@@ -156,7 +156,7 @@ printNmae(myName)
 
 </br>
 
-#### if - let 방식으로 옵셔널 바인딩
+#### if - let
 
 ```swift
 func printName(_ name: String) {
