@@ -24,6 +24,23 @@ categories: Swift
 
 * 대문자 CamelCase 사용
 
+* 구조체는 **값 타입 (Value Type)**
+> 함수에서 상수나 변수에 전달될 때 값이 **복사되어 전달**
+
+```swift
+struct Resolution {
+    var width = 0
+    var height = 0
+}
+
+let hd = Resolution(width: 100, height:100)
+// Resolution 구조체의 인스턴스 hd 선언
+var picture = hd
+// 변수 picture에 hd 할당
+```
+
+> 구조체에서는 값이 할당되는 순간 복사되기 때문에 picture와 hd는 전혀 다른 인스턴스
+
 </br> 
 
 struct 이름 { </br>
@@ -160,6 +177,51 @@ jenny.name = "jenny" // ❌ error code ❌
 jenny.selfIntroduce()
 // -> 저는 Swift반 unknown입니다
 ```
+
+</br>
+</br>
+</br>
+
+## 💡 클래스 (Class)
+
+### 정의
+
+* 클래스는 참조 타입 (Reference Type)
+> 변수나 상수에 값을 할당 하거나 함수에 인자로 전달할 때 그 값이 복사되지 않고 참조
+> 값을 갖고 있는 메모리를 바라본다는 의미
+
+```swift
+// 클래스 생성
+class VideoMode {
+    var resolution = Resolution()  
+    // 위 Resolution 구조체를 값으로 사용
+    var interlaced = false
+    var frameRate = 0.0
+    var name: String?
+}
+```
+
+```swift
+// 클래스 (VideoMode) 인스턴스 tenEigthy 생성
+let tenEighty = VideoMode()
+
+// 각 프로퍼티에 값 할당
+tenEighty.resolution = hd
+tenEighty.interlaced = true
+tenEighty.name = "1080i"
+tenEighty.frameRate = 25.0
+```
+
+```swift
+
+```
+
+
+</br>
+
+class 이름 { </br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;구현부 </br>
+}
 
 </br>
 </br> 
