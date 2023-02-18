@@ -35,7 +35,7 @@ struct 이름 { </br>
 
 ### 프로퍼티 및 매서드
 
-* 프로퍼티와 매서드에 대한 자세한 설명은 여기 참고
+🔎 프로퍼티와 매서드에 대한 자세한 설명은 여기 참고
 
 </br>
 
@@ -47,9 +47,39 @@ struct Sample {
     let immutableProperty: Int = 100 // 불변 프로퍼티
 
     static var typeProperty: Int = 100 // 선언한 타입(Sample)에서 사용할 수 있는 타입 프로퍼티
-    
 
+    // 인스턴스 매서드
+    func instanceMethod() {
+        print("instance method")
+    }
 
+    // 타입 매서드
+    static func typeMethod() {
+        print("type method")
+    }
 }
 ```
+
+</br>
+</br>
+
+### 구조체 사용
+
+#### 1. 가변 인스턴스
+
+```swift
+// 가변 인스턴스 정의
+var mutable: Sample = Sample()
+
+// 내부 프로퍼티 값 변경 가능
+mutable.mutableProperty = 200
+
+// 불변으로 선언한 프로퍼티는 변경 불가능🚫
+mutable.immutableProperty = 200 // ❌ error code ❌
+```
+
+</br>
+</br>
+
+#### 2. 불변 인스턴스 
 
