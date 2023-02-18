@@ -116,12 +116,34 @@ mutable.typeMethod() // ❌ error code ❌
 ```swift
 struct Student {
     var name: String = "unknown"
-    var class: String = "Swift"
+    var `class`: String = "Swift"
 
     static func selfIntroduce() {
         print("학생타입")
     }
 
-    려ㅜ
+    func selfIntroduce() {
+        print("저는 \(self.class)반 \(name)입니다")
+    }
 }
+```
+
+</br>
+
+* 타입 매서드 사용
+```swift
+Student.selfIntroduce()
+// -> 학생타입
+```
+</br>
+
+* 새로운 인스턴스 생성
+``` 
+```
+
+
+</br>
+</br> 
+
+```toc
 ```
