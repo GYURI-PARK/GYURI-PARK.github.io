@@ -128,7 +128,7 @@ mutable.typeMethod() // ❌ error code ❌
 </br>
 </br>
 
-#### 예시
+#### 예제
 
 ```swift
 struct Student {
@@ -255,6 +255,42 @@ class Sample {
         print("type method - class")
     }
 }
+```
+
+</br>
+</br>
+
+### 클래스 사용
+
+#### 1. 가변 인스턴스 / 불변 인스턴스
+
+✨ 구조체와 다르게 가변 인스턴스와 불변 인스턴스에서 **모두** 가변으로 선언한 프로퍼티는 변경이 가능
+
+```swift
+var mutableReference: Sample = Sample()
+let immutableReference: Sample = Sample()
+
+mutableReference.mutableProperty = 200
+immutableReference.mutableProperty = 200
+
+// ❌ error code ❌ 불변 프로퍼티는 변경 불가능
+mutableReference.immutableProperty = 200
+immutableReference.immutableProperty = 200
+```
+
+</br>
+</br>
+
+#### 2. 타입 프로퍼티 및 매서드
+
+```swift
+Sample.typeProperty = 300
+Sample.typeMethod()
+// -> type method - static
+
+// 🚫 인스턴스에서는 사용 불가능
+mutableReference.typeProperty = 400 // ❌ error code ❌
+mutableReference.typeMethod() // ❌ error code ❌
 ```
 
 </br>
