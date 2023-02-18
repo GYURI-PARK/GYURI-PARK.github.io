@@ -74,7 +74,7 @@ var mutable: Sample = Sample()
 // 내부 프로퍼티 값 변경 가능
 mutable.mutableProperty = 200
 
-// 불변으로 선언한 프로퍼티는 변경 불가능🚫
+// 🚫 불변으로 선언한 프로퍼티는 변경 불가능
 mutable.immutableProperty = 200 // ❌ error code ❌
 ```
 
@@ -87,8 +87,41 @@ mutable.immutableProperty = 200 // ❌ error code ❌
 // 불변 인스턴스 정의
 let immutable: Sample = Sample()
 
-// 내부 프로퍼티 모두 변경 불가능 🚫
+// 🚫 내부 프로퍼티 모두 변경 불가능
 mutable.mutableProperty = 200 // ❌ error code ❌
 mutable.immutableProperty = 200 // ❌ error code ❌
 ```
 
+</br>
+</br>
+
+#### 3. 타입 프로퍼티 및 매서드
+
+* 구조체 타입 자체에서 사용할 수 있는 프로퍼티 및 매서드
+
+```swift
+Sample.typeProperty = 300
+Sample.typeMethod() // -> type method
+
+// 🚫 인스턴스에서는 사용 불가능
+mutable.typeProperty = 400 // ❌ error code ❌
+mutable.typeMethod() // ❌ error code ❌
+```
+
+</br>
+</br>
+
+#### 예시
+
+```swift
+struct Student {
+    var name: String = "unknown"
+    var class: String = "Swift"
+
+    static func selfIntroduce() {
+        print("학생타입")
+    }
+
+    려ㅜ
+}
+```
