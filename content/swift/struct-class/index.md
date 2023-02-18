@@ -137,10 +137,29 @@ Student.selfIntroduce()
 ```
 </br>
 
-* 새로운 인스턴스 생성
-``` 
+* 새로운 가변 인스턴스 생성
+```swift
+var doris: Student = Student()
+doris.name = "Doris"
+doris.class = "Java"
+
+doris.selfIntroduce()
+// -> 저는 Java반 Doris입니다
 ```
 
+</br>
+
+* 불변 인스턴스 생성
+
+```swift
+let jenny: Student = Student()
+
+// 🚫 프로퍼티 값 변경 불가능
+jenny.name = "jenny" // ❌ error code ❌
+
+jenny.selfIntroduce()
+// -> 저는 Swift반 unknown입니다
+```
 
 </br>
 </br> 
