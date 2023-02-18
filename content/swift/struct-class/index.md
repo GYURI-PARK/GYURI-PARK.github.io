@@ -6,3 +6,5 @@ author: 박규리
 tags: Swift 
 categories: Swift
 ---
+
+## 💡 구조체 (Struct)
