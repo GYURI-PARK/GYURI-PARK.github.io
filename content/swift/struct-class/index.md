@@ -20,8 +20,12 @@ categories: Swift
 
 * 인스턴스의 값(프로퍼티)을 저장하거나 기능(메소드)을 제공하고 이를 캡슐화할 수 있는 Swift가 제공하는 타입
 
+* Swift에서는 대부분의 타입이 구조체로 이루어져 있다.
+
+* 대문자 CamelCase 사용
+
 </br> 
 
 struct 이름 { </br>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 구조체 내용 </br>    
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 구현부 </br>    
 }
