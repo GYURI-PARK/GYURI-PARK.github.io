@@ -83,3 +83,12 @@ mutable.immutableProperty = 200 // ❌ error code ❌
 
 #### 2. 불변 인스턴스 
 
+```swift
+// 불변 인스턴스 정의
+let immutable: Sample = Sample()
+
+// 내부 프로퍼티 모두 변경 불가능 🚫
+mutable.mutableProperty = 200 // ❌ error code ❌
+mutable.immutableProperty = 200 // ❌ error code ❌
+```
+
