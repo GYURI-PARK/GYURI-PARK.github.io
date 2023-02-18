@@ -29,3 +29,27 @@ categories: Swift
 struct 이름 { </br>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; 구현부 </br>    
 }
+
+</br>
+</br>
+
+### 프로퍼티 및 매서드
+
+* 프로퍼티와 매서드에 대한 자세한 설명은 여기 참고
+
+</br>
+
+```swift
+struct Sample {
+    // 프로퍼티 : 인스턴스 변수 (타입안에 들어있는 변수)
+    // 매서드 : 구조체 안의 함수 (타입안에 들어있는 함수)
+    var mutableProperty: Int = 100 // 가변 프로퍼티
+    let immutableProperty: Int = 100 // 불변 프로퍼티
+
+    static var typeProperty: Int = 100 // 선언한 타입(Sample)에서 사용할 수 있는 타입 프로퍼티
+    
+
+
+}
+```
+
