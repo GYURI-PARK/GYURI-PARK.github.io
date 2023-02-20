@@ -14,7 +14,7 @@ categories: Swift
 
 </br>
 
-## 저장 프로퍼티 (Stored Property)
+## 1. 저장 프로퍼티 (Stored Property)
 
 > 단순히 값을 저장하고 있는 프로퍼티 </br>
 > **let**을 사용해 상수 또는 **var**를 사용해 변수로 선언해 사용 가능 </br>
@@ -37,7 +37,7 @@ rangeOfThreeItems.firstValue = 6
 </br>
 </br>
 
-### 1. 상수 구조체 인스턴스의 저장 프로퍼티 
+### 상수 구조체 인스턴스의 저장 프로퍼티 
 
 * 구조체를 상수(let)로 선언하면 구조체 인스턴스의 프로퍼티 변경 불가능
 * 클래스 인스턴스는 let으로 선언하더라도 프로퍼티 변경 가능
@@ -53,7 +53,7 @@ rangeOfFourItems.firstValue = 6
 </br>
 </br>
 
-### 2. 지연 저장 프로퍼티 (Lazy Stored Property)
+### 지연 저장 프로퍼티 (Lazy Stored Property)
 
 * 값이 처음으로 사용되기 전에는 계산되지 않는 프로퍼티
 * **lazy** 키워드 사용
@@ -186,6 +186,74 @@ struct AlternativeRect {
 </br>
 
 ### 읽기전용 계산된 프로퍼티
+
+* getter만 있고 setter를 제공하지 않는 계산된 프로퍼티 
+* 반드시 반환 값을 제공하고 다른 값을 지정할 수는 없는 프로퍼티
+
+```swift
+struct Cuboid {
+    var width = 0.0, height = 0.0, depth = 0.0
+    var volume: Double {
+        return width * height * depth
+    }
+}
+// volume : 읽기 전용 계산된 프로퍼티
+```
+
+</br>
+</br>
+
+> 📝 </br>
+> 반드시 **var**로 선언 (let❌) </br>
+
+</br>
+</br>
+
+## 3. 타입 프로퍼티 (Type Property)
+
+* 특정 타입에 속한 프로퍼티로 그 타입에 해당하는 단 하나의 프로퍼티만 생성된다.
+* 특정 타입의 모든 인스턴스에 공통적으로 사용되는 값을 정의할 때 유용
+* 항상 **초기값**을 지정해서 사용
+* **static** 키워드 사용
+
+</br>
+</br>
+
+### 구조체에서의 타입 프로퍼티 선언
+
+```swift
+struct SomeStructure {
+    static var storedTypeProperty = "Some value."
+    static var computedTypeProperty: Int {
+        return 1
+    }
+}
+```
+
+### 열거형에서의 타입 프로퍼티 선언
+```swift
+enum SomeEnumeration {
+    static var storedTypeProperty = "Some value."
+    static var computedTypeProperty: Int {
+        return 6
+    }
+}
+```
+
+### 클래스에서의 타입 프로퍼티 선언
+
+*
+```swift
+class SomeClass {
+    static var storedTypeProperty = "Some value."
+    static var computedTypeProperty: Int {
+        return 27
+    }
+    class var overrideableComputedTypeProperty: Int {
+        return 107
+    }
+}
+```
 
 </br>
 </br> 
