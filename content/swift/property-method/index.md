@@ -242,7 +242,9 @@ enum SomeEnumeration {
 
 ### 클래스에서의 타입 프로퍼티 선언
 
-*
+* static과 class 2가지 형태로 선언 가능 
+* class 선언 시 서브클래스에서 overriding 가능
+
 ```swift
 class SomeClass {
     static var storedTypeProperty = "Some value."
