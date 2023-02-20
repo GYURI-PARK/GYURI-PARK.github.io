@@ -75,12 +75,27 @@ class DataImporter {
     var filename = "data.txt"
 }
 
-// 데이터 관리 기능 클래스 생성
+// 데이터 관리 기능 클래스 선언 가정
 class DataManager {
     lazy var importer = DataImporter()
     var data = [String]()
 }
+
+let manager = Datamanager()
+manager.data.append("Some data")
+manager.data.append("Some more data")
+// ⭐️ DataImporter 인스턴스는 이 시점에 생성돼 있지 않다.
 ```
+* DataManager 클래스는 DataImport클래스를 가지고 있지만 지연 프로퍼티로 선언하였으므로 DataManager의 인스턴스 manager를 만들고 data를 추가시키는 동안 DataImporter인스턴스는 생성되지 않는다.
+
+</br>
+</br>
+
+```swift
+print(manager.importer.filename)
+// 다음과 같이 importer 프로퍼티에 처음 접근할 때 importer 인스턴스는 생성
+```
+
 
 ## 계산된 프로퍼티 (Computed Property)
 
