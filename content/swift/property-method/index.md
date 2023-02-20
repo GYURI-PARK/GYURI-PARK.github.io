@@ -61,7 +61,26 @@ rangeOfFourItems.firstValue = 6
 
 > 📝 </br>
 > 지연 프로퍼티는 반드시 변수(var)로 선언 </br>
-> 상수(let) = 
+> 상수(let) = 초기화 되기 전에 항상 값을 갖는 프로퍼티 </br>
+> BUT, 지연 프로퍼티는 처음 사용되기 전에는 값을 갖지 않음
+
+</br>
+</br>
+
+```swift
+// 외부 파일에서 데이터를 가져오는 클래스 생성
+// 초기화하는데 매우 많은 시간이 소요된다고 가정 
+
+class DataImporter {
+    var filename = "data.txt"
+}
+
+// 데이터 관리 기능 클래스 생성
+class DataManager {
+    lazy var importer = DataImporter()
+    var data = [String]()
+}
+```
 
 ## 계산된 프로퍼티 (Computed Property)
 
