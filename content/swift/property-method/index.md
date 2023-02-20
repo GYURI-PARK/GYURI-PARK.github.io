@@ -155,6 +155,37 @@ print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 // -> square.origin is now at (10.0, 10.0)
 ```
 
+![사진](./square.webp)
+
+</br>
+</br>
+
+### 💭 Setter 선언의 간략한 표현
+
+* 앞선 코드에서 Setter의 인자 이름을 set(newCenter)라고 명시했지만, 인자 이름(newCenter)을 지정하지 않으면 *인자 기본 이름인 **newValue*** 사용 가능
+
+```swift
+struct AlternativeRect {
+    var origin = Point()
+    var size = Size()
+    var center: Point {
+        get {
+            let centerX = origin.x + (size.width / 2)
+            let centerY = origin.y + (size.height / 2)
+            return Point(x: centerX, y: centerY)
+        }
+        set {
+            origin.x = newValue.x - (size.width / 2)
+            origin.y = newValue.y - (size.height / 2)
+        }
+    }
+}
+```
+
+</br>
+</br>
+
+### 읽기전용 계산된 프로퍼티
 
 </br>
 </br> 
