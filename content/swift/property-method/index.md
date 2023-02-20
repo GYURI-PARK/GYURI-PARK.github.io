@@ -7,14 +7,14 @@ tags: Swift
 categories: Swift
 ---
 
-# 💡 프로퍼티 (Property)
+## 💡 프로퍼티 (Property)
 
 ✨ 프로퍼티는 **클래스, 구조체, 열거형**과 관련한 값 </br>
 ✨ 프로퍼티의 종류에는 *저장 프로퍼티(Stored Property)*와 *계산된 프로퍼티(Computed Property)*가 있다. </br>
 
 </br>
 
-## 1. 저장 프로퍼티 (Stored Property)
+### 1. 저장 프로퍼티 (Stored Property)
 
 > 단순히 값을 저장하고 있는 프로퍼티 </br>
 > **let**을 사용해 상수 또는 **var**를 사용해 변수로 선언해 사용 가능 </br>
@@ -37,7 +37,7 @@ rangeOfThreeItems.firstValue = 6
 </br>
 </br>
 
-### 상수 구조체 인스턴스의 저장 프로퍼티 
+#### 상수 구조체 인스턴스의 저장 프로퍼티 
 
 * 구조체를 상수(let)로 선언하면 구조체 인스턴스의 프로퍼티 변경 불가능
 * 클래스 인스턴스는 let으로 선언하더라도 프로퍼티 변경 가능
@@ -53,7 +53,7 @@ rangeOfFourItems.firstValue = 6
 </br>
 </br>
 
-### 지연 저장 프로퍼티 (Lazy Stored Property)
+#### 지연 저장 프로퍼티 
 
 * 값이 처음으로 사용되기 전에는 계산되지 않는 프로퍼티
 * **lazy** 키워드 사용
@@ -100,11 +100,12 @@ print(manager.importer.filename)
 </br>
 </br>
 
-## 2. 계산된 프로퍼티 (Computed Property)
+### 2. 계산된 프로퍼티 (Computed Property)
 
-> 값을 저장하고 있지 않고 특정하게 계산한 값을 반환해 주는 프로퍼티 </br>
-> 클래스, 구조체, 열거형 모두에서 사용 가능 </br>
-> 키워드 **get**과 **set**을 통해 *(getter와 optional한 setter를 제공)* 값을 탐색하고 간접적으로 다른 프로퍼티 값을 설정할 수 있는 방법을 제공 
+
+* 값을 저장하고 있지 않고 특정하게 계산한 값을 반환해 주는 프로퍼티
+* 클래스, 구조체, 열거형 모두에서 사용 가능 
+* 키워드 **get**과 **set**을 통해 *(getter와 optional한 setter를 제공)* 값을 탐색하고 간접적으로 다른 프로퍼티 값을 설정할 수 있는 방법을 제공 
 
 </br>
 </br>
@@ -160,7 +161,7 @@ print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
 </br>
 </br>
 
-### 💭 Setter 선언의 간략한 표현
+#### 💭 Setter 선언의 간략한 표현
 
 * 앞선 코드에서 Setter의 인자 이름을 set(newCenter)라고 명시했지만, 인자 이름(newCenter)을 지정하지 않으면 *인자 기본 이름인 **newValue*** 사용 가능
 
@@ -185,7 +186,7 @@ struct AlternativeRect {
 </br>
 </br>
 
-### 읽기전용 계산된 프로퍼티
+#### 읽기전용 계산된 프로퍼티
 
 * getter만 있고 setter를 제공하지 않는 계산된 프로퍼티 
 * 반드시 반환 값을 제공하고 다른 값을 지정할 수는 없는 프로퍼티
@@ -209,7 +210,7 @@ struct Cuboid {
 </br>
 </br>
 
-## 3. 타입 프로퍼티 (Type Property)
+### 3. 타입 프로퍼티 (Type Property)
 
 * 특정 타입에 속한 프로퍼티로 그 타입에 해당하는 단 하나의 프로퍼티만 생성된다.
 * 특정 타입의 모든 인스턴스에 공통적으로 사용되는 값을 정의할 때 유용
@@ -219,7 +220,7 @@ struct Cuboid {
 </br>
 </br>
 
-### 구조체에서의 타입 프로퍼티 선언
+#### 구조체에서의 타입 프로퍼티 선언
 
 ```swift
 struct SomeStructure {
@@ -230,7 +231,7 @@ struct SomeStructure {
 }
 ```
 
-### 열거형에서의 타입 프로퍼티 선언
+#### 열거형 "
 ```swift
 enum SomeEnumeration {
     static var storedTypeProperty = "Some value."
@@ -240,7 +241,7 @@ enum SomeEnumeration {
 }
 ```
 
-### 클래스에서의 타입 프로퍼티 선언
+#### 클래스 "
 
 * static과 class 2가지 형태로 선언 가능 
 * class 선언 시 서브클래스에서 overriding 가능
@@ -256,6 +257,12 @@ class SomeClass {
     }
 }
 ```
+</br>
+</br>
+
+## 💡 메소드 (Method)
+
+
 
 </br>
 </br> 
