@@ -18,6 +18,7 @@ categories: Swift
 
 > 단순히 값을 저장하고 있는 프로퍼티 </br>
 > **let**을 사용해 상수 또는 **var**를 사용해 변수로 선언해 사용 가능 </br>
+> 클래스와 구조체(열거형 X) 에서만 사용기능
 
 </br>
 
@@ -99,10 +100,65 @@ print(manager.importer.filename)
 </br>
 </br>
 
-### 저장 프로퍼티와 인스턴스 변수
-
-
 ## 2. 계산된 프로퍼티 (Computed Property)
 
+> 값을 저장하고 있지 않고 특정하게 계산한 값을 반환해 주는 프로퍼티 </br>
+> 클래스, 구조체, 열거형 모두에서 사용 가능 </br>
+> 키워드 **get**과 **set**을 통해 *(getter와 optional한 setter를 제공)* 값을 탐색하고 간접적으로 다른 프로퍼티 값을 설정할 수 있는 방법을 제공 
+
+</br>
+</br>
+
+```swift
+// 좌표와 크기를 갖는 사각형을 표현하는 구조체
+
+struct Point {
+    var x = 0.0, y = 0.0
+}
+struct Size {
+    var width = 0.0, height = 0.0
+}
+
+struct Rect {
+    var origin = Point()
+    var size = Size()
+    var center: Point {
+        get {
+            let centerX = origin.x + (size.width / 2)
+            let centerY = origin.y + (size.height / 2)
+            return Point(x: centerX, y: centerY)
+        }
+        // get : 다른 좌표와 크기 프로퍼티들을 연산하여 중점 표현
+        set(newCenter) {
+            origin.x = newCenter.x - (size.width / 2)
+            origin.y = newCenter.y - (size.height / 2)
+        }
+        // set : 사각형의 중점 직접 설정
+        // x,y 좌표가 어떤 값을 가져야 하는지 계산해서 x,y에 적절한 좌표값 넣어줌
+    }
+}
+```
+> 💻 </br>
+> center : 사각형의 중점을 표현하는 계산된 프로퍼티 </br>
+
+</br>
+
+```swift
+var square = Rect(origin: Point(x: 0.0, y: 0.0),
+                  size: Size(width: 10.0, height: 10.0))
+                  
+let initialSquareCenter = square.center
+square.center = Point(x: 15.0, y: 15.0)
+
+print("square.origin is now at (\(square.origin.x), \(square.origin.y))")
+
+// -> square.origin is now at (10.0, 10.0)
+```
+
+</br>
+</br> 
+
+```toc
+```
 
 
