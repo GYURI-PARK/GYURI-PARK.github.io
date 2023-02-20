@@ -38,6 +38,19 @@ rangeOfThreeItems.firstValue = 6
 
 ### 1. 상수 구조체 인스턴스의 저장 프로퍼티
 
+* 구조체를 상수(let)로 선언하면 구조체 인스턴스의 프로퍼티 변경 불가능
+* 클래스 인스턴스는 let으로 선언하더라도 프로퍼티 변경 가능
+
+```swift
+let rangeOfFourItems = FixedLengRange(firstValue: 0, length: 4)
+// -> 범위 값은 0, 1, 2, 3
+
+rangeOfFourItems.firstValue = 6
+// ❌ error code ❌
+```
+
+</ㅠㄱ>
+
 ## 2. 계산된 프로퍼티 (Computed Property)
 
 
