@@ -96,8 +96,13 @@ print(manager.importer.filename)
 // 다음과 같이 importer 프로퍼티에 처음 접근할 때 importer 인스턴스는 생성
 ```
 
+</br>
+</br>
 
-## 계산된 프로퍼티 (Computed Property)
+### 저장 프로퍼티와 인스턴스 변수
+
+
+## 2. 계산된 프로퍼티 (Computed Property)
 
 
 
