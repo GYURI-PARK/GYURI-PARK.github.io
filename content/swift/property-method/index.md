@@ -363,6 +363,24 @@ struct Point {
 ``` 
 
 </br>
+</br>
+
+### 2. 타입 메서드 (Type Method)
+
+* 특정 타입 자체에서 호출해 사용
+* 메서드 키워드 func앞에 **staic** 혹은 **class** 키워드를 추가해 선언
+
+```swift
+class SomeClass {
+    class func someTypeMethod() {
+        // Type Method 구현
+    }
+}
+
+내ㅡ
+```
+
+</br>
 </br> 
 
 ```toc
