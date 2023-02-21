@@ -295,8 +295,50 @@ class Counter {
 </br>
 </br>
 
-```ㄴㅈ
+```swift
+let counter = Counter()
+// 초기 count 값 = 0
+
+counter.increment()
+// count 값이 1로 변경
+
+counter.increment(by: 5)
+// count 값은 현재 6
+
+counter.reset()
+// count 값은 0
 ```
+</br>
+</br>
+
+#### self 프로퍼티
+
+* 모든 프로퍼티는 암시적으로 인스턴스 자체를 의미하는 self라는 프로퍼티를 갖는다
+* 인스턴스 자체를 참조하는데 사용
+
+</br>
+</br>
+
+```swift
+func increment() {
+    self.count += 1
+}
+```  
+> 💻 </br>
+> Counter 클래스에서 선언할 때 increment() 메서드에서의 count += 1과 self.count += 1은 같은 의미 </br>
+> Swift에서 특정 메소드에서 해당 인스턴스에 등록된 메소드나 프로퍼티를 호출하면 현재 인스턴스의 메소드나 프로퍼티를 사용하는 것으로 자동으로 가정하기 때문 </br>
+> **인자 이름이 프로퍼치 이름과 같은 경우**에는 프로퍼티에 접근하기 위해 명시적으로 self 키워드를 사용해야한다.
+
+</br>
+
+```swift
+struct Point {
+    var x = 0.0, y = 0.0
+    func isToTheRightOf(x: Double) -> Bool {
+        return self.x > x  // self.x를 이용해 프로퍼티 x와 인자 x를 구분
+    }
+} 
+```  
 
 </br>
 </br> 
