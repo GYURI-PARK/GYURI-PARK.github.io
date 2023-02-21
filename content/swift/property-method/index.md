@@ -326,7 +326,7 @@ func increment() {
 ```  
 > 💻 </br>
 > Counter 클래스에서 선언할 때 increment() 메서드에서의 count += 1과 self.count += 1은 같은 의미 </br>
-> Swift에서 특정 메소드에서 해당 인스턴스에 등록된 메소드나 프로퍼티를 호출하면 현재 인스턴스의 메소드나 프로퍼티를 사용하는 것으로 자동으로 가정하기 때문 </br>
+> Swift에서 특정 메소드에서 해당 인스턴스에 등록된 메소드나 프로퍼티를 호출하면 현재 인스턴스의 메소드나 프로퍼티를 사용하는 것으로 자동으로 가정하기 x때문 </br>
 > **인자 이름이 프로퍼치 이름과 같은 경우**에는 프로퍼티에 접근하기 위해 명시적으로 self 키워드를 사용해야한다.
 
 </br>
@@ -334,11 +334,33 @@ func increment() {
 ```swift
 struct Point {
     var x = 0.0, y = 0.0
+
     func isToTheRightOf(x: Double) -> Bool {
-        return self.x > x  // self.x를 이용해 프로퍼티 x와 인자 x를 구분
+        return self.x > x  
+        // self.x를 이용해 프로퍼티 x와 인자 x를 구분
     }
 } 
 ```  
+</br>
+</br>
+
+#### 인스턴스 메서드 내에서 값 타입 변경
+
+* **mutating** 키워드 사용
+* 일반적으로 인스턴스 메서드 내에서 값 타입(구조체, 열거형)의 프로퍼는 변경 불가능
+* mutating이라는 키워드가 붙은 메소드에서는 메소드의 계산이 끝난 후 원본 구조체에 그 결과를 덮어 써서 그 값을 변경
+
+</br>
+
+```swift
+struct Point {
+    var x = 0.0, y = 0.0
+    mutating func moveBy(x deltaX: Double, y deltaY: Double) {
+        x += deltaX
+        y += deltaY
+    }
+} 
+``` 
 
 </br>
 </br> 
