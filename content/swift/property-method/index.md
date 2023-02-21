@@ -369,6 +369,9 @@ struct Point {
 
 * 특정 타입 자체에서 호출해 사용
 * 메서드 키워드 func앞에 **staic** 혹은 **class** 키워드를 추가해 선언
+* 클래스, 구조체, 열거형에서 모두 타입 메서드 사용 가능
+
+</br>
 
 ```swift
 class SomeClass {
@@ -377,8 +380,13 @@ class SomeClass {
     }
 }
 
-내ㅡ
+SomeClass.someTypeMethod()
+// 타입 메서드 호출
 ```
+</br>
+
+* 타입 메서드 안에서도 self키워드 사용 가능
+* 이 때, self는 인스턴스가 아닌 타입 자신을 의미
 
 </br>
 </br> 
