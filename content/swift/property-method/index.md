@@ -10,7 +10,7 @@ categories: Swift
 ## 💡 프로퍼티 (Property)
 
 ✨ 프로퍼티는 **클래스, 구조체, 열거형**과 관련한 값 </br>
-✨ 프로퍼티의 종류에는 *저장 프로퍼티(Stored Property)*와 *계산된 프로퍼티(Computed Property)*가 있다. </br>
+✨ 프로퍼티의 종류에는 _저장 프로퍼티(Stored Property)_와 _계산된 프로퍼티(Computed Property)_가 있다. </br>
 
 </br>
 
@@ -231,7 +231,7 @@ struct SomeStructure {
 }
 ```
 
-#### 열거형 "
+#### 열거형에서의 타입 프로퍼티 선언
 ```swift
 enum SomeEnumeration {
     static var storedTypeProperty = "Some value."
@@ -241,7 +241,7 @@ enum SomeEnumeration {
 }
 ```
 
-#### 클래스 "
+#### 클래스에서의 타입 프로퍼티 선언
 
 * static과 class 2가지 형태로 선언 가능 
 * class 선언 시 서브클래스에서 overriding 가능
@@ -262,7 +262,41 @@ class SomeClass {
 
 ## 💡 메소드 (Method)
 
+* 특정 타입의 클래스, 구조체, 열거형과 관련된 함수 
 
+</br>
+
+### 1. 인스턴스 메소드 (Instance Method)
+
+* 특정 클래스, 구조체, 열거형의 인스턴스에 속한 메소드
+* 인스턴스 내의 값을 제어하거나 변경 가능
+* 이름 그대로 그 인스턴스가 속한 특정 타입의 인스턴스애서만 실행 가능
+
+</br>
+</br>
+
+```swift
+class Counter {
+    var count = 0
+    func increment() {
+        count += 1
+    }
+    func increment(by amount: Int) {
+        count += amount
+    }
+    func reset() {
+        count = 0
+    }
+}
+```
+> 💻 </br>
+> Counter 클래스를 선언하고 인스턴스 메서드 increment(), increment(by amount: Int), reset()를 정의
+
+</br>
+</br>
+
+```ㄴㅈ
+```
 
 </br>
 </br> 
