@@ -24,6 +24,8 @@ categories: iOS
 
 > A structure that contains a point in a two-dimensional coordinate system
 
+</br>
+
 * 2차원 좌표계의 점을 포함하는 구조체
 
 </br>
@@ -65,6 +67,51 @@ let scene = GameScene(size: view.frame.size)
 scene.anchorPoint = CGPoint(x: 0, y: 1)
 // 원점을 왼쪽 상단으로 설정
 ```
+
+</br>
+</br>
+
+## CGSize
+
+> A structure that contains width and height values
+
+</br>
+
+* 너비와 높이 값을 포함하는 구조체
+* 사각형을 의미하는 것이 아님
+
+```swift
+public struct CGSize {
+    
+    public var width: CGFloat
+
+    public var height: CGFloat
+
+    public init()
+
+    public init(width: CGFloat, height: CGFloat)
+}
+```
+
+</br>
+
+> 다음과 같이 CGFloat 타입의 width, height 값을 가지는 구조체이다.
+> </br>
+> </br>
+> View의 사이즈를 나타낼 때 CGSize를 사용할 수 있다.</br>
+
+</br>
+
+```swift
+let size: CGSize = .init(width: 150, height: 200)
+```
+
+</br>
+</br>
+
+## CGRect
+
+
 
 
 </br>
