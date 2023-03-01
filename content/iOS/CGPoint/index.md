@@ -51,8 +51,20 @@ public struct CGPoint {
 </br>
 </br>
 
+```swift
+let pos: CGPoint = .init(x: 100, y: 200)
+```
 
+</br>
+</br>
 
+```swift
+// 내가 사용한 예
+let scene = GameScene(size: view.frame.size)
+
+scene.anchorPoint = CGPoint(x: 0, y: 1)
+// 원점을 왼쪽 상단으로 설정
+```
 
 
 </br>
