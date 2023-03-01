@@ -118,6 +118,11 @@ let size: CGSize = .init(width: 150, height: 200)
 </br>
 
 * **사각형**의 위치와 크기를 포함하는 구조체
+* 실제 UIView를 구현할 땐 frame의 파라미터로 CGRect가 사용된다.
+
+```swift
+let myView: UIView = .init(frame: CGRect)
+```
 
 </br>
 
@@ -136,7 +141,30 @@ public struct CGRect {
 
 </br>
 
-> 위 코드에서 보이듯 CGRect는 **CGPoint 타입의 origin**과 **ㅊㅎ냨ㄷ**
+> 위 코드에서 보이듯 CGRect는 **CGPoint 타입의 origin**과 **CGSize 타입의 size**를 포함하고 있다. </br>
+> 즉, View를 나타낼 때 origin은 **x,y 좌표**를 size는 **width, height**를 나타낸다고 생각하면 된다.
+
+</br>
+</br>
+
+실제 View의 frame에 접근하는 법
+</br>
+
+```swift
+let rect: CGRect = .init(origin: CGPoint(x: 100, y: 200), size: CGSize(width: 150, height: 200))
+```
+</br>
+</br>
+
+간단하게 표현 </br>
+
+```swift
+let rect: CGRect = .init(x: 100, y: 200, width: 150, height: 200)
+```
+
+</br>
+</br>
+
 
 </br>
 </br>
