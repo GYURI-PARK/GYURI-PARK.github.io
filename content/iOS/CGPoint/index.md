@@ -22,6 +22,10 @@ categories: iOS
 
 ## CGPoint
 
+> A structure that contains a point in a two-dimensional coordinate system
+
+* 2차원 좌표계의 점을 포함하는 구조체
+
 
 </br>
 </br>
