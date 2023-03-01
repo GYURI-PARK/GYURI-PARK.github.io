@@ -80,6 +80,8 @@ scene.anchorPoint = CGPoint(x: 0, y: 1)
 * 너비와 높이 값을 포함하는 구조체
 * 사각형을 의미하는 것이 아님
 
+</br>
+
 ```swift
 public struct CGSize {
     
@@ -111,8 +113,30 @@ let size: CGSize = .init(width: 150, height: 200)
 
 ## CGRect
 
+> A structure that contains the location and dimensions of a rectangle
 
+</br>
 
+* **사각형**의 위치와 크기를 포함하는 구조체
+
+</br>
+
+```swift
+public struct CGRect {
+
+    public var origin: CGPoint
+
+    public var size: CGSize
+
+    public init()
+
+    public init(origin: CGpoint, size: CGSize)
+}
+```
+
+</br>
+
+> 위 코드에서 보이듯 CGRect는 **CGPoint 타입의 origin**과 **ㅊㅎ냨ㄷ**
 
 </br>
 </br>
