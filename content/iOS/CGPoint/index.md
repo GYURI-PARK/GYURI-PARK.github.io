@@ -43,8 +43,15 @@ public struct CGPoint {
 </br>
 
 > 다음과 같이 CGFloat 타입의 x, y 값을 가지는 구조체이다.
+> </br>
+> </br>
+> ✨ 따라서 View의 위치를 나타낼 때 CGPoint를 사용한다.</br>
+> 그러나 꼭 View의 위치를 나타낼 때만 쓰는  것이 아니라 x, y 를 나타내야 할 때 언제든 사용 가능하다.
 
 </br>
+</br>
+
+
 
 
 
