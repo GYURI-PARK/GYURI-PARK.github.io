@@ -26,6 +26,27 @@ categories: iOS
 
 * 2차원 좌표계의 점을 포함하는 구조체
 
+</br>
+
+```swift
+public struct CGPoint {
+
+    public var x: CGFloat
+
+    public var y: CGFloat
+
+    public init()
+
+    public init(x: CGFloat, y: CGFloat)
+}
+```
+</br>
+
+> 다음과 같이 CGFloat 타입의 x, y 값을 가지는 구조체이다.
+
+</br>
+
+
 
 </br>
 </br>
