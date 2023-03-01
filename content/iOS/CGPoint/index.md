@@ -165,6 +165,15 @@ let rect: CGRect = .init(x: 100, y: 200, width: 150, height: 200)
 </br>
 </br>
 
+실제 View 정의 </br>
+
+```swift
+let rect: CGRect = .init(x: 100, y: 200, width: 150, height: 200)
+let myView: UIView = .init(frame: rect)
+
+myView.backgroundColor = .blue
+self.view.addSubview(myView)
+```
 
 </br>
 </br>
