@@ -222,6 +222,12 @@ printName(yourName)
 // 뒤에 느낌표를 붙이지 않아도 강제추출 가능
 // 그러나 nil 값이 전달되기 때문에 런타임 오류 발생
 ```
+
+</br>
+</br>
+
+## 💡 옵셔널 체이닝 (Optional Chaining)
+
 </br>
 </br> 
 
