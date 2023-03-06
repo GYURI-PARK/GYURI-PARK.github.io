@@ -54,8 +54,7 @@ let closure = { print("Unnamed Closure") }
 > </br>
 > - C, C++, Objective-C : block </br>
 > - Java : Lambda funciton </br>
-> - C# : Delegates  </ㅠㄱ>
-
+> - C# : Delegates  </br>
 
 </br>
 </br>
