@@ -15,4 +15,29 @@ categories: Swift
 
 </br>
 
-1. ㅜㅡ
+1. Named Closure (함수) </br>
+</br>
+
+```swift
+func doSomething() {
+    print("Named Closure")
+}
+```
+
+> 다음 코드와 같이 우리가 일반적으로 func()을 사용해 정의하는 이름이 있는 함수를 의미 </br>
+> 단지, 이를 클로저로 부르는 것이 아니라, 그냥 함수로 명칭 </br>
+</br>
+</br>
+
+2. Unnamed Closure (익명함수) </br>
+</br>
+
+```swift
+let closure = { print("Unnamed Closure") }
+```
+
+> 보통 Closure의 의미는 다음과 같이 이름을 붙이지 않고 사용하는 함수(익명함수)를 말함 </br>
+</br>
+</br>
+💡
+## 
