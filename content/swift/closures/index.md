@@ -60,3 +60,10 @@ let closure = { print("Unnamed Closure") }
 </br>
 
 ## 💡 클로저 표현식
+
+```swift
+{ (parameters) -> return type in
+    statements
+}
+```
+
