@@ -38,6 +38,26 @@ let closure = { print("Unnamed Closure") }
 
 > 보통 Closure의 의미는 다음과 같이 이름을 붙이지 않고 사용하는 함수(익명함수)를 말함 </br>
 </br>
+
+* 따라서 클로저는 익명이긴 하지만 함수이기에 1급 객체 함수의 특성을 모두 가짐 
+
+> 1급 객체 함수의 특성 </br>
+> </br>
+> 1. 변수나 상수에 저장 및 할당 가능 </br>
+> 2. 파라미터(객체의 인자)로 전달 가능 </br>
+> 3. 함수(객체)에서 return 가능 </br>
+
 </br>
-💡
-## 
+</br>
+
+> Swift의 클로저와 같은 것들 </br>
+> </br>
+> - C, C++, Objective-C : block </br>
+> - Java : Lambda funciton </br>
+> - C# : Delegates  </ㅠㄱ>
+
+
+</br>
+</br>
+
+## 💡 클로저 표현식
