@@ -182,7 +182,7 @@ if let name: String = myName {
 var myName: String? = "Doris"
 var yourName: String? = nil
 
-if let name - myName, let friend = yourName {
+if let name = myName, let friend = yourName {
     print("\(name) and \(friend)")
 }
 // myName, yourName 두개의 변수에 모두 할당 되어야지만 실행 가능
