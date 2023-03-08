@@ -267,7 +267,10 @@ my.name
 > my는 Person의 옶셔널 타입을 가지고 있기 때문에 각 프로퍼티에 접근하기 위해서는 반드시 unwrapping을 해야한다 ❗️ </br>
 </br>
 
+#### HOW?
+
 🧠 그렇다면 옵셔널 형태 안의 프로퍼티는 어떻게 접근해야 할까? 
+
 </br>
 </br>
 
@@ -286,7 +289,26 @@ my?.name
 </br>
 </br>
 
+#### nil일 경우
 
+🧠 만약 변수가 nil이라면 반환되는 값은?
+
+</br>
+</br>
+
+```swift
+my = nil
+my?.contacts.email
+```
+> 다음과 같이 표현식이 nil일 경우 nil을 반환 </br>
+> my, contacts, email 중 단 하나의 표현식이라도 nil이라면 결과값은 nil </br>
+
+<br>
+
+* 즉, 옵셔널 체이닝은 변수가 nil인지 아닌지를 확인하고 nil이 아닐 경우에는 본래의 값을 반환하고 nil일 경우 nil을 반환하게 된다.
+
+</br>
+</br>
 
 </br>
 </br> 
