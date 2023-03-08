@@ -228,6 +228,88 @@ printName(yourName)
 
 ## 💡 옵셔널 체이닝 (Optional Chaining)
 
+* 체인의 형태로 연쇄적으로 옵셔널을 사용하는 것
+* .(dot)을 통해 내부 프로퍼티나 매서드에 연속적으로 접근할 때 옵셔널 값이 하나라도 껴 있으면 옵셔널 체이닝
+* 연결된 질의에서 어느 하나라도 nil이 존재한다면 전체 결과는 nil이 된다.
+
+
+### 예시
+
+```swift
+struct Contacts {
+    var email : String
+    var address : [String : String]
+}
+
+struct Person {
+    var name : String
+    var contacts : Contacts
+    
+    init(name : String, email : String, address : String) {
+        self.name = name
+        contacts = Contacts(email: email, address: ["home" : address])
+    }
+}
+
+var my : Person? = Person(name: "Doris", email: "doris@naver.com", address: "Seoul")
+```
+
+> 두 개의 구조체 Contacts와 Person을 만들고 Person 구조체 안에 Contents 구조체를 인스턴스로 가지는 프로퍼티 contacts를 선언 </br>
+> 옵셔널 Person 타입인 my란 변수를 선언 </br>
+> 값 (my.contacts.email)에 접근해보자 </br>
+
+```swift
+my.contacts.email 
+my.name 
+```
+
+> 위 두개의 코드 모두 에러가 나는 것을 확인할 수 있다. </br>
+> my는 Person의 옶셔널 타입을 가지고 있기 때문에 각 프로퍼티에 접근하기 위해서는 반드시 unwrapping을 해야한다 ❗️ </br>
+</br>
+
+#### HOW?
+
+🧠 그렇다면 옵셔널 형태 안의 프로퍼티는 어떻게 접근해야 할까? 
+
+</br>
+</br>
+
+```swift
+my?.contacts.email
+my?.name
+```
+
+> **위 코드에서처럼 my인스턴스에 ?(물음표)를 붙여주어서 옵셔널 형태임을 알려주면 된다.**
+
+</br>
+</br>
+
+즉, 옵셔널 표현식의 멤버에 접근할 때, 표현식이 nil일 수도 있으니 ?를 사용해주는 것이 바로 **옵셔널 체이닝** 
+
+</br>
+</br>
+
+#### nil일 경우
+
+🧠 만약 변수가 nil이라면 반환되는 값은?
+
+</br>
+</br>
+
+```swift
+my = nil
+my?.contacts.email
+```
+> 다음과 같이 표현식이 nil일 경우 nil을 반환 </br>
+> my, contacts, email 중 단 하나의 표현식이라도 nil이라면 결과값은 nil </br>
+
+<br>
+
+* 즉, 옵셔널 체이닝은 변수가 nil인지 아닌지를 확인하고 nil이 아닐 경우에는 본래의 값을 반환하고 nil일 경우 nil을 반환하게 된다.
+
+</br>
+</br>
+
 </br>
 </br> 
 
