@@ -66,4 +66,9 @@ let closure = { print("Unnamed Closure") }
     statements
 }
 ```
+</br>
+
+> in을 기준으로 앞부분 ((parameters) -> return type)은 **Closure Head**, 뒷부분 statements는 **Closure Body**
+
+</br>
 
