@@ -41,11 +41,13 @@ categories: iOS
 
 1.  다음과 같이 **PROJECT -> TARGETS -> Info** 로 접근 </br>
 
-2. </br>
+</br>
 
 ![사진](./3.png)
 
-Key에 **'App Transport Security'**를 추가하고 </br>
+</br>
+
+2. Key에 **'App Transport Security'**를 추가하고 </br>
 하위에 **'Allow Arbitrary Loads'**를 추가한 다음, </br>
 Value를 **'Yes'**로 설정
 
@@ -57,5 +59,26 @@ Value를 **'Yes'**로 설정
 </br>
 
 > 이전에 없던 info 파일이 생성되었다.
+
+</br>
+</br>
+
+[사진](./5.png)
+
+</br>
+
+3. Key에 **'Application Scene Manifest'**르 추가하고 </br>
+하위에 **'Scene Configuration'**을 추가
+
+</br>
+</br>
+
+[사진](./result.png)
+</br>
+
+> 다음과 같이 해당 에러가 사라진 것을 볼 수 있다.
+
+
+
 ```toc
 ```
