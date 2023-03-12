@@ -78,6 +78,21 @@ Value를 **'Yes'**로 설정
 
 > 다음과 같이 해당 에러가 사라진 것을 볼 수 있다.
 
+</br>
+</br>
+
+## 🧠 Info.plist 파일
+
+> Info.plist = Information Property List Files </br>
+</br>
+
+* Info.plist 파일은 **실행 패키지에 관한 필수 설정 정보**가 포함된 구조화된 텍스트 파일
+* 일반적으로 유니코드 UTF-8로 인코딩되면 내용은 XML 사용
+* key, value로 구성된 딕셔너리 형태
+* 시스템은 이 key와 value를 사용해 앱과 앱의 설정을 가져오므로, 플러그인/프레임워크/앱에는 Info.plist가 존재해야한다.
+
+</br>
+</br>
 
 
 ```toc
