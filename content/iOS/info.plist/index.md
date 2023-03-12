@@ -29,11 +29,33 @@ categories: iOS
 검색해본 결과 </br>
 > Xcode13부터 신규 프로젝트 생성 시 info.plist파일이 프로젝트 내부로 들어가 디렉토리 상에서 찾을 수 없다고 하였다.
 
+</br>
+</br>
+</br>
 
+## 🔎 해결방법
 
+![사진](./2.png)
+
+</br>
+
+1.  다음과 같이 **PROJECT -> TARGETS -> Info** 로 접근 </br>
+
+2. </br>
+
+![사진](./3.png)
+
+Key에 **'App Transport Security'**를 추가하고 </br>
+하위에 **'Allow Arbitrary Loads'**를 추가한 다음, </br>
+Value를 **'Yes'**로 설정
 
 </br>
 </br>
 
+[사진](./4.png)
+
+</br>
+
+> 이전에 없던 info 파일이 생성되었다.
 ```toc
 ```
