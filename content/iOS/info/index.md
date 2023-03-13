@@ -1,6 +1,6 @@
 ---
 emoji: 🚫
-title: [Xcode] 사라진 info.plist 파일을 찾아서
+title: (Xcode) 사라진 info.plist 파일을 찾아서
 date: '2023-03-12 23:48:00'
 author: 박규리
 tags: iOS
