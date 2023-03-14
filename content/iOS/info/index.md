@@ -72,7 +72,9 @@ Value를 **'Yes'**로 설정
 
 </br>
 
-3. Key에 **'Application Scene Manifest'**르 추가하고 
+3. 
+Key에 **'Application Scene Manifest'**를 추가하고 
+
 </br>
 
 하위에 **'Scene Configuration'**을 추가
