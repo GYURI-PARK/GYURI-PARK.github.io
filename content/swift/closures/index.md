@@ -1,7 +1,7 @@
 ---
 emoji: 📷
 title: 클로저 (Closure)
-date: '2023-03-06 00:00:00'
+date: '2023-03-06 10:00:00'
 author: 박규리
 tags: Swift 
 categories: Swift
