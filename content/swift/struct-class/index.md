@@ -215,12 +215,13 @@ tenEighty.frameRate = 25.0
 ```swift
 // 새로운 상수 선언 후 tenEighty 클래스 인스턴스 할당
 let alsoTenEighty = tenEighty
-alseoTenEighty.frameRate = 30.0
+alsoTenEighty.frameRate = 30.0
 ```
-> alsoTenEighty 상수가 tenEighty 인스턴스를 복사한 것이 아니라 참조한 것이므로 
-> 최초에 할당한 tenEight.frameRate 값 또한 30.0으로 출력된다. </br>
+> alsoTenEighty 상수가 tenEighty 인스턴스를 복사한 것이 아니라 참조한 것이므로 최초에 할당한 tenEight.frameRate 값 또한 30.0으로 출력된다. </br>
+
 > 즉, alsoTenEighty는 tenEighty가 바라보고 있는 메모리 주소를 동일하게 바라보고 참조하고 있는 것이고 </br>
-> alseoTenEighty.frameRate = 30.0 코드는 alsoTenEighty 자체를 변경하는 것이 아닌 바라보는 값을 변경하는 것
+
+> alsoTenEighty.frameRate = 30.0 코드는 alsoTenEighty 자체를 변경하는 것이 아닌 바라보는 값을 변경하는 것
 
 </br>
 
