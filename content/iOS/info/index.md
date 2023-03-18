@@ -1,7 +1,7 @@
 ---
 emoji: 🚫
 title: (Xcode) 사라진 info.plist 파일을 찾아서
-date: '2023-03-12 23:45:00'
+date: '2023-03-12 23:40:00'
 author: 박규리
 tags: iOS
 categories: iOS
@@ -48,13 +48,13 @@ categories: iOS
 </br>
 
 2. 
-</br>
 
-Key에 **'App Transport Security'**를 추가하고 </br>
 
-하위에 **'Allow Arbitrary Loads'**를 추가한 다음, </br>
+> Key에 **'App Transport Security'**를 추가하고 </br>
 
-Value를 **'Yes'**로 설정
+> 하위에 **'Allow Arbitrary Loads'**를 추가한 다음, </br>
+
+> Value를 **'Yes'**로 설정
 
 </br>
 </br>
@@ -73,11 +73,10 @@ Value를 **'Yes'**로 설정
 </br>
 
 3. 
-Key에 **'Application Scene Manifest'**를 추가하고 
 
-</br>
+> Key에 **'Application Scene Manifest'**를 추가하고 </br>
 
-하위에 **'Scene Configuration'**을 추가
+> 하위에 **'Scene Configuration'**을 추가
 
 </br>
 </br>
