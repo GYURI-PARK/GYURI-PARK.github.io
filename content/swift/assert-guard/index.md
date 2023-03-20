@@ -53,7 +53,47 @@ functionWithAssert(age: 50)
 
 ## 💡 guard 구문
 
+* guard 구문의 핵심은 **Early EXIT (빠른 종료)**
 
+> if 조건문과 비교해본다면, if문은 '(조건)이면 (code)해라'의 실행구문이지만, guard구문의 경우 '(조건)이 아니면 끝내라'
+
+</br>
+
+* 디버깅 모드뿐만 아니라 어떤 조건에서도 동작 가능
+* guard의 else 블럭 내부에는 *특정 코드블럭을 종료하는 지시어(return, break, continue, throw 등)*가 꼭 있어야 한다.
+* 단순 조건 판단 후 빠르게 종료할 떄도 용이
+
+### guard let 옵셔널 바인딩
+
+```swift
+func functionWithGuard(age: Int?) {
+
+    guard let unwrappedAge = age, // guard let을 통해 옵셔널 바인딩
+    // age가 nil일 경우 실행 X -> 종료
+        unwrappedAge < 130,
+        unwrappedAge >= 0 else {
+        print("나이값 입력이 잘못되었습니다")
+        return
+    }
+    // 조건 1 = unwrappedAge < 130, 조건 2 = unwrappedAge >= 0
+    // 조건과 맞지 않을 경우 "나이값 입력이 잘못되었습니다" 출력 -> 종료
+
+    print("당신의 나이는 \(unwrappedAge)세입니다")
+    // guard구문을 통과했을 경우 당신의 나이는 OO세입니다 출력
+}
+```
+</br>
+
+* if-let 구문과 다르게, else문 생략 불가능
+* 제어문 전환 명령어 반드시 필요
+* 요구사항만을 반영해서 예외처리할 경우 guard let이 유용
+* 함수 전체에서 optional로 추출된 상수나 함수 사용 가능
+
+### 반복문 안에서의 guard구문
+
+```swift
+
+```
 
 </br>
 </br> 
