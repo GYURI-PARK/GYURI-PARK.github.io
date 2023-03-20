@@ -33,6 +33,8 @@ categories: iOS
 - 앞서 설명한 뷰는 장면들을 전환하여 보여줄 수 있는데 SKScene이 각 장면에 해당하는 클래스
 - 장면은 화면에 등장하는 컨텐츠 구성요소인 Node들을 관리
 
+</br>
+
 3. SKNode
 
 - 장면 내의 배경, 캐릭터, UI요소 등은 모두 SKNode로 표현
@@ -73,9 +75,51 @@ class Button {
 }
 ```
 
+</br>
+</br>
+
+## Essentials
+
+* SpriteKit으로 보여지는 모든 것들은 SKScene의 인스턴스인 scene 객체를 통해 수행
+
+Scene 생성 </br>
+
+```swift
+let scene = SKScene(size: skView.bounds.size)
+scene.anchorPoint = CGPoint(x: 0.5, y: 0.5)
+// 다음과 같이 anchorPoint를 (0.5,0.5)로 설정하게 되면 중심이 (0,0)이 된다.
+```
 
 </br>
+
+Scene 위에 이미지 표시 </br>
+
+```swift
+let image = SKSpriteNode(imageNamed: "myImage.png")
+scene.addChild(image)
+```
+
+</br>
+
+View 내부에 Scene 표시 </br>
+
+```swift
+if let skView = self.view as? SKView { 
+    skView.presentScene(scene)
+}
+// presentScene 함수 사용
+```
+</br>
 </br> 
+
+## Scene Renderers
+
+## Textures
+
+## Animation
+
+</br>
+</br>
 
 ```toc
 ```
