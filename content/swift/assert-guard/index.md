@@ -89,10 +89,45 @@ func functionWithGuard(age: Int?) {
 * 요구사항만을 반영해서 예외처리할 경우 guard let이 유용
 * 함수 전체에서 optional로 추출된 상수나 함수 사용 가능
 
-### 반복문 안에서의 guard구문
+</br>
+</br>
+
+### 반복문 안에서의 guard 구문
 
 ```swift
+var count = 1
+while true {
+    guard count < 3 else {
+        break
+    }
+    print(count)
+    count += 1
+}
+// 1
+// 2
+```
+</br>
+</br>
 
+### Dictionary 활용
+
+```swift
+func someFunction(info: [String: Any]) {
+    guard let name = info["name"] as? String else {
+        return
+    }
+
+    guard let age = info["age"] as? Int, age >= 0 else {
+        return
+    }
+
+    print("\(name): \(age)")
+
+}
+
+someFunction(info: ["name": "jenny", "age": "25"]) // 종료
+someFunction(info: ["name": "jisoo"]) // 종료 
+someFunction(info: ["name": "doris", "age": 25]) // doris: 25
 ```
 
 </br>
