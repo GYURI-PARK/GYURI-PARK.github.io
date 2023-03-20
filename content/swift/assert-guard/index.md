@@ -53,6 +53,11 @@ functionWithAssert(age: 50)
 
 ## 💡 guard 구문
 
+> 문법 </br>
+> guard 조건 else {조건이 false일 때 실행될 구문} 
+
+</br>
+
 * guard 구문의 핵심은 **Early EXIT (빠른 종료)**
 
 > if 조건문과 비교해본다면, if문은 '(조건)이면 (code)해라'의 실행구문이지만, guard구문의 경우 '(조건)이 아니면 끝내라'
