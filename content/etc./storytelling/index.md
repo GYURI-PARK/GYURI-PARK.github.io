@@ -29,6 +29,8 @@ categories: etc.
 * 반복 가능한
 * 캐릭터가 등장하는 
 * 기존의 가정에 도전하는 
+</br>
+
 
 ## 👀 (HOW) 어떻게 하면 효과적인 스토리 텔링을 할 수 있을까?
 
@@ -69,12 +71,15 @@ That's 58 songs every second of every minute of every hour of every day </br>
 
 ## Nancy Duarte, Resonate 
 
-![사진](./resonate.png)
-
 </br>
 
 Nancy Duarte에 따르면 스토리 텔링은 **What is**와 **What could be**의 반복이다.
 
+</br>
+
+![사진](./resonate.png)
+
+</br>
 </br>
 
 위의 그림에서 처럼 What is와 What could be 사이에는 GAP이 존재하는데, 이 gap을 그대로 둘 경우 이야기 하고자 하는 것이 제대로 전달되지 않을 가능성이 높다. </br>
