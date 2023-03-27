@@ -9,7 +9,7 @@ categories: Swift
 
 ## 💡 assert 함수
 
-> 특정조건을 체크하고 조건이 성립되지 않으면 메시지를 출력할 수 있게 해주는 함수
+> 특정v조건을 체크하고 조건이 성립되지 않으면 메시지를 출력할 수 있게 해주는 함수
 
 </br>
 </br>
@@ -65,8 +65,10 @@ functionWithAssert(age: 50)
 </br>
 
 * 디버깅 모드뿐만 아니라 어떤 조건에서도 동작 가능
-* guard의 else 블럭 내부에는 *특정 코드블럭을 종료하는 지시어(return, break, continue, throw 등)*가 꼭 있어야 한다.
+* guard의 else 블럭 내부에는 _특정 코드블럭을 종료하는 지시어(return, break, continue, throw 등)_가 꼭 있어야 한다.
 * 단순 조건 판단 후 빠르게 종료할 떄도 용이
+
+</br>
 
 ### guard let 옵셔널 바인딩
 
