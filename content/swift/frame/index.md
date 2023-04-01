@@ -102,7 +102,7 @@ struct BlogUpload: View {
 </br>
 </br>
 
-### 🔑 주요 특징
+### 🔑 Key Point
 
 * 내부 View의 크기가 정해져있으면 이를 상위 View가 마음대로 조정할 수 없다.
 > 따라서 내부 View안에 frame이 사용되었다면 면밀히 삺피고 배치해야할 필요가 있다. </br>
@@ -164,11 +164,111 @@ struct BlogUpload: View {
 
 <br>
 
-> 위 사진처럼 최소 너비를 0, 최대 너비를 infinity로 잡아줌으로써 주어진 공간을 3등분할 수 있다. 
+> 위 사진처럼 최소 너비를 0, 최대 너비를 infinity로 잡아줌으로써 주어진 공간을 3등분할 수 있다. </br>
+</br>
 
-## .padding
+* min / max값을 사용하면 padding, spacerc처럼 View 사이에 빈 공간을 주는 것이 아닌 View 자체의 영역이 커지는 것
 
-## Spacer()
+</br>
+</br>
+
+## 💡 View의 상하좌우 간격을 주는 .padding()
+
+> frame의 각 변에 여백을 추가해주는 것으로, defalut는 padding(16)이다.
+
+</br>
+</br>
+
+### 🔑 Key Point
+
+* padding을 사용할 땐 modifier의 순서에 주의
+
+```swift
+struct BlogUpload: View {
+    var body: some View {
+        Rectangle()
+            .foregroundColor(.blue)
+            .frame(width: 150, height: 150)
+            .border(Color.red)
+            .padding()
+            .border(Color.blue)
+    }
+}
+```
+![사진](./view7.png)
+
+</br>
+
+> 위 코드에서처럼 빨간색으로 border를 설정해준 다음 padding값을 주게 되면 border가 포함된 frame 각 변에 padding처리가 된다. </br>
+
+</br>
+
+* 이러한 padding은 자잘한 View들 사이 간격을 디자인 상 정확한 수치로 여백을 주어야할 때 사용하면 편리한다.
+
+</br>
+</br>
+
+## 💡 빈 공간을 할당해주는 Spacer()
+
+> View의 일종이긴 하지만, 그냥 '공간'
+
+</br>
+
+> View를 한쪽이나 양쪽으로 밀어버리기 위해 Spacer()를 사용 </br>
+> Stack 밖에서도 사용할 수 있으나 의도대로 사용하기 위해선 Stack 안에서 사용하는 것이 좋다.
+
+* Spacer의 최소 간격은 8이긴 하지만, minLength값을 0으로 설정해주게 되면 중간간격을 없애 줄 수 있다.
+
+```swift
+struct BlogUpload: View {
+    var body: some View {
+        VStack{
+            Rectangle()
+                .foregroundColor(.red)
+                .frame(height: UIScreen.main.bounds.height / 2)
+                
+            Spacer()
+            
+            Rectangle()
+                .foregroundColor(.blue)
+                .frame(height: UIScreen.main.bounds.height / 2)
+        }
+    }
+}
+```
+![사진](./view8.png)
+
+</br>
+</br>
+
+```swift
+struct BlogUpload: View {
+    var body: some View {
+        VStack{
+            Rectangle()
+                .foregroundColor(.red)
+                .frame(height: UIScreen.main.bounds.height / 2)
+                
+            Spacer(minLength: 0)
+            
+            Rectangle()
+                .foregroundColor(.blue)
+                .frame(height: UIScreen.main.bounds.height / 2)
+        }
+    }
+}
+```
+![사진](./view9.png)
+
+</br>
+</br>
+
+## 🤔 정리
+
+**Frame**은 View 자체의 높이와 너비, 즉 사이즈를 지정할 때 </br>
+**Padding**은 View의 각 변(top, bottom, leading, trailing)의 여백을 지정할 때 </br>
+**Spacer**은 Stack에 소속된 View들 사이의 거리를 지정할 때 </br>
+
 
 </br>
 </br> 
