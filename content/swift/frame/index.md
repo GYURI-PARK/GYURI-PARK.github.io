@@ -4,13 +4,15 @@ title: (SwiftUI) View 사이즈 조절하기 by Frame, Padding, Spacer
 date: '2023-04-01 13:00:00'
 author: 박규리
 tags: Swift
-categories: SWift
+categories: Swift SwiftUI
 ---
 
 ## 💡 SwiftUI에서의 View
 
-> SwiftUI는 AutoLayout과 달리, 본인이 속한 부모뷰와 본인의 콘텐츠에 동시에 영향을 받아 자동으로 Layout이 결정 </br>
-> UIKit에서 프레임을 설정하는 것과 달리, SwiftUI의 수식어는 뷰를 직접 변경하는 것이 아닌, 원래의 뷰를 수식하는 *새로운 뷰를 반환* </br>
+> SwiftUI는 AutoLayout과 달리, </br>
+> 본인이 속한 부모뷰와 본인의 콘텐츠에 동시에 영향을 받아 자동으로 Layout이 결정 </br>
+> UIKit에서 프레임을 설정하는 것과 달리, </br>
+> SwiftUI의 수식어는 뷰를 직접 변경하는 것이 아닌, 원래의 뷰를 수식하는 *새로운 뷰를 반환* </br>
 
 </br>
 </br>
