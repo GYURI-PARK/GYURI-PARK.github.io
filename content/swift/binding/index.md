@@ -91,8 +91,7 @@ struct BlogUpload: View {
 
 ## 💡 @Binding
 
-> A property wrapper type that can read and write a value
-owned by a source of truth </br>
+> A property wrapper type that can read and write a value owned by a source of truth </br>
 > </br>
 > @State로 선언된 속성을 다른 뷰에서 사용하려 할 때 @Bindging 사용 </br>
 
