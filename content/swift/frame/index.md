@@ -10,9 +10,9 @@ categories: Swift SwiftUI
 ## 💡 SwiftUI에서의 View
 
 > SwiftUI는 AutoLayout과 달리, </br>
-> 본인이 속한 부모뷰와 본인의 콘텐츠에 동시에 영향을 받아 자동으로 Layout이 결정 </br>
+> **본인이 속한 부모뷰와 본인의 콘텐츠에 동시에 영향**을 받아 자동으로 Layout이 결정 </br>
 > UIKit에서 프레임을 설정하는 것과 달리, </br>
-> SwiftUI의 수식어는 뷰를 직접 변경하는 것이 아닌, 원래의 뷰를 수식하는 *새로운 뷰를 반환* </br>
+> SwiftUI의 수식어는 뷰를 직접 변경하는 것이 아닌, 원래의 뷰를 수식하는 **새로운 뷰를 반환** </br>
 
 </br>
 </br>
@@ -34,6 +34,8 @@ struct ContentView_Previews: PreviewProvider {
 ```
 
 * SwiftUI에서 뷰는 View 프로토콜을 따르는 구조체로 선언되고, 그 View 프로토콜을 따르기 위해서는 body 프로퍼티를 가지고 있어야 하며, 그 안에 View가 선언되어야 한다.
+
+</br>
 
 ![사진](./view1.png)
 
@@ -65,6 +67,7 @@ struct BlogUpload_Previews: PreviewProvider {
 </br>
 
 > 다음 코드에서와 같이 두개의 Text를 입력하더라도 위 사진에서처럼 하나의 뷰에 Text 두개가 나타나는 것이 아닌 Preview가 두개 생기는 것을 볼 수 있다. </br>
+> </br>
 > ⭐️ 따라서 새로운 뷰를 추가하기 위해서는 VStack, HStack, ZStack등을 통해 컨테이너 뷰들을 배치해야 한다.
 
 </br>
