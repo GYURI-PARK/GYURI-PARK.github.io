@@ -218,14 +218,6 @@ struct MyNavigationLink: View {
 > NavigationStack은 State를 통해 stack에 쌓여있는 모든 View를 관리하기 때문에 </br>
 > 실행 시 [root] -> [red] -> [blue] 차례대로 쌓여있는 것을 확인할 수 있다. </br>
 
-</br>
-</br>
-
-### 💻 예제
-
-```swift
-
-```
 
 </br>
 </br>
