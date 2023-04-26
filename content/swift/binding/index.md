@@ -89,6 +89,72 @@ struct BlogUpload: View {
 </br>
 </br>
 
+### 📝 Docs
+
+![공식문서](./state0.png)
+
+</br>
+
+```swift
+ @State private var isPlaying: Bool = false // Create the state. 
+```
+
+</br>
+
+> App, Scene 또는 View에서 상태 값을 생성하려면, 속성 선언에 **@State 속성(attribute)**을 적용하고 **초기값**을 제공해야 한다. </br>
+> **private** 선언을 통해 저장 관리(storage management)와 충돌 방지
+
+</br>
+</br>
+
+![공식문서](./state1.png)
+
+</br>
+
+> SwfitUI에서는 속성들의 저장을 자동으로 관리 </br>
+> 값이 변경되면 이에 영향 받는 뷰 계층의 일부분을 업데이트 </br>
+
+```swift
+struct PlayButton: View {
+    @State private var isPlaying: Bool = false // Create the state.
+
+    var body: some View {
+        Button(isPlaying ? "Pause" : "Play") { // Read the state.
+            isPlaying.toggle() // Write the state.
+        }
+    }
+}
+```
+
+</br>
+
+> isPlaying 상태 속성의 래핑된 값을 직접 참조하여 읽고 쓰기 가능 </br>
+
+</br>
+
+![공식문서](./state2.png)
+
+</br>
+
+> 상태(state)를 사용하는 가장 높은 뷰 계층(highest view in the view hierarchy) 중에서 상태 값을 필요로 하는 뷰에서 해당 상태를 private으로 선언 </br>
+> 하위 뷰들은 이를 직접적으로 읽기 전용으로 접근하거나, 읽기 및 쓰기 권한을 위해 바인딩(binding)으로 공유 가능 </br>
+>  이러한 상태(state) 속성은 *어떤 스레드(thread)에서든 안전하게 변경 가능*
+
+</br>
+</br>
+
+### ⭐️ 정리
+
+* SwiftUI에서는 상태(state)를 사용하여 값을 저장하고 관리할 수 있으며, 상태를 **private**으로 선언하여 안전하게 관리하는 것이 중요 
+* @State 속성을 사용하여 **초기값을 제공**하여 SwiftUI에서 해당 상태 값을 적절하게 처리할 수 있도록 해야 함
+* SwiftUI에서는 State 속성의 저장과 업데이트를 자동으로 처리하며, 래핑된 값을 **직접 참조하여 액세스 가능**
+* SwiftUI에서는 상태(state)를 **최상위 뷰**에서 선언하고, @Binding으로 하위 뷰들에게 전달하여 상태 값을 공유하고, 이를 안전하게 변경 가능
+
+</br>
+</br>
+
+## 💡 @StateObject
+
 ## 💡 @Binding
 
 > A property wrapper type that can read and write a value owned by a source of truth </br>
@@ -171,8 +237,7 @@ struct BlogUpload: View {
 </br>
 </br>
 
-![사진](./binding3.png)
-![사진](./binding4.png)
+![사진](./binding3.png) ![사진](./binding4.png)
 
 </br>
 </br>
