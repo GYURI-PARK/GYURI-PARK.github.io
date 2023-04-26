@@ -155,6 +155,40 @@ struct PlayButton: View {
 
 ## 💡 @StateObject
 
+![pic](./stateObject.png)
+
+> 값 타입을 저장할 경우 @State를 사용하지만, **참조 타입 (Reference Type)**인 클래스(Class) 인스턴스와 같은 값을 저장할 경우, @StateObject를 사용 </br>
+> 클래스(Class)는 객체(Object)를 생성해 참조 타입으로 사용
+
+```swift
+class Person {
+    var name: String
+    var phoneNumber: String
+    var email: String
+
+    init(name: String, phoneNumber: String, email: String) {
+        self.name = name
+        self.phoneNumber = phoneNumber
+        self.email = email
+    }
+}
+
+struct PersonView: View {
+    @StateObject var person = Person(name: "John Doe", phoneNumber: "010-1234-5678", email: "johndoe@example.com")
+
+    var body: some View {
+        VStack {
+            Text(person.name)
+            Text(person.phoneNumber)
+            Text(person.email)
+        }
+    }
+}
+```
+
+</br>
+</br>
+
 ## 💡 @Binding
 
 > A property wrapper type that can read and write a value owned by a source of truth </br>
@@ -182,6 +216,21 @@ struct BlogUpload: View {
 </br>
 
 * 외부에서 접근해야 하기 때문에 private X
+
+</br>
+</br>
+
+### 📝 Docs
+
+![pic](./docs1.png)
+
+</br>
+
+> 바인딩은 데이터를 직접 저장하지 않고 대신 다른 곳에 저장된 속성을 연결 </br>
+> 즉, 바인딩은 뷰 간에 데이터를 공유하고 연결하는 방법 중 하나 </br>
+> 양방향 연결을 통해 뷰에서 변경된 데이터를 속성에 즉시 반영 가능, 속성에서 변경된 데이터를 뷰에 반영 가능 </br>
+> 데이터의 일관성과 신뢰성을 유지하며 뷰 업데이트 가능 
+
 
 </br>
 </br>
