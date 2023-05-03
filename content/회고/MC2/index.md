@@ -88,12 +88,12 @@ Issue 에 포함될 내용은
 
 > 💡 </br>
 > 깃허브에서는 기능 별로 브랜치를 파 pull 과 push 를 합니다. </br>
-> 브랜치는 rebase 방식으로 합칩니다. </br>
-> 브랜치명 예시 feature/uploadImage, GUI/uploadImage </br>
+> 브랜치는 `rebase` 방식으로 합칩니다. </br>
+> 브랜치명 예시 `feature/uploadImage, GUI/uploadImage` </br>
 
 </br>
 
-rebase 방식에 대해선 더 공부해봐야 될 것 같습니다. </br>
+`rebase 방식`에 대해선 더 공부해봐야 될 것 같습니다. </br>
 
 ```bash
 # 새로운 브랜치를 파서 작업을 시작합니다. 
