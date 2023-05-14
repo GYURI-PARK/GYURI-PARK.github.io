@@ -37,7 +37,7 @@ struct BlogUpload: View {
 > 다음 코드와 같이 A로 정의된 값을 내부에서 B로 변경하려고 할 때, </br>
 > *'Cannot assign to property: 'self'is immutable*과 같은 오류가 발생한다. </br>
 > </br>
-> 따라서 이와 같은 문제를 해결하기 위해 @State를 사용한 데이터 바인딩이 필요하다. </br>
+> 따라서 이와 같은 문제를 해결하기 위해 `@State`를 사용한 데이터 바인딩이 필요하다. </br>
 </br>
 
 ## 💡 @State
@@ -57,11 +57,11 @@ struct BlogUpload: View {
 
 * Property Wrapper : 변화가 생기면 해당 변수의 값을 읽거나 새로 쓸 수 있다.
 * State value 값이 변경되면 뷰는 해당 value의 apperance를 무효화 하고 새롭게 body 값을 계산
-* State 변수값이 변경되면 view를 다시 랜더링하기 때문에 항상 최신 값을 가짐
-* State 인스턴스는 그 자체로 값이 아닌, 값을 읽고 쓰는 것을 의미
-* @State 속성으로 어떤 프로퍼티의 초기값을 지정했다면, 다른 값으로 재할당 불가능 -> **@Binding** 변수를 통해서만 가능  
-* @State는 **private**이고 다른 View와 공유되지 않음
-* SwiftUI는 state로 선언된 property들의 저장소를 관리 -> Property Wrapper로 감싼 변수는 View가 소유하고 있지 않는다.
+* State 변수값이 변경되면 view를 다시 랜더링하기 때문에 `항상 최신 값`을 가짐
+* State 인스턴스는 그 자체로 값이 아닌, `값을 읽고 쓰는 것`을 의미
+* @State 속성으로 어떤 프로퍼티의 초기값을 지정했다면, 다른 값으로 재할당 불가능 -> `**@Binding**` 변수를 통해서만 가능  
+* @State는 **private**이고 `다른 View와 공유되지 않음`
+* SwiftUI는 state로 선언된 property들의 `저장소를 관리` -> Property Wrapper로 감싼 변수는 View가 소유하고 있지 않는다.
 
 </br>
 </br>
@@ -101,8 +101,8 @@ struct BlogUpload: View {
 
 </br>
 
-> App, Scene 또는 View에서 상태 값을 생성하려면, 속성 선언에 **@State 속성(attribute)**을 적용하고 **초기값**을 제공해야 한다. </br>
-> **private** 선언을 통해 저장 관리(storage management)와 충돌 방지
+> App, Scene 또는 View에서 상태 값을 생성하려면, 속성 선언에 `@State 속성(attribute)`을 적용하고 `초기값`을 제공해야 한다. </br>
+> `private` 선언을 통해 저장 관리(storage management)와 충돌 방지
 
 </br>
 </br>
@@ -136,19 +136,19 @@ struct PlayButton: View {
 
 </br>
 
-> 상태(state)를 사용하는 가장 높은 뷰 계층(highest view in the view hierarchy) 중에서 상태 값을 필요로 하는 뷰에서 해당 상태를 private으로 선언 </br>
+> 상태(state)를 사용하는 `가장 높은 뷰 계층(highest view in the view hierarchy)` 중에서 상태 값을 필요로 하는 뷰에서 해당 상태를 private으로 선언 </br>
 > 하위 뷰들은 이를 직접적으로 읽기 전용으로 접근하거나, 읽기 및 쓰기 권한을 위해 바인딩(binding)으로 공유 가능 </br>
->  이러한 상태(state) 속성은 *어떤 스레드(thread)에서든 안전하게 변경 가능*
+>  이러한 상태(state) 속성은 어떤 스레드(thread)에서든 안전하게 변경 가능
 
 </br>
 </br>
 
 ### ⭐️ 정리
 
-* SwiftUI에서는 상태(state)를 사용하여 값을 저장하고 관리할 수 있으며, 상태를 **private**으로 선언하여 안전하게 관리하는 것이 중요 
-* @State 속성을 사용하여 **초기값을 제공**하여 SwiftUI에서 해당 상태 값을 적절하게 처리할 수 있도록 해야 함
-* SwiftUI에서는 State 속성의 저장과 업데이트를 자동으로 처리하며, 래핑된 값을 **직접 참조하여 액세스 가능**
-* SwiftUI에서는 상태(state)를 **최상위 뷰**에서 선언하고, @Binding으로 하위 뷰들에게 전달하여 상태 값을 공유하고, 이를 안전하게 변경 가능
+* SwiftUI에서는 상태(state)를 사용하여 값을 저장하고 관리할 수 있으며, 상태를 `private`으로 선언하여 안전하게 관리하는 것이 중요 
+* @State 속성을 사용하여 `초기값을 제공`하여 SwiftUI에서 해당 상태 값을 적절하게 처리할 수 있도록 해야 함
+* SwiftUI에서는 State 속성의 저장과 업데이트를 자동으로 처리하며, 래핑된 값을 `직접 참조하여 액세스 가능`
+* SwiftUI에서는 상태(state)를 `최상위 뷰`에서 선언하고, @Binding으로 하위 뷰들에게 전달하여 상태 값을 공유하고, 이를 안전하게 변경 가능
 
 </br>
 </br>
@@ -157,7 +157,7 @@ struct PlayButton: View {
 
 ![pic](./stateObject.png)
 
-> 값 타입을 저장할 경우 @State를 사용하지만, **참조 타입 (Reference Type)**인 클래스(Class) 인스턴스와 같은 값을 저장할 경우, @StateObject를 사용 </br>
+> 값 타입을 저장할 경우 @State를 사용하지만, `참조 타입 (Reference Type)`인 클래스(Class) 인스턴스와 같은 값을 저장할 경우, @StateObject를 사용 </br>
 > 클래스(Class)는 객체(Object)를 생성해 참조 타입으로 사용
 
 ```swift
@@ -193,12 +193,12 @@ struct PersonView: View {
 
 > A property wrapper type that can read and write a value owned by a source of truth </br>
 > </br>
-> @State로 선언된 속성을 다른 뷰에서 사용하려 할 때 @Bindging 사용 </br>
+> @State로 선언된 속성을 `다른 뷰에서 사용하려 할 때` @Binding 사용 </br>
 
 </br>
 
 사용법 </br>
-> 변수 앞에 **$(달러)**을 붙여 바인딩 변수임을 나타냄 </br>
+> 변수 앞에 `$(달러)`을 붙여 바인딩 변수임을 나타냄 </br>
 
 ```swift
 struct BlogUpload: View {
@@ -228,7 +228,7 @@ struct BlogUpload: View {
 
 > 바인딩은 데이터를 직접 저장하지 않고 대신 다른 곳에 저장된 속성을 연결 </br>
 > 즉, 바인딩은 뷰 간에 데이터를 공유하고 연결하는 방법 중 하나 </br>
-> 양방향 연결을 통해 뷰에서 변경된 데이터를 속성에 즉시 반영 가능, 속성에서 변경된 데이터를 뷰에 반영 가능 </br>
+> `양방향 연결`을 통해 뷰에서 변경된 데이터를 속성에 즉시 반영 가능, 속성에서 변경된 데이터를 뷰에 반영 가능 </br>
 > 데이터의 일관성과 신뢰성을 유지하며 뷰 업데이트 가능 
 
 
