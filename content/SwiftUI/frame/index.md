@@ -3,8 +3,8 @@ emoji: 🖼
 title: (SwiftUI) View 사이즈 조절하기 by Frame, Padding, Spacer
 date: '2023-04-01 13:00:00'
 author: 박규리
-tags: Swift
-categories: Swift SwiftUI
+tags: SwiftUI
+categories: SwiftUI
 ---
 
 ## 💡 SwiftUI에서의 View

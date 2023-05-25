@@ -3,8 +3,8 @@ emoji: 🐌
 title: (SwiftUI) 데이터 바인딩
 date: '2023-04-27 17:53:00'
 author: 박규리
-tags: Swift
-categories: Swift SwiftUI
+tags: SwiftUI
+categories: SwiftUI
 ---
 
 ## SwiftUI에서 데이터 바인딩이 필요한 이유

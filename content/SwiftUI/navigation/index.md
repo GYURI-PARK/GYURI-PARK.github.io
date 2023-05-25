@@ -3,8 +3,8 @@ emoji: 🥸
 title: (SwiftUI) 화면전환을 위한 NavigationLink, NavigationStack
 date: '2023-04-03 14:43:00'
 author: 박규리
-tags: Swift
-categories: Swift SwiftUI
+tags: SwiftUI
+categories: SwiftUI
 ---
 
 ## 💡 NavigationStack
