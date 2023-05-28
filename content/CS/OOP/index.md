@@ -1,7 +1,7 @@
 ---
 emoji: 📦
 title: 객체 지향 프로그래밍 (OOP, Object-Oriented Programming)
-date: '2023-02-21 13:00:00'
+date: '2023-02-21 13:30:00'
 author: 박규리
 tags: CS
 categories: CS
