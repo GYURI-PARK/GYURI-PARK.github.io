@@ -70,201 +70,31 @@
         }
       }
     })
-  </script><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">(SwiftUI) 화면전환을 위한 NavigationLink, NavigationStack</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">gyurisinZorba.com</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-xxees4"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1r5ns1a"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" aria-expanded="false" autoCapitalize="none" spellcheck="false" role="combobox"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🥸</div><div class="info"><div class="categories"><a class="category" href="/posts/Swift">Swift</a><a class="category" href="/posts/SwiftUI">SwiftUI</a></div></div><h1 class="title">(SwiftUI) 화면전환을 위한 NavigationLink, NavigationStack</h1><div class="info"><div class="author">posted by <strong>박규리</strong>,</div> <!-- -->April 03, 2023</div></header><div class="post-content"><div class="markdown"><h2 id="-navigationstack" style="position:relative;"><a href="#-navigationstack" aria-label=" navigationstack permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 NavigationStack</h2>
+  </script><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2"/><link rel="preload" as="font" type="font/woff2" crossorigin="anonymous" href="/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2"/><style>@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxK.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc4.woff2) format("woff2")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:300;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmSU5fBBc-.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:400;src:url(/static/webfonts/s/roboto/v30/KFOmCnqEu92Fr1Mu4mxM.woff) format("woff")}@font-face{font-display:swap;font-family:Roboto;font-style:normal;font-weight:500;src:url(/static/webfonts/s/roboto/v30/KFOlCnqEu92Fr1MmEU9fBBc-.woff) format("woff")}</style><link rel="sitemap" type="application/xml" href="/sitemap.xml"/><style>.gatsby-image-wrapper{position:relative;overflow:hidden}.gatsby-image-wrapper picture.object-fit-polyfill{position:static!important}.gatsby-image-wrapper img{bottom:0;height:100%;left:0;margin:0;max-width:none;padding:0;position:absolute;right:0;top:0;width:100%;object-fit:cover}.gatsby-image-wrapper [data-main-image]{opacity:0;transform:translateZ(0);transition:opacity .25s linear;will-change:opacity}.gatsby-image-wrapper-constrained{display:inline-block;vertical-align:top}</style><noscript><style>.gatsby-image-wrapper noscript [data-main-image]{opacity:1!important}.gatsby-image-wrapper [data-placeholder-image]{opacity:0!important}</style></noscript><script type="module">const e="undefined"!=typeof HTMLImageElement&&"loading"in HTMLImageElement.prototype;e&&document.body.addEventListener("load",(function(e){const t=e.target;if(void 0===t.dataset.mainImage)return;if(void 0===t.dataset.gatsbyImageSsr)return;let a=null,n=t;for(;null===a&&n;)void 0!==n.parentNode.dataset.gatsbyImageWrapper&&(a=n.parentNode),n=n.parentNode;const o=a.querySelector("[data-placeholder-image]"),r=new Image;r.src=t.currentSrc,r.decode().catch((()=>{})).then((()=>{t.style.opacity=1,o&&(o.style.opacity=0,o.style.transition="opacity 500ms linear")}))}),!0);</script><title data-react-helmet="true">(SwiftUI) 화면전환을 위한 NavigationLink, NavigationStack</title></head><body><div id="___gatsby"><div style="outline:none" tabindex="-1" id="gatsby-focus-wrapper"><div class="page-wrapper"><header class="page-header-wrapper"><div class="page-header"><div class="front-section"><a class="link" href="/">gyurisinZorba.com</a></div><div class="trailing-section"><a class="link" href="/about">about</a><a class="link" href="/posts">posts</a><div class="MuiAutocomplete-root MuiAutocomplete-hasPopupIcon css-xxees4"><div class="search-input-wrapper"><div class="MuiFormControl-root MuiFormControl-fullWidth MuiTextField-root search-input css-feqhe6"><div class="MuiInputBase-root MuiInput-root MuiInput-underline MuiInputBase-colorPrimary MuiInputBase-fullWidth MuiInputBase-formControl MuiInputBase-adornedEnd MuiAutocomplete-inputRoot css-1r5ns1a"><input type="text" aria-invalid="false" autoComplete="off" value="" class="MuiInputBase-input MuiInput-input MuiInputBase-inputAdornedEnd MuiAutocomplete-input MuiAutocomplete-inputFocused css-mnn31" aria-autocomplete="list" aria-expanded="false" autoCapitalize="none" spellcheck="false" role="combobox"/><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeMedium search-icon css-vubbuv" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="SearchOutlinedIcon"><path d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg></div></div></div></div></div></div></header><main class="page-content"><header class="post-header"><div class="emoji">🖼</div><div class="info"><div class="categories"><a class="category" href="/posts/SwiftUI">SwiftUI</a></div></div><h1 class="title">(SwiftUI) View 사이즈 조절하기 by Frame, Padding, Spacer</h1><div class="info"><div class="author">posted by <strong>박규리</strong>,</div> <!-- -->April 01, 2023</div></header><div class="post-content"><div class="markdown"><h2 id="-swiftui에서의-view" style="position:relative;"><a href="#-swiftui%EC%97%90%EC%84%9C%EC%9D%98-view" aria-label=" swiftui에서의 view permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 SwiftUI에서의 View</h2>
 <blockquote>
-<p>A view that displays a root view and enables you to present additional views over the root view. </br>
-</br>
-다른 뷰로 넘어가는 방식 (화면전환의 방식)을 스택처럼 적용한 것</p>
+<p>SwiftUI는 AutoLayout과 달리, </br>
+<strong>본인이 속한 부모뷰와 본인의 콘텐츠에 동시에 영향</strong>을 받아 자동으로 Layout이 결정 </br>
+UIKit에서 프레임을 설정하는 것과 달리, </br>
+SwiftUI의 수식어는 뷰를 직접 변경하는 것이 아닌, 원래의 뷰를 수식하는 <strong>새로운 뷰를 반환</strong> </br></p>
 </blockquote>
 </br>
 </br>
-<p>선언 </br></p>
-<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">NavigationStack</span><span class="token operator">&lt;</span><span class="token class-name">Data</span><span class="token punctuation">,</span> <span class="token class-name">Root</span><span class="token operator">></span> <span class="token keyword">where</span> <span class="token class-name">Root</span> <span class="token punctuation">:</span> <span class="token class-name">View</span></code></pre></div>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">import</span> <span class="token class-name">SwiftUI</span>
+
+<span class="token keyword">struct</span> <span class="token class-name">ContentView</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Hello, world!"</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">struct</span> <span class="token class-name">ContentView_Previews</span><span class="token punctuation">:</span> <span class="token class-name">PreviewProvider</span> <span class="token punctuation">{</span>
+    <span class="token keyword">static</span> <span class="token keyword">var</span> previews<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">ContentView</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
 <ul>
-<li>항상 제거되지 않은 가장 최근에 추가된 View를 표시</li>
-<li>RootView는 제거할 수 없다.</li>
+<li>SwiftUI에서 뷰는 View 프로토콜을 따르는 구조체로 선언되고, 그 View 프로토콜을 따르기 위해서는 body 프로퍼티를 가지고 있어야 하며, 그 안에 View가 선언되어야 한다.</li>
 </ul>
-</br>
-<p>NavigationStack을 사용하기 위해선 <strong>NavigationLink</strong>와 <strong>.navigationDestination</strong> 수정자가 필요 </br>
-</br></p>
-<ol>
-<li>NavigationLink = 제어 뷰 (클릭 시 내가 원하는 View를 나오게 하는 역할)</li>
-<li>navigationDestination(for:destination:) = Destination View를 NavigationLink에서 제시된 Data 타입과 연결해주는 Method</li>
-</ol>
-<h2 id="-navigationlink" style="position:relative;"><a href="#-navigationlink" aria-label=" navigationlink permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 NavigationLink</h2>
-<blockquote>
-<p>A view that controls a navigation presnetation. </br>
-</br>
-내비게이션 형태로 presnetation을 제어하는 view </br></p>
-</blockquote>
-</br>
-<p>선언 </br></p>
-<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">NavigationLink</span><span class="token operator">&lt;</span><span class="token class-name">Label</span><span class="token punctuation">,</span> <span class="token class-name">Destination</span><span class="token operator">></span> <span class="token keyword">where</span> <span class="token class-name">Label</span><span class="token punctuation">:</span> <span class="token class-name">View</span><span class="token punctuation">,</span> <span class="token class-name">Desitnation</span> <span class="token punctuation">:</span> <span class="token class-name">View</span></code></pre></div>
-</br>
-</br>
-<h2 id="-예제" style="position:relative;"><a href="#-%EC%98%88%EC%A0%9C" aria-label=" 예제 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💻 예제</h2>
-<ol>
-<li>Navigation을 위한 View 생성</li>
-</ol>
-<blockquote>
-<p>NavigationStack과 List를 사용해 여러 개의 NavigationLink를 쌓아준다. </br></p>
-</blockquote>
-</br>
-<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">MyNavigationLink</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-            <span class="token class-name">NavigationStack</span> <span class="token punctuation">{</span>
-                <span class="token class-name">List</span> <span class="token punctuation">{</span>
-                    <span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Mint"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>mint<span class="token punctuation">)</span>
-                    <span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Pink"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>pink<span class="token punctuation">)</span>
-                    <span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Teal"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>teal<span class="token punctuation">)</span>
-                <span class="token punctuation">}</span>
-                <span class="token punctuation">.</span><span class="token function">navigationTitle</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Colors"</span></span><span class="token punctuation">)</span>
-            <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre></div>
-<p><span
-      class="gatsby-resp-image-wrapper"
-      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 690px; "
-    >
-      <span
-    class="gatsby-resp-image-background-image"
-    style="padding-bottom: 195.00000000000003%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAnCAYAAAAPZ2gOAAAACXBIWXMAABYlAAAWJQFJUiTwAAABOElEQVRIx+2UvWrDMBSF9f5boBDoEuiYoQ8QktISQnHzCB5CSgOGDLETW5Ktn1Puba0mtIPcdsigC0c/SPp0JK4kqkriJx2P6qIdK0FFXbcoy4YXU923e+ggIC3e70u0rYdSFsYAWrtfwRi4XD5jMrnDeHyL0eiG29PpPbs8P3aMGLjZvIGgi8UTZrMHzOePWK0yHA71567xLgkqlDKg6DqL87DWRcsYyzqdFISUHaSUWK9fsNvtAHg45zAkrLW8pq41RNNoeO/DIA1Q37lYfc0PDrXWyLIMRVEwlCbEisIYwy7ZIRW9bdIwd5dOg0PaIc9zVFUZHMaF/36HVFBnu31FWVbhHmOd0eYfpyOHGoJyh6zS62iajvOJ+sOkueY87BOyf79/Ufgc/lMJmIAJmIAJmIAJeD3AdzmNv/C3EwHFAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
-  ></span>
-  <img
-        class="gatsby-resp-image-image"
-        alt="사진"
-        title="사진"
-        src="/static/9d8e40919553c05ed214d76fe8649241/1e043/navigation1.png"
-        srcset="/static/9d8e40919553c05ed214d76fe8649241/e9ff0/navigation1.png 180w,
-/static/9d8e40919553c05ed214d76fe8649241/f21e7/navigation1.png 360w,
-/static/9d8e40919553c05ed214d76fe8649241/1e043/navigation1.png 690w"
-        sizes="(max-width: 690px) 100vw, 690px"
-        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
-        loading="lazy"
-        decoding="async"
-      />
-    </span></p>
-</br>
-</br>
-<ol start="2">
-<li>클릭시 이동할 뷰 (목적지에 해당하는 뷰) 생성</li>
-</ol>
-<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">ColorDetail</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-    
-    <span class="token keyword">var</span> color<span class="token punctuation">:</span> <span class="token class-name">Color</span>
-    
-    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"</span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation"><span class="token keyword">self</span><span class="token punctuation">.</span>color<span class="token punctuation">.</span>description</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">"</span></span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre></div>
-</br>
-</br>
-<ol start="3">
-<li>navigationDestination(for:destination:) 수정자를 이용해 목적지 View를 연결</li>
-</ol>
-<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">MyNavigationLink</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-        <span class="token class-name">NavigationStack</span> <span class="token punctuation">{</span>
-            <span class="token class-name">List</span> <span class="token punctuation">{</span>
-                <span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Mint"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>mint<span class="token punctuation">)</span>
-                <span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Pink"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>pink<span class="token punctuation">)</span>
-                <span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Teal"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>teal<span class="token punctuation">)</span>
-            <span class="token punctuation">}</span>
-            <span class="token punctuation">.</span><span class="token function">navigationDestination</span><span class="token punctuation">(</span><span class="token keyword">for</span><span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                color <span class="token keyword">in</span> <span class="token class-name">ColorDetail</span><span class="token punctuation">(</span>color<span class="token punctuation">:</span> color<span class="token punctuation">)</span>
-            <span class="token punctuation">}</span>
-            
-            <span class="token punctuation">.</span><span class="token function">navigationTitle</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Colors"</span></span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">struct</span> <span class="token class-name">ColorDetail</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-    
-    <span class="token keyword">var</span> color<span class="token punctuation">:</span> <span class="token class-name">Color</span>    
-    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"</span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation"><span class="token keyword">self</span><span class="token punctuation">.</span>color<span class="token punctuation">.</span>description</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">"</span></span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre></div>
-</br>
-</br>
-<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Mint"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>mint<span class="token punctuation">)</span></code></pre></div>
-<blockquote>
-<p>다음과 같이 NavigationLink에 제시된 Data의 타입은 <strong>Color</strong> </br></p>
-</blockquote>
-</br>
-<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token punctuation">.</span><span class="token function">navigationDestination</span><span class="token punctuation">(</span><span class="token keyword">for</span><span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span><span class="token keyword">self</span><span class="token punctuation">)</span></code></pre></div>
-<blockquote>
-<p>for 파라미터에 해당하는 데이터 타입 = Color </br></p>
-</blockquote>
-</br>
-<p><strong>이 두개의 타입이 일치하지 않으면 화면 전환이 이루어지지 않는다</strong></p>
-</br>
-</br>
-<h3 id="두-개-이상의-데이터-타입이-존재할-경우" style="position:relative;"><a href="#%EB%91%90-%EA%B0%9C-%EC%9D%B4%EC%83%81%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85%EC%9D%B4-%EC%A1%B4%EC%9E%AC%ED%95%A0-%EA%B2%BD%EC%9A%B0" aria-label="두 개 이상의 데이터 타입이 존재할 경우 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>두 개 이상의 데이터 타입이 존재할 경우</h3>
-<blockquote>
-<p>navigationDestination(for:destination:)을 여러개 사용 </br></p>
-</blockquote>
-</br>
-<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">MyNavigationLink</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-        <span class="token class-name">NavigationStack</span> <span class="token punctuation">{</span>
-            <span class="token class-name">List</span> <span class="token punctuation">{</span>
-                <span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Mint"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>mint<span class="token punctuation">)</span> <span class="token comment">// color 타입</span>
-                <span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Pink"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token string-literal"><span class="token string">"Pink"</span></span><span class="token punctuation">)</span> <span class="token comment">// string 타입</span>
-                <span class="token class-name">NavigationLink</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Teal"</span></span><span class="token punctuation">,</span> value<span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>teal<span class="token punctuation">)</span>
-            <span class="token punctuation">}</span>
-            <span class="token punctuation">.</span><span class="token function">navigationDestination</span><span class="token punctuation">(</span><span class="token keyword">for</span><span class="token punctuation">:</span> <span class="token class-name">Color</span><span class="token punctuation">.</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                color <span class="token keyword">in</span> <span class="token class-name">ColorDetail</span><span class="token punctuation">(</span>color<span class="token punctuation">:</span> color<span class="token punctuation">)</span>
-            <span class="token punctuation">}</span>
-            <span class="token punctuation">.</span><span class="token function">navigationDestination</span><span class="token punctuation">(</span><span class="token keyword">for</span><span class="token punctuation">:</span> <span class="token class-name">String</span><span class="token punctuation">.</span><span class="token keyword">self</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
-                color <span class="token keyword">in</span> <span class="token class-name">ColorDetailForString</span><span class="token punctuation">(</span>color<span class="token punctuation">:</span> color<span class="token punctuation">)</span>
-            <span class="token punctuation">}</span>
-            
-            <span class="token punctuation">.</span><span class="token function">navigationTitle</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"Colors"</span></span><span class="token punctuation">)</span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">struct</span> <span class="token class-name">ColorDetail</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-    
-    <span class="token keyword">var</span> color<span class="token punctuation">:</span> <span class="token class-name">Color</span>
-    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"</span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation"><span class="token keyword">self</span><span class="token punctuation">.</span>color<span class="token punctuation">.</span>description</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">"</span></span><span class="token punctuation">)</span>
-        
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span>
-
-<span class="token keyword">struct</span> <span class="token class-name">ColorDetailForString</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-    
-    <span class="token keyword">var</span> color<span class="token punctuation">:</span> <span class="token class-name">String</span>
-    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"</span><span class="token interpolation-punctuation punctuation">\(</span><span class="token interpolation"><span class="token keyword">self</span><span class="token punctuation">.</span>color<span class="token punctuation">.</span>description</span><span class="token interpolation-punctuation punctuation">)</span><span class="token string">"</span></span><span class="token punctuation">)</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre></div>
-</br>
-</br>
-<h2 id="-navigation-state-관리" style="position:relative;"><a href="#-navigation-state-%EA%B4%80%EB%A6%AC" aria-label=" navigation state 관리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 Navigation State 관리</h2>
-<blockquote>
-<p>NavigationStack은 Stack이 표시하는 모든 데이터를 나타내는 경로를 추적한다. </br></p>
-<blockquote>
-<p>즉, 경로에 추가된 모든 value에 대해 NavigationStack은 다른 View를 push </br></p>
-</blockquote>
-<ul>
-<li>Stack에 있는 View는 마음대로 순서를 바꾸거나 제어 가능 </br></li>
-</ul>
-</blockquote>
-</br>
-<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">MyNavigationLink</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-    <span class="token attribute atrule">@State</span> <span class="token keyword">private</span> <span class="token keyword">var</span> presentedColor<span class="token punctuation">:</span> <span class="token punctuation">[</span><span class="token class-name">Color</span><span class="token punctuation">]</span> <span class="token operator">=</span> <span class="token punctuation">[</span><span class="token class-name">Color</span><span class="token punctuation">.</span>red<span class="token punctuation">,</span> <span class="token class-name">Color</span><span class="token punctuation">.</span>blue<span class="token punctuation">]</span>
-    
-    
-    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
-        <span class="token class-name">NavigationStack</span><span class="token punctuation">(</span>path<span class="token punctuation">:</span> $presentedColor<span class="token punctuation">)</span> <span class="token punctuation">{</span>
-            <span class="token comment">// ...   </span>
-        <span class="token punctuation">}</span>
-    <span class="token punctuation">}</span>
-<span class="token punctuation">}</span></code></pre></div>
 </br>
 <p><span
       class="gatsby-resp-image-wrapper"
@@ -272,47 +102,403 @@
     >
       <span
     class="gatsby-resp-image-background-image"
-    style="padding-bottom: 66.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABKUlEQVQ4y5WTXW6EMAyEuf/R9qXPK/UEXSD/OMQJUznAFii0u5GMo0F8GZu4SUpjbDtwSkjMSCmBc0YMAbHXYO9/dGaM4wjvBxBJprqX7FxAjCOaaCyS88BUME1TDVnkPfxXi0L01CVKKbjfP3G7faBtDawlGDNAKV/hDZdcAQsHS6pOSuaNNj8F+Hh00NqglAk5l6qlxCCKaKTUGTjtHMYYwZx372TlnKG1rQficNAMZP4DyKfAvrewdkAI0sdYs3OEEGgP3Ob/gMbMvVtDqfAb+J5D2oXWJ0Ba/ugRKHnd74Gzu0vgOyW/BHy35LV/LzmUayEfH5doSrnrHqaLeyj9PHMoWtcZaD1UiIS47PtlUtYZPWYpWVyu2naWrfVwbniGgKwN9WJ/A4H4+nK4f5FuAAAAAElFTkSuQmCC'); background-size: cover; display: block;"
+    style="padding-bottom: 62.77777777777778%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAANCAYAAACpUE5eAAAACXBIWXMAABYlAAAWJQFJUiTwAAABuklEQVQ4y5WU666iMBSFfX+fyb8a4zXeMjPJxBhBDwJFKL3QFtZkl4PKaCaZnayUNOnH3l0LBlmWgWUZOC+hpURZcvCyhLUWTdOAqqoMioJDK4kk1zgzh8o4AA3quoYxBkopaK0xkFqjFBLGWBhrUdcthKoDSiERBBcwluLGCvwOGH78/IXNZoPD4YDz+QzOOe73OwaKKyit4er2bXXTeFAnKuqgKArkeQ4hSsxnU+z3ewyHQ4xGI6xWKxyPRwghMJC5QvCVoYgLKCE9tOuuAz5Hr5AkCZbLJV4riiJst1s/9sBaB6UsKqWhpIIxzo/97LIPjOMY0+kUzrnHfhAE2O12LVAVClF8R5SXkNxA5Ab2+8Jb9YG32w2TyeQxCdXpdMJisWhNUcZBmxra1iCOqVtV9Owav1rXH5kOUwp4KUAehkHgDfId0sZTzQfh4TwB0zTFer32QIoTVRiGz5G/A/JB+DgyAclVusOu3oB9A171Gdh12N3jP4DvegVqXYExhtls1osNBfsRm9cDf9cbUCkfbDpMTpM58/kc4/HYx4m+lv/qkAuN8CsBS1NcLhdcr1e/Utf0T6AE/AGzPuotKDyA7gAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
   ></span>
   <img
         class="gatsby-resp-image-image"
-        alt="picture"
-        title="picture"
-        src="/static/d23f42fb6c58e2e19bc6b58a161b4bc7/37523/navigation2.png"
-        srcset="/static/d23f42fb6c58e2e19bc6b58a161b4bc7/e9ff0/navigation2.png 180w,
-/static/d23f42fb6c58e2e19bc6b58a161b4bc7/f21e7/navigation2.png 360w,
-/static/d23f42fb6c58e2e19bc6b58a161b4bc7/37523/navigation2.png 720w,
-/static/d23f42fb6c58e2e19bc6b58a161b4bc7/302a4/navigation2.png 1080w,
-/static/d23f42fb6c58e2e19bc6b58a161b4bc7/e515d/navigation2.png 1430w"
+        alt="사진"
+        title="사진"
+        src="/static/177b0488f7b20da61279f8587f348c65/37523/view1.png"
+        srcset="/static/177b0488f7b20da61279f8587f348c65/e9ff0/view1.png 180w,
+/static/177b0488f7b20da61279f8587f348c65/f21e7/view1.png 360w,
+/static/177b0488f7b20da61279f8587f348c65/37523/view1.png 720w,
+/static/177b0488f7b20da61279f8587f348c65/302a4/view1.png 1080w,
+/static/177b0488f7b20da61279f8587f348c65/07a9c/view1.png 1440w,
+/static/177b0488f7b20da61279f8587f348c65/a5262/view1.png 2388w"
         sizes="(max-width: 720px) 100vw, 720px"
         style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
         loading="lazy"
         decoding="async"
       />
-    </span>
-</br></p>
+    </span></p>
 <blockquote>
-<p>NavigationStack은 State를 통해 stack에 쌓여있는 모든 View를 관리하기 때문에 </br>
-실행 시 [root] -> [red] -> [blue] 차례대로 쌓여있는 것을 확인할 수 있다. </br></p>
+<p>사진과 같이 미리보기를 할 수 있는 이유는 BloadUpload뷰에 대한 PreviewProvider가 설정되어 있기 때문</p>
 </blockquote>
 </br>
 </br>
+<ul>
+<li>⭐️ 하나의 body 프로퍼티는 단 1개의 뷰를 반환하도록 구성</li>
+</ul>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">import</span> <span class="token class-name">SwiftUI</span>
+
+<span class="token keyword">struct</span> <span class="token class-name">BlogUpload</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"🌎Hello, World!🌎"</span></span><span class="token punctuation">)</span>
+        <span class="token class-name">Text</span><span class="token punctuation">(</span><span class="token string-literal"><span class="token string">"👻Hello, Doris👻"</span></span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+
+<span class="token keyword">struct</span> <span class="token class-name">BlogUpload_Previews</span><span class="token punctuation">:</span> <span class="token class-name">PreviewProvider</span> <span class="token punctuation">{</span>
+    <span class="token keyword">static</span> <span class="token keyword">var</span> previews<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">BlogUpload</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 75.55555555555556%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAPCAYAAADkmO9VAAAACXBIWXMAABYlAAAWJQFJUiTwAAACA0lEQVQ4y4WTTW/aQBCG/f8PjZTcUlW5tim3SiEXvowr8ZVUIFIgbcBrwFgEL9heAybAW80UWxbQxtKYxX787M7OrOa3HtB7/IWnhwGCfh9r8YLtSxdRGCJcLuEFCoE9gt/+Adl7gv/chtMTeG478Hu/8bZSUMR5Hnzfh+YNTXhjG/32Txj3d7i//Yxs5hZGuYzBYAClQnjShTcUUPYIot2Enr3Dty9fkc1k8N0wYJomlFIs1YIwhCtdlPQS5HyOTzc3+HBxASklcrkcJrbNMHHT2QxFXYdcLHD98RqXV1eQcs6c4zjMaWEYwhIC1WoVx1etVoMQAsRQCNPkZ8cXfWtZFpbL5UFoWSiXy/xyu91ypMFEKAQMwzjhKpUKhsMhM1oMlkqlE9A47E8spLGu6yccLSZZId3Swv1+TzceF4tFLgwxsTDN7Q9coVBgR5IyLTfew4XnQ869synTON5DFSiOsymnhVG0wTqK3hVuNhuOd4XpVCqVfwt3ux3HWeFoNEqEx9VLC+mjWPjfKtOfer1+0l/0LN2HJG80Gmf7NZ5YC5TCZDLh6tFZpBPiui6/pOrFMxM3tm3mgiBIODod+Xyes/wr9D2sVit0u10WUE9R0LjZbDJEE8Vcp9M54VqtVsJpk5mPse3wjOv1GlEUJb/UV9PXV0jpIubmZziSTadTXvEfS2ZWO4B4F94AAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="사진"
+        title="사진"
+        src="/static/709b788bc14847880a0917f84c509017/37523/view2.png"
+        srcset="/static/709b788bc14847880a0917f84c509017/e9ff0/view2.png 180w,
+/static/709b788bc14847880a0917f84c509017/f21e7/view2.png 360w,
+/static/709b788bc14847880a0917f84c509017/37523/view2.png 720w,
+/static/709b788bc14847880a0917f84c509017/302a4/view2.png 1080w,
+/static/709b788bc14847880a0917f84c509017/07a9c/view2.png 1440w,
+/static/709b788bc14847880a0917f84c509017/bd9eb/view2.png 1442w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+</br>
+<blockquote>
+<p>다음 코드에서와 같이 두개의 Text를 입력하더라도 위 사진에서처럼 하나의 뷰에 Text 두개가 나타나는 것이 아닌 Preview가 두개 생기는 것을 볼 수 있다. </br>
+</br>
+⭐️ 따라서 새로운 뷰를 추가하기 위해서는 VStack, HStack, ZStack등을 통해 컨테이너 뷰들을 배치해야 한다.</p>
+</blockquote>
+</br>
+</br>
+<h2 id="-view의-크기를-정하는-frame" style="position:relative;"><a href="#-view%EC%9D%98-%ED%81%AC%EA%B8%B0%EB%A5%BC-%EC%A0%95%ED%95%98%EB%8A%94-frame" aria-label=" view의 크기를 정하는 frame permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 View의 크기를 정하는 .frame</h2>
+<blockquote>
+<p>View의 매서드인 frame은 View의 전체 크기를 정해준다.</p>
+</blockquote>
+</br>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">import</span> <span class="token class-name">SwiftUI</span>
+
+<span class="token keyword">struct</span> <span class="token class-name">BlogUpload</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>cyan<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 720px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 144.44444444444443%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAdCAYAAACqhkzFAAAACXBIWXMAABYlAAAWJQFJUiTwAAADPklEQVRIx+2W709bVRjH+1f4xmxjyTYnc7GjnfFv8MXUZCa+9a0uRl6qic5BFkZXNiiysRYc++WAdhjcukmkFdpVYJkIS6bZ0MFKGXXj/mjL7S29tx9zr72lpNDyxsQX3uSbc+65OZ/7Pec855zHJooiorDCH88U7v2pMrOQ5ZcnKvFkmnRKRpZTyLJMKpXalmyCICKsPOdRQmHsd5XoI5XwwyxzixKyJGB+F4SSTANFWT8ySqtusyqZlEQ2I7GaEkFTgQKFQgFd1zfIaDNkPIqiIElSCboBaAxNkmSUrEpobJwz7R2mOrvO4fX10O31ccHro93TyZmz7XSd7+bx3BzZbLYE3QA0GtfW1ojFYpw76+ZFfJ7VlSQjwzc4fPBVnK/t570jbxF//BtycomH9ydpPdnEcjJJJpOpdGjMSUHX6Pb10nLnPrdewFBC5+upOG8393CkyccHXUP0P8nin89xR4aPXBeYikXJa1rJpc0avyhKoOXp8H7DS6dC7A88Z8+1Ber9y7w5ophyBlPsu77I3msL7P1Oou7jDmYno+TymwJF0DXau3vY7Q7zxk0BRyBBQyDB6wNPTdkH4zgCSzj8cZy307zS6GF28u7mQMEAFnS+OuVmp2uUwzcF7P5FDgWWKjUYpyGYZl+jh5mtHApFh67O8+w6Hcb5vYB9sBJo9yc2AGs6/PTESXa0Fh1uAbRbwE88zExEqwNPtLax0xXCWQPouJ1h97E2IiNB8nrBXINNgV+2nGaHq4bDgX+AdR+6CQeHqwM/b26pDSxzOP7Drc2B5WGzy119UdbnsINfJyJbxeF6YNcCbmuV14G923dYLQ7/RYf/A/+TwDp32Nwph/yLNASWKmXslGCN89AAForAl11hDg79Rf31p9T3xyv17TwHhiX2VDttxOJe7vL24vSEeX8K3gnJvPtTulIhiaNT4Ghs48G9CXL5vAk0ODbrkjYacrkc09PTfPbFcX4cjxKKxBiNxMzS0mjkLmM/T3J18AbHm5pLh4LFsZWnEQZUVVUezM5w5VIfly/1lcrL5e99F/EP9JNcfmZe9uWpiq08tTCARrqxqihouo6maVvKuDpl8/oVzH5W/78BmFxnQUWE2ikAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="사진"
+        title="사진"
+        src="/static/f98157369c5ca98684166edb862f31cc/37523/view3.png"
+        srcset="/static/f98157369c5ca98684166edb862f31cc/e9ff0/view3.png 180w,
+/static/f98157369c5ca98684166edb862f31cc/f21e7/view3.png 360w,
+/static/f98157369c5ca98684166edb862f31cc/37523/view3.png 720w,
+/static/f98157369c5ca98684166edb862f31cc/f1901/view3.png 942w"
+        sizes="(max-width: 720px) 100vw, 720px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+</br>
+</br>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">BlogUpload</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>cyan<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>width<span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">300</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+</br>
+</br>
+<h3 id="-key-point" style="position:relative;"><a href="#-key-point" aria-label=" key point permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>🔑 Key Point</h3>
+<ul>
+<li>내부 View의 크기가 정해져있으면 이를 상위 View가 마음대로 조정할 수 없다.</li>
+</ul>
+<blockquote>
+<p>따라서 내부 View안에 frame이 사용되었다면 면밀히 삺피고 배치해야할 필요가 있다. </br></p>
+</blockquote>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">import</span> <span class="token class-name">SwiftUI</span>
+
+<span class="token keyword">struct</span> <span class="token class-name">BlogUpload</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">VStack</span><span class="token punctuation">(</span>spacing<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+            <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>cyan<span class="token punctuation">)</span>
+            
+            <span class="token class-name">VStack</span> <span class="token punctuation">{</span>
+                <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                    <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>yellow<span class="token punctuation">)</span>
+                    <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>width<span class="token punctuation">:</span> <span class="token number">150</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">150</span><span class="token punctuation">)</span>
+            <span class="token punctuation">}</span>
+            
+            <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>width<span class="token punctuation">:</span> <span class="token number">400</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">background</span><span class="token punctuation">(</span><span class="token class-name">Color</span><span class="token punctuation">.</span>orange<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+</code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 660px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 201.66666666666666%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAACXBIWXMAABYlAAAWJQFJUiTwAAABVElEQVRIx+2Py0pCURSG1w7qFWzYqAtkqD1A0aRBLxFNpaZBr5G3mhU18XiCQJ2bEYIeB1IvUFlpUDgsOOeLc9GOWhDScA8+1mLv9X97bYmbT/wnooVaqIVaqIVaqIVaqIV/FraJFfyaMB9Y/QX3Ljw7JEwUHhklXmizZLwxb/RYMHpeDfeLxrs381NWls0ufaJefWXFfGG7eMle+YRk6Zxk6WzAbvmUneIFMfPZm42G8i6yYbQIs56/ZdOwuL+Zg6ZAQ8AKcPum0KnNslWosZa/YzQvnewsY+QifFzN4FgKuz41hHv2eT1N9zhCJzOeFVLCGGmBiuA0FU59BEtBVSArcDieFTutGCKlsDMKp6K877kSGj5ebwlOVWFng9mRvNjBRk5KcNLBSxl/Q5oK6jIQen14wyDjBA7XJeS+D5hA2M95jpwg9X2BI98+6YZ2IGsdCF+cf5R+cLDUAgAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="사진"
+        title="사진"
+        src="/static/325e81e1b5835f482d2f99f8ed4e15b7/1f083/view5.png"
+        srcset="/static/325e81e1b5835f482d2f99f8ed4e15b7/e9ff0/view5.png 180w,
+/static/325e81e1b5835f482d2f99f8ed4e15b7/f21e7/view5.png 360w,
+/static/325e81e1b5835f482d2f99f8ed4e15b7/1f083/view5.png 660w"
+        sizes="(max-width: 660px) 100vw, 660px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<blockquote>
+<p>사진에서 볼수 있듯 orange색의 높이 100의 frame을 만들어주었음에도 불구하고, yellow 색의 사각형은 위로 튀어 나온 것을 볼 수 있다. </br>
+</br>
+만약 VStack 높이를 맞추고 싶다면, View의 크기를 완전히 고정시키는 것이 아닌, </br>
+너비나 높이의 <strong>최댓값, 최솟값을 정하는 방식</strong>으로 정의해주어야 한다.</p>
+</blockquote>
+</br>
+</br>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">BlogUpload</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">HStack</span> <span class="token punctuation">{</span>
+            <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>red<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>minWidth<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> maxWidth<span class="token punctuation">:</span> <span class="token punctuation">.</span>infinity<span class="token punctuation">)</span>
+            
+            <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>blue<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>minWidth<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> maxWidth<span class="token punctuation">:</span> <span class="token punctuation">.</span>infinity<span class="token punctuation">)</span>
+            
+            <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>purple<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>minWidth<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">,</span> maxWidth<span class="token punctuation">:</span> <span class="token punctuation">.</span>infinity<span class="token punctuation">)</span>
+        <span class="token punctuation">}</span> <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>height<span class="token punctuation">:</span> <span class="token number">100</span><span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+</br>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 668px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 192.22222222222223%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAmCAYAAADEO7urAAAACXBIWXMAABYlAAAWJQFJUiTwAAABrElEQVRIx+2WP0hbURSHT23VVbdORTqISBDUutVUETvooKCdu+gW/EMtFpOWgpsiOAmi2KFKjNpERAVdWhUyqkMdtEFQqoPQCjrZd9/9JH/EG/sQW5PtHfj4He6Fj/fgnssVMlBa60QqpRAyVFdSyaQsnhn7wqtyha7QFd5NGJ9DA21kstXGtrnmTBaETreHQ8eta+Yv+9owUb526HjNt+XvVI1D3ZhNzRjUjoN3VNMQhPXIOdG+I9Y/HLNxA6GiGBOrvAQqnzA9uoG8BXmjkB6SdGly+iE0/Jv5+j1mGmPMNqQjVFdgYj2vBG8pcxNRJAB5fkWOHx76QXo1BQMQHjllsSlGuHWfSEs6gjcuuMaqfgYvPHz5FEXeQ35A8SgAuQF48E5TOJgSNseIvNpnvjUdwVOEieV5CmWPmRpZQ7pBOhXSRRKfRj5CcOgX4Zpdgi9/EKpPR1hZwsReWYbVBQ5iJ0xsw9SWZnILJrfh86YmtAOHuxf8/HrG4dr5XzgeG/tex0ZZmOhU2rbmjwJLaaxEpnqbxJ6tnPnHSeH/JsW9D12hK8zWgzNrT+JLYMxHwAJx6EIAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="pic"
+        title="pic"
+        src="/static/6093e1cbbc5aac51119f845a7d7853f7/74866/view6.png"
+        srcset="/static/6093e1cbbc5aac51119f845a7d7853f7/e9ff0/view6.png 180w,
+/static/6093e1cbbc5aac51119f845a7d7853f7/f21e7/view6.png 360w,
+/static/6093e1cbbc5aac51119f845a7d7853f7/74866/view6.png 668w"
+        sizes="(max-width: 668px) 100vw, 668px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+<br>
+<blockquote>
+<p>위 사진처럼 최소 너비를 0, 최대 너비를 infinity로 잡아줌으로써 주어진 공간을 3등분할 수 있다. </br></p>
+</blockquote>
+</br>
+<ul>
+<li>min / max값을 사용하면 padding, spacerc처럼 View 사이에 빈 공간을 주는 것이 아닌 View 자체의 영역이 커지는 것</li>
+</ul>
+</br>
+</br>
+<h2 id="-view의-상하좌우-간격을-주는-padding" style="position:relative;"><a href="#-view%EC%9D%98-%EC%83%81%ED%95%98%EC%A2%8C%EC%9A%B0-%EA%B0%84%EA%B2%A9%EC%9D%84-%EC%A3%BC%EB%8A%94-padding" aria-label=" view의 상하좌우 간격을 주는 padding permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 View의 상하좌우 간격을 주는 .padding()</h2>
+<blockquote>
+<p>frame의 각 변에 여백을 추가해주는 것으로, defalut는 padding(16)이다.</p>
+</blockquote>
+</br>
+</br>
+<h3 id="-key-point-1" style="position:relative;"><a href="#-key-point-1" aria-label=" key point 1 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>🔑 Key Point</h3>
+<ul>
+<li>padding을 사용할 땐 modifier의 순서에 주의</li>
+</ul>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">BlogUpload</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>blue<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>width<span class="token punctuation">:</span> <span class="token number">150</span><span class="token punctuation">,</span> height<span class="token punctuation">:</span> <span class="token number">150</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">border</span><span class="token punctuation">(</span><span class="token class-name">Color</span><span class="token punctuation">.</span>red<span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">padding</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            <span class="token punctuation">.</span><span class="token function">border</span><span class="token punctuation">(</span><span class="token class-name">Color</span><span class="token punctuation">.</span>blue<span class="token punctuation">)</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 484px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 197.77777777777777%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAoCAYAAAD+MdrbAAAACXBIWXMAABYlAAAWJQFJUiTwAAABnElEQVRIx+2VTUsbURSGLykp9F+5L/4GbdNNS0PUTWv8WOhSQW3wu639QOi6m24MUbPS7gX3wWja0iTGaDL3nqfcO4NOxU6SIogwAy/n3Hve+8DhzplR3PKjYmAMjIF3ChS5ir0ofPYGoFzGbvT3mRtalqBio9YGTwueET+GclsLeyNb1kaoXsAZ0AZaAi0Cib9na9ZjjHRu2R5qVhvUVtY4mH3L4dy7kN5zMLNOfW2dZu2Mi6iW3aYYmnZRLpF7uoh6UedR+icPX/5ysrl6XmP1WQ5OjnyvmC6AxyXmhjZRY6AmrmkMlkY+Q6UcAKU74EL6E+o1PMga1Kg4ufwVLGc+QOWoN+B8AEyEgIms/D/wTfqjAyazHolR7ZTMagdcyWz02HK5xMzQF9Q4qMlrGoeF4c3QpXQAntvFSZmvT6bpG9ymP7XF41TeqT+Vp2+gwLfUFPyo+N7IW0ZoG/h96qH392AnjxQLyG6gYsHt6e/7zmO90e9hMEpNz5+Gxj9ka9ZzNX4dZtkNv9HRostZvrXPV/xPiYEx8F4D/wBxUg9eETuL1wAAAABJRU5ErkJggg=='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="사진"
+        title="사진"
+        src="/static/887e61d9a98fcafece4e467053fae1ec/ff42b/view7.png"
+        srcset="/static/887e61d9a98fcafece4e467053fae1ec/e9ff0/view7.png 180w,
+/static/887e61d9a98fcafece4e467053fae1ec/f21e7/view7.png 360w,
+/static/887e61d9a98fcafece4e467053fae1ec/ff42b/view7.png 484w"
+        sizes="(max-width: 484px) 100vw, 484px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+</br>
+<blockquote>
+<p>위 코드에서처럼 빨간색으로 border를 설정해준 다음 padding값을 주게 되면 border가 포함된 frame 각 변에 padding처리가 된다. </br></p>
+</blockquote>
+</br>
+<ul>
+<li>이러한 padding은 자잘한 View들 사이 간격을 디자인 상 정확한 수치로 여백을 주어야할 때 사용하면 편리한다.</li>
+</ul>
+</br>
+</br>
+<h2 id="-빈-공간을-할당해주는-spacer" style="position:relative;"><a href="#-%EB%B9%88-%EA%B3%B5%EA%B0%84%EC%9D%84-%ED%95%A0%EB%8B%B9%ED%95%B4%EC%A3%BC%EB%8A%94-spacer" aria-label=" 빈 공간을 할당해주는 spacer permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>💡 빈 공간을 할당해주는 Spacer()</h2>
+<blockquote>
+<p>View의 일종이긴 하지만, 그냥 ‘공간’</p>
+</blockquote>
+</br>
+<blockquote>
+<p>View를 한쪽이나 양쪽으로 밀어버리기 위해 Spacer()를 사용 </br>
+Stack 밖에서도 사용할 수 있으나 의도대로 사용하기 위해선 Stack 안에서 사용하는 것이 좋다.</p>
+</blockquote>
+<ul>
+<li>Spacer의 최소 간격은 8이긴 하지만, minLength값을 0으로 설정해주게 되면 중간간격을 없애 줄 수 있다.</li>
+</ul>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">BlogUpload</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">VStack</span><span class="token punctuation">{</span>
+            <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>red<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>height<span class="token punctuation">:</span> <span class="token class-name">UIScreen</span><span class="token punctuation">.</span>main<span class="token punctuation">.</span>bounds<span class="token punctuation">.</span>height <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+                
+            <span class="token class-name">Spacer</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+            
+            <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>blue<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>height<span class="token punctuation">:</span> <span class="token class-name">UIScreen</span><span class="token punctuation">.</span>main<span class="token punctuation">.</span>bounds<span class="token punctuation">.</span>height <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 660px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 196.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAnCAYAAAAPZ2gOAAAACXBIWXMAABYlAAAWJQFJUiTwAAAATUlEQVRIx+3MMQ2AMABE0ZvRgQDSdANdDDhoFSCtYpp8kmLhxhve+sR54KSECRMmTPiH8yo4ibrjpNFenLR1cJLuiZUesEqYMGHChMsHNcV5xuZbEIEAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="사진"
+        title="사진"
+        src="/static/d4e8720581097692d45878f946f32c88/1f083/view8.png"
+        srcset="/static/d4e8720581097692d45878f946f32c88/e9ff0/view8.png 180w,
+/static/d4e8720581097692d45878f946f32c88/f21e7/view8.png 360w,
+/static/d4e8720581097692d45878f946f32c88/1f083/view8.png 660w"
+        sizes="(max-width: 660px) 100vw, 660px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+</br>
+</br>
+<div class="gatsby-highlight" data-language="swift"><pre class="language-swift"><code class="language-swift"><span class="token keyword">struct</span> <span class="token class-name">BlogUpload</span><span class="token punctuation">:</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+    <span class="token keyword">var</span> body<span class="token punctuation">:</span> <span class="token keyword">some</span> <span class="token class-name">View</span> <span class="token punctuation">{</span>
+        <span class="token class-name">VStack</span><span class="token punctuation">{</span>
+            <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>red<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>height<span class="token punctuation">:</span> <span class="token class-name">UIScreen</span><span class="token punctuation">.</span>main<span class="token punctuation">.</span>bounds<span class="token punctuation">.</span>height <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+                
+            <span class="token class-name">Spacer</span><span class="token punctuation">(</span>minLength<span class="token punctuation">:</span> <span class="token number">0</span><span class="token punctuation">)</span>
+            
+            <span class="token class-name">Rectangle</span><span class="token punctuation">(</span><span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">foregroundColor</span><span class="token punctuation">(</span><span class="token punctuation">.</span>blue<span class="token punctuation">)</span>
+                <span class="token punctuation">.</span><span class="token function">frame</span><span class="token punctuation">(</span>height<span class="token punctuation">:</span> <span class="token class-name">UIScreen</span><span class="token punctuation">.</span>main<span class="token punctuation">.</span>bounds<span class="token punctuation">.</span>height <span class="token operator">/</span> <span class="token number">2</span><span class="token punctuation">)</span>
+        <span class="token punctuation">}</span>
+    <span class="token punctuation">}</span>
+<span class="token punctuation">}</span></code></pre></div>
+<p><span
+      class="gatsby-resp-image-wrapper"
+      style="position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 660px; "
+    >
+      <span
+    class="gatsby-resp-image-background-image"
+    style="padding-bottom: 196.11111111111111%; position: relative; bottom: 0; left: 0; background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAnCAYAAAAPZ2gOAAAACXBIWXMAABYlAAAWJQFJUiTwAAAATUlEQVRIx+3MsQmAMABE0QNXcQBJkyIzOIoDGMhUjhfhC3GFK6947RPtwEkJEyZMmPAPZys4ibrjpOe8cJIGWG33i5PUwSphwoQJEy4fOEBtlpMa5sgAAAAASUVORK5CYII='); background-size: cover; display: block;"
+  ></span>
+  <img
+        class="gatsby-resp-image-image"
+        alt="사진"
+        title="사진"
+        src="/static/63b8dbb423320a5335211235dc180791/1f083/view9.png"
+        srcset="/static/63b8dbb423320a5335211235dc180791/e9ff0/view9.png 180w,
+/static/63b8dbb423320a5335211235dc180791/f21e7/view9.png 360w,
+/static/63b8dbb423320a5335211235dc180791/1f083/view9.png 660w"
+        sizes="(max-width: 660px) 100vw, 660px"
+        style="width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;"
+        loading="lazy"
+        decoding="async"
+      />
+    </span></p>
+</br>
+</br>
+<h2 id="-정리" style="position:relative;"><a href="#-%EC%A0%95%EB%A6%AC" aria-label=" 정리 permalink" class="anchor before"><svg aria-hidden="true" focusable="false" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>🤔 정리</h2>
+<p><strong>Frame</strong>은 View 자체의 높이와 너비, 즉 사이즈를 지정할 때 </br>
+<strong>Padding</strong>은 View의 각 변(top, bottom, leading, trailing)의 여백을 지정할 때 </br>
+<strong>Spacer</strong>은 Stack에 소속된 View들 사이의 거리를 지정할 때 </br></p>
+</br>
+</br> 
 <div class="table-of-contents">
 <ul>
 <li>
-<p><a href="#-navigationstack">💡 NavigationStack</a></p>
+<p><a href="#-swiftui%EC%97%90%EC%84%9C%EC%9D%98-view">💡 SwiftUI에서의 View</a></p>
 </li>
 <li>
-<p><a href="#-navigationlink">💡 NavigationLink</a></p>
-</li>
-<li>
-<p><a href="#-%EC%98%88%EC%A0%9C">💻 예제</a></p>
+<p><a href="#-view%EC%9D%98-%ED%81%AC%EA%B8%B0%EB%A5%BC-%EC%A0%95%ED%95%98%EB%8A%94-frame">💡 View의 크기를 정하는 .frame</a></p>
 <ul>
-<li><a href="#%EB%91%90-%EA%B0%9C-%EC%9D%B4%EC%83%81%EC%9D%98-%EB%8D%B0%EC%9D%B4%ED%84%B0-%ED%83%80%EC%9E%85%EC%9D%B4-%EC%A1%B4%EC%9E%AC%ED%95%A0-%EA%B2%BD%EC%9A%B0">두 개 이상의 데이터 타입이 존재할 경우</a></li>
+<li><a href="#-key-point">🔑 Key Point</a></li>
 </ul>
 </li>
 <li>
-<p><a href="#-navigation-state-%EA%B4%80%EB%A6%AC">💡 Navigation State 관리</a></p>
+<p><a href="#-view%EC%9D%98-%EC%83%81%ED%95%98%EC%A2%8C%EC%9A%B0-%EA%B0%84%EA%B2%A9%EC%9D%84-%EC%A3%BC%EB%8A%94-padding">💡 View의 상하좌우 간격을 주는 .padding()</a></p>
+<ul>
+<li><a href="#-key-point-1">🔑 Key Point</a></li>
+</ul>
+</li>
+<li>
+<p><a href="#-%EB%B9%88-%EA%B3%B5%EA%B0%84%EC%9D%84-%ED%95%A0%EB%8B%B9%ED%95%B4%EC%A3%BC%EB%8A%94-spacer">💡 빈 공간을 할당해주는 Spacer()</a></p>
+</li>
+<li>
+<p><a href="#-%EC%A0%95%EB%A6%AC">🤔 정리</a></p>
 </li>
 </ul>
-</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/swift/frame/"><div class="direction">이전 글</div><div class="title">(SwiftUI) View 사이즈 조절하기 by Frame, Padding, Spacer</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/swift/enum/"><div class="direction">다음 글</div><div class="title">열거형 (Enum)</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2023<!-- --> <a href="https://github.com/GYURI-PARK">박규리</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/swift/navigation/";window.___webpackCompilationHash="7ace9e0e2da7fd787241";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-c6994e07ca88ec5e3041.js"],"app":["/app-dddb7a0b8fb9dcef41d2.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8c399ae9f9901967b185.js"],"component---src-pages-about-js":["/component---src-pages-about-js-21d8c2c490ded832ccb4.js"],"component---src-pages-index-js":["/component---src-pages-index-js-c92ccdc7ccd815e18645.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-8c1d858342370a92cf91.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-ce35e674eb60c34c6c1f.js"]};/*]]>*/</script><script src="/polyfill-c6994e07ca88ec5e3041.js" nomodule=""></script><script src="/app-dddb7a0b8fb9dcef41d2.js" async=""></script><script src="/framework-7aada5a5a3510ed3a1e8.js" async=""></script><script src="/webpack-runtime-dff8eeb742227381fc3c.js" async=""></script></body></html>
+</div></div></div><div class="post-navigator"><div class="post-navigator-card-wrapper"><a class="post-card prev" href="/etc./storytelling/"><div class="direction">이전 글</div><div class="title">스토리 텔링(Story telling)</div></a></div><div class="post-navigator-card-wrapper"><a class="post-card next" href="/SwiftUI/navigation/"><div class="direction">다음 글</div><div class="title">(SwiftUI) 화면전환을 위한 NavigationLink, NavigationStack</div></a></div></div><div class="utterances"></div></main><footer class="page-footer-wrapper"><p class="page-footer">© <!-- -->2023<!-- --> <a href="https://github.com/GYURI-PARK">박규리</a> powered by<a href="https://github.com/zoomKoding/zoomkoding-gatsby-blog"> zoomkoding-gatsby-blog</a></p></footer><div class="dark-mode-button-wrapper"><button class="MuiButtonBase-root MuiIconButton-root MuiIconButton-sizeMedium dark-mode-button css-1yxmbwk" tabindex="0" type="button"><svg class="MuiSvgIcon-root MuiSvgIcon-fontSizeLarge dark-mode-icon css-6flbmm" focusable="false" aria-hidden="true" viewBox="0 0 24 24" data-testid="DarkModeIcon"><path d="M12 3c-4.97 0-9 4.03-9 9s4.03 9 9 9 9-4.03 9-9c0-.46-.04-.92-.1-1.36-.98 1.37-2.58 2.26-4.4 2.26-2.98 0-5.4-2.42-5.4-5.4 0-1.81.89-3.42 2.26-4.4-.44-.06-.9-.1-1.36-.1z"></path></svg></button></div></div></div><div id="gatsby-announcer" style="position:absolute;top:0;width:1px;height:1px;padding:0;overflow:hidden;clip:rect(0, 0, 0, 0);white-space:nowrap;border:0" aria-live="assertive" aria-atomic="true"></div></div><script id="gatsby-script-loader">/*<![CDATA[*/window.pagePath="/SwiftUI/frame/";window.___webpackCompilationHash="7ace9e0e2da7fd787241";/*]]>*/</script><script id="gatsby-chunk-mapping">/*<![CDATA[*/window.___chunkMapping={"polyfill":["/polyfill-c6994e07ca88ec5e3041.js"],"app":["/app-dddb7a0b8fb9dcef41d2.js"],"component---cache-caches-gatsby-plugin-offline-app-shell-js":["/component---cache-caches-gatsby-plugin-offline-app-shell-js-12b5d8159c7e67968cd6.js"],"component---src-pages-404-js":["/component---src-pages-404-js-8c399ae9f9901967b185.js"],"component---src-pages-about-js":["/component---src-pages-about-js-21d8c2c490ded832ccb4.js"],"component---src-pages-index-js":["/component---src-pages-index-js-c92ccdc7ccd815e18645.js"],"component---src-templates-blog-template-js":["/component---src-templates-blog-template-js-8c1d858342370a92cf91.js"],"component---src-templates-category-template-js":["/component---src-templates-category-template-js-ce35e674eb60c34c6c1f.js"]};/*]]>*/</script><script src="/polyfill-c6994e07ca88ec5e3041.js" nomodule=""></script><script src="/app-dddb7a0b8fb9dcef41d2.js" async=""></script><script src="/framework-7aada5a5a3510ed3a1e8.js" async=""></script><script src="/webpack-runtime-dff8eeb742227381fc3c.js" async=""></script></body></html>
